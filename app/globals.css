@@ -28,6 +28,10 @@ section {
     rgb(var(--background-start-rgb)); */
 }
 
+.tl-progress-bar {
+  clip-path: inset(0px 0px);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: pretty;
