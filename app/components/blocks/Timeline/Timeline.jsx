@@ -1,5 +1,5 @@
 import TimelineItem from "./TimelineItem";
-import { timelineData } from "./data.js";
+import { timelineData } from "./timelineData.js";
 
 export default function Timeline() {
   return (

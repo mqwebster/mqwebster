@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ResumeItem from "../blocks/Resume/ResumeItem";
-import { resumeData } from "../blocks/Resume/data.js";
+import { resumeData } from "../blocks/Resume/resumeData.js";
 import { skillsLogos } from "../blocks/Resume/skillsLogos";
 import skillIcon from "/public/icons/skill-icon.png";
 
