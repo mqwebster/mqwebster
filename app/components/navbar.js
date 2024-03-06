@@ -19,7 +19,7 @@ export default function Navbar() {
           height={72}
         />
 
-        <ul className="flex flex-row gap-4">
+        <ul className="flex flex-row gap-4 text-white">
           {navItems.map((item) => {
             return (
               <li key={item.text}>
