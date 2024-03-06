@@ -42,7 +42,72 @@ export default function Resume() {
 
   return (
     <section id="#resume" className="w-full max-w-screen-xl">
-      <div>Resume section</div>
+      <div className="">
+        <h1>My Experience...</h1>
+
+        <div className="">
+          <div className="">
+            <ul className="">
+              <li>
+                <a href="#Education">Education</a>
+              </li>
+              <li>
+                <a href="#Skills">Skills</a>
+              </li>
+              <li>
+                <a href="#Experience">Experience</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="">
+            <div id="Education" className="">
+              <h2>Education</h2>
+              {educationElements}
+            </div>
+
+            <div id="Skills" className="">
+              <h2>Skills</h2>
+
+              <div className="">
+                <div className="">
+                  <Image src={skillIcon} alt="Resume Item Icon" />
+                </div>
+
+                <div className="">
+                  <h3>Interpersonal Skills</h3>
+                  <ul className="">
+                    <li>Detail-oriented work ethic</li>
+                    <li>Employee resource management</li>
+                    <li>
+                      Enthusiastic synergy-focused approach to collaboration
+                    </li>
+                    <li>Project management</li>
+                    <li>Solution based communication skills</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="">
+                <div className="">
+                  <Image src={skillIcon} alt="Resume Item Icon" />
+                </div>
+
+                <div className="">
+                  <h3>Technical Compentencies</h3>
+                  <ul className="">{skillsElement}</ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="Experience" className="">
+              <h2>Experience</h2>
+
+              {experienceElements}
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
