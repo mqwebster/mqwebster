@@ -18,9 +18,11 @@ export default function TimelineItem({
         <h3>{title}</h3>
         <p>{description}</p>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col bg-gray-200 relative">
           <span>{quote}</span>
-          <span>{quoteAuthor}</span>
+          <span className="text-blue-base">{quoteAuthor}</span>
+
+          <div></div>
         </div>
       </div>
     </div>
