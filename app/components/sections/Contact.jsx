@@ -23,7 +23,7 @@ export default function Contact() {
   // }, []);
 
   return (
-    <section id="contact" className="w-full max-w-screen-xl">
+    <section id="contact" className="w-full max-w-screen-xl z-0">
       <div className="">
         <h1>Get In Contact...</h1>
         <h2>{`I'm currently open to work, and I'm always ready to learn!`}</h2>
