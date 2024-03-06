@@ -7,18 +7,18 @@ export default function TimelineItem({
   quoteAuthor,
 }) {
   return (
-    <div key={id} className="grid grid-cols-3">
-      <div className=" col-span-1">{year}</div>
+    <div key={id} className="grid grid-cols-[1fr,160px,1fr] mb-16">
+      <div className="ml-auto">{year}</div>
 
-      <div className="col-span-2">
-        <div className="w-4 h-4 rounded-full bg-black"></div>
+      <div className="flex justify-center">
+        <div className="w-4 h-4 rounded-full bg-black dark:bg-white"></div>
       </div>
 
-      <div className="col-span-3">
+      <div className=" text-balance col-start-3">
         <h3>{title}</h3>
         <p>{description}</p>
 
-        <div>
+        <div className="flex flex-col">
           <span>{quote}</span>
           <span>{quoteAuthor}</span>
         </div>
