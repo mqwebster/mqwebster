@@ -10,7 +10,7 @@ export default function TimelineItem({
   quoteAuthor,
 }) {
   return (
-    <div key={id} className="grid grid-cols-[1fr,160px,1fr] mb-16">
+    <div className="grid grid-cols-[1fr,160px,1fr] mb-16">
       <div className="ml-auto">{year}</div>
 
       <div className="flex justify-center">

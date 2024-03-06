@@ -3,10 +3,10 @@ import PortfolioItem from "../blocks/Portfolio/PortfolioItem";
 
 export default function Portfolio() {
   const siteElements = portfolioData.sites.map((item) => {
-    return <PortfolioItem key={item.id} {...item} />;
+    return <PortfolioItem key={`SiteItem-${item.id}`} {...item} />;
   });
   const projectElements = portfolioData.projects.map((item) => {
-    return <PortfolioItem key={item.id} {...item} />;
+    return <PortfolioItem key={`ProjectItem-${item.id}`} {...item} />;
   });
 
   return (

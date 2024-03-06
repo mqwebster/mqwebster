@@ -22,8 +22,8 @@ export default function ResumeItem({
         <span className="">{location}</span>
         {list && (
           <ul className="">
-            {list.map((item) => {
-              return <li key={id}>{item}</li>;
+            {list.map((item, index) => {
+              return <li key={`${section}-${title}-${index}`}>{item}</li>;
             })}
           </ul>
         )}

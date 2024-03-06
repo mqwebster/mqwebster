@@ -6,10 +6,18 @@ import skillIcon from "/public/icons/skill-icon.png";
 
 export default function Resume() {
   const educationElements = resumeData.Education.map((item) => {
-    return <ResumeItem key={item.id} section="Education" {...item} />;
+    return (
+      <ResumeItem key={`Education-${item.id}`} section="Education" {...item} />
+    );
   });
   const experienceElements = resumeData.Experience.map((item) => {
-    return <ResumeItem key={item.id} section="Experience" {...item} />;
+    return (
+      <ResumeItem
+        key={`Experience-${item.id}`}
+        section="Experience"
+        {...item}
+      />
+    );
   });
 
   const skills = [
@@ -29,7 +37,7 @@ export default function Resume() {
   const skillsElement = skills.map((skill, i) => {
     skill.url = skillsLogos[i].url;
     return (
-      <li key={skill.id}>
+      <li key={skill.name}>
         <Image
           src={skill.url}
           alt={`${skill.name} Logo`}

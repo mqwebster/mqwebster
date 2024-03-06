@@ -10,7 +10,7 @@ export default function Timeline() {
 
       <div className="flex flex-col gap-16 z-0">
         {timelineData.map((item) => {
-          return <TimelineItem key={item.id} {...item} />;
+          return <TimelineItem key={`${item.title}-${item.id}`} {...item} />;
         })}
       </div>
     </div>
