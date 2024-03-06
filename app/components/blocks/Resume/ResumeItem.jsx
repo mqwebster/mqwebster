@@ -2,9 +2,15 @@ import Image from "next/image";
 import educationIcon from "/public/icons/education-icon.png";
 import experienceIcon from "/public/icons/experience-icon.png";
 
-export default function ResumeItem({ id, date, title, location, list }) {
-  const iconSelector =
-    props.section === "Education" ? educationIcon : experienceIcon;
+export default function ResumeItem({
+  id,
+  date,
+  title,
+  location,
+  list,
+  section,
+}) {
+  const iconSelector = section === "Education" ? educationIcon : experienceIcon;
 
   return (
     <div className="">
