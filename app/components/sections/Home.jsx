@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <section id="#home" className="w-full max-w-screen-xl z-10">
-      <div className="min-h-[92vh] flex flex-col justify-center items-center">
+      <div className="min-h-[calc(100vh-112px)] flex flex-col justify-center items-center">
         <span className="">{`Hey, I'm...`}</span>
         <div className="">
           <ul className="">
