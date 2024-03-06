@@ -24,11 +24,11 @@ export default function Contact() {
 
   return (
     <section id="contact" className="w-full max-w-screen-xl">
-      <div className="wrap">
+      <div className="">
         <h1>Get In Contact...</h1>
         <h2>{`I'm currently open to work, and I'm always ready to learn!`}</h2>
 
-        <div className="contact-items">
+        <div className="">
           {/* <Button link={resume} text="Resume" icon={download} type="resume" /> */}
           <Button
             link="mailto:marques.q.webster@gmail.com"
