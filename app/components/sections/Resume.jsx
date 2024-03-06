@@ -41,7 +41,7 @@ export default function Resume() {
   });
 
   return (
-    <section id="#resume">
+    <section id="#resume" className="w-full max-w-screen-xl">
       <div>Resume section</div>
     </section>
   );
