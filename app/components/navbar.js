@@ -10,7 +10,10 @@ export default function Navbar() {
     { link: "#contact", text: "Contact" },
   ];
   return (
-    <nav id="navbar" className="max-h-[112px] px-16 py-4 bg-blue-base">
+    <nav
+      id="navbar"
+      className="max-h-[112px] px-16 py-4 bg-blue-base sticky top-0 z-50"
+    >
       <div className="mx-auto flex flex-row justify-between items-center max-w-screen-xl">
         <Image
           src="/MarquesWebster.png"
