@@ -17,7 +17,7 @@ export default function Button({ icon, link, text, type }) {
   function emailBtn() {
     function copyEmail() {
       setBtnText("Copied!");
-      const link = link.replace("mailto:", "");
+      var link = link.replace("mailto:", "");
       navigator.clipboard.writeText(link);
 
       setTimeout(() => {
