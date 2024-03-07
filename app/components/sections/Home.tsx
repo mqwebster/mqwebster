@@ -19,7 +19,11 @@ import React from "react";
 import { HeroParallax } from "../ui/hero-parallax";
 
 export function Home() {
-  return <HeroParallax products={products} />;
+  return (
+    <section className="overflow-clip w-full z-0">
+      <HeroParallax products={products} />
+    </section>
+  );
 }
 export const products = [
   {
