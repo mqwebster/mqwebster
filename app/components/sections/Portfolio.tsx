@@ -1,7 +1,7 @@
 import { portfolioData } from "../blocks/Portfolio/portfolioData";
 import PortfolioItem from "../blocks/Portfolio/PortfolioItem";
 
-export default function Portfolio() {
+export function Portfolio() {
   const siteElements = portfolioData.sites.map((item) => {
     return <PortfolioItem key={`SiteItem-${item.id}`} {...item} />;
   });

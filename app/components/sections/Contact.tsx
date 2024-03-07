@@ -8,7 +8,7 @@ import github from "/public/icons/github-icon.png";
 import linkedin from "/public/icons/linkedin-icon.png";
 // import resume from "/public/files/resume.pdf";
 
-export default function Contact() {
+export function Contact() {
   // const [visitors, setVisitors] = useState("");
 
   // useEffect(() => {

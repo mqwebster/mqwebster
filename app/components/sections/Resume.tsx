@@ -1,7 +1,7 @@
 import ResumeItem from "../blocks/Resume/ResumeItem";
 import { resumeData } from "../blocks/Resume/resumeData.js";
 
-export default function Resume() {
+export function Resume() {
   const educationElements = resumeData.Education.map((item) => {
     return (
       <ResumeItem key={`Education-${item.id}`} section="Education" {...item} />

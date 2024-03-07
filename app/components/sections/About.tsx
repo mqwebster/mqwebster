@@ -1,6 +1,6 @@
 import Timeline from "../blocks/Timeline/Timeline";
 
-export default function About() {
+export function About() {
   return (
     <section id="#about" className="w-full max-w-screen-xl z-0 py-16">
       <div className="flex flex-col">
