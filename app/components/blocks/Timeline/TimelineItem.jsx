@@ -23,8 +23,8 @@ export default function TimelineItem({
           <p>{description}</p>
         </div>
 
-        <div className="flex flex-col bg-gray-200 relative p-6 rounded-lg">
-          <span>{quote}</span>
+        <div className="flex flex-col gap-2 bg-gray-200 relative p-6 rounded-lg">
+          <span className="text-black">{quote}</span>
           <span className="text-blue-base">{quoteAuthor}</span>
 
           <div className="absolute -top-6 -right-4 dark:invert">
