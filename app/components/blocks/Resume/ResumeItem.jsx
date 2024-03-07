@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { skillsLogos } from "./skillsLogos";
 import educationIcon from "/public/icons/education-icon.png";
 import experienceIcon from "/public/icons/experience-icon.png";
+import skillIcon from "/public/icons/skill-icon.png";
 
 export default function ResumeItem({
   id,
@@ -9,17 +11,27 @@ export default function ResumeItem({
   location,
   list,
   section,
+  skills,
 }) {
-  const iconSelector = section === "Education" ? educationIcon : experienceIcon;
+  const iconSelector = {
+    Education: educationIcon,
+    Experience: experienceIcon,
+    Skills: skillIcon,
+  };
 
   return (
     <div className="">
-      <Image width={48} height={48} src={iconSelector} alt="Resume Item Icon" />
+      <Image
+        width={40}
+        height={40}
+        src={iconSelector[section]}
+        alt="Resume Item Icon"
+      />
 
       <div className="">
-        <span className="">{date}</span>
+        {date && <span className="text-xs">{date}</span>}
         <h3>{title}</h3>
-        <span className="">{location}</span>
+        {location && <span className="text-blue-base">{location}</span>}
         {list && (
           <ul className="">
             {list.map((item, index) => {
@@ -28,6 +40,25 @@ export default function ResumeItem({
           </ul>
         )}
       </div>
+
+      {skills && (
+        <ul>
+          {skills.map((skill, i) => {
+            skill.url = skillsLogos[i].url;
+            return (
+              <li key={skill.name}>
+                <Image
+                  src={skill.url}
+                  alt={`${skill.name} Logo`}
+                  width={48}
+                  height={48}
+                />
+                {skill.name}
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 }

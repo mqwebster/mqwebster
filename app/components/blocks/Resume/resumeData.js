@@ -77,4 +77,36 @@ export const resumeData = {
       ],
     },
   ],
+
+  Skills: [
+    {
+      id: 1,
+      title: "Interpersonal Skills",
+      list: [
+        "Detail-oriented work ethic",
+        "Employee resource management",
+        "Enthusiastic synergy-focused approach to collaboration",
+        "Project management",
+        "Solution based communication skills",
+      ],
+    },
+    {
+      id: 2,
+      title: "Technical Competencies",
+      skills: [
+        { name: "CSS", url: "" },
+        { name: "Figma", url: "" },
+        { name: "GitHub", url: "" },
+        { name: "HTML", url: "" },
+        { name: "JavaScript", url: "" },
+        { name: "NPM", url: "" },
+        { name: "Prettier", url: "" },
+        { name: "PWA", url: "" },
+        { name: "React", url: "" },
+        { name: "Vite", url: "" },
+        { name: "Webflow", url: "" },
+        { name: "WordPress", url: "" },
+      ],
+    },
+  ],
 };
