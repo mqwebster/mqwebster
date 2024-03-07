@@ -10,7 +10,7 @@ export function Portfolio() {
   });
 
   return (
-    <section id="portfolio" className="w-full max-w-screen-xl z-0">
+    <section id="portfolio" className="w-full max-w-screen-xl z-0 py-16">
       <div className="">
         <h1 className="w-max mx-auto">Work Showcase...</h1>
 
