@@ -21,13 +21,13 @@ export default function Resume() {
   });
 
   return (
-    <section id="#resume" className="w-full max-w-screen-xl z-0">
+    <section id="#resume" className="w-full max-w-screen-xl z-0 py-16">
       <div className="">
-        <h1>My Experience...</h1>
+        <h1 className="w-max mx-auto">My Experience...</h1>
 
-        <div className="">
-          <div className="">
-            <ul className="">
+        <div className="flex gap-10 relative">
+          <nav className="min-w-44 h-full sticky top-[20vh]">
+            <ul className="flex flex-col gap-8">
               <li>
                 <a href="#Education">Education</a>
               </li>
@@ -38,20 +38,20 @@ export default function Resume() {
                 <a href="#Experience">Experience</a>
               </li>
             </ul>
-          </div>
+          </nav>
 
-          <div className="">
-            <div id="Education" className="">
+          <div className="flex flex-col gap-20">
+            <div id="Education" className="border-b-2 border-blue-200">
               <h2>Education</h2>
               {educationElements}
             </div>
 
-            <div id="Skills" className="">
+            <div id="Skills" className="border-b-2 border-blue-200">
               <h2>Skills</h2>
               {skillElements}
             </div>
 
-            <div id="Experience" className="">
+            <div id="Experience" className="border-b-2 border-blue-200">
               <h2>Experience</h2>
               {experienceElements}
             </div>
