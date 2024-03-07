@@ -1,8 +1,13 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { skillsLogos } from "./skillsLogos";
 import educationIcon from "/public/icons/education-icon.png";
 import experienceIcon from "/public/icons/experience-icon.png";
 import skillIcon from "/public/icons/skill-icon.png";
+
+interface skillsInterface {
+  name: string;
+  url;
+}
 
 export default function ResumeItem({
   id,
@@ -12,6 +17,14 @@ export default function ResumeItem({
   list,
   section,
   skills,
+}: {
+  id: number;
+  date?: string;
+  title: string;
+  location?: string;
+  list?: Array<string>;
+  section: string;
+  skills?: Array<skillsInterface>;
 }) {
   const iconSelector = {
     Education: educationIcon,

@@ -8,6 +8,13 @@ export default function TimelineItem({
   description,
   quote,
   quoteAuthor,
+}: {
+  id: number;
+  year: string;
+  title: string;
+  description: string;
+  quote: string;
+  quoteAuthor: string;
 }) {
   return (
     <div className="grid grid-cols-[1fr,160px,1fr] mb-16">

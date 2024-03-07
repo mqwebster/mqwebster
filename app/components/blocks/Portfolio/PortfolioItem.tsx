@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import projectIcon from "/public/icons/project-icon.png";
 
 export default function PortfolioItem({
@@ -8,6 +8,13 @@ export default function PortfolioItem({
   link,
   image,
   type,
+}: {
+  id: number;
+  title: string;
+  description: string;
+  link: string;
+  image: StaticImageData;
+  type: string;
 }) {
   return (
     <div key={id} className="">
