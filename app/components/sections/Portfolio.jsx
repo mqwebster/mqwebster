@@ -12,7 +12,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="w-full max-w-screen-xl z-0">
       <div className="">
-        <h1>Work Showcase...</h1>
+        <h1 className="w-max mx-auto">Work Showcase...</h1>
 
         <div className="">
           <div className="">
