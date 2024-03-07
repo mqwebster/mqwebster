@@ -6,10 +6,10 @@ export default function Button({ icon, link, text, type }) {
   const [btnText, setBtnText] = useState(text);
 
   const btnContent = (
-    <div>
-      <span className="btn-text">{btnText}</span>
-      <div className="btn-img">
-        <Image src={icon} alt="Button Icon" />
+    <div className="group/button w-10 h-10 hover:w-40 overflow-clip flex items-center justify-between rounded-full border-0 hover:border-2 hover:border-r-0 border-blue-base">
+      <span className="hidden group-hover/button:block mx-auto">{btnText}</span>
+      <div className="max-w-10 max-h-10 p-2 rounded-full border-2 border-blue-base">
+        <Image src={icon} alt="Button Icon" className="object-contain" />
       </div>
     </div>
   );
