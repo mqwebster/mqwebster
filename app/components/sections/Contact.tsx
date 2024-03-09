@@ -25,8 +25,8 @@ export function Contact() {
   return (
     <section id="contact" className="w-full max-w-screen-xl z-0 py-16">
       <div className="flex flex-col gap-8 items-center py-20">
-        <h1>Get In Contact...</h1>
-        <h2>{`I'm currently open to work, and I'm always ready to learn!`}</h2>
+        <h2>Get In Contact...</h2>
+        <h3 className="text-center">{`I'm currently open to work, and I'm always ready to learn!`}</h3>
 
         <div className="flex gap-4">
           {/* <Button link={resume} text="Resume" icon={download} type="resume" /> */}
