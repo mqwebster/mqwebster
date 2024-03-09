@@ -23,7 +23,7 @@ export function Resume() {
   return (
     <section id="#resume" className="w-full max-w-screen-xl z-0 py-16">
       <div className="">
-        <h1 className="w-max mx-auto">My Experience...</h1>
+        <h2 className="w-max mx-auto">My Experience...</h2>
 
         <div className="flex gap-10 relative">
           <nav className="min-w-44 h-full sticky top-[20vh]">
@@ -42,17 +42,17 @@ export function Resume() {
 
           <div className="flex flex-col gap-20">
             <div id="Education" className="border-b-2 border-blue-200">
-              <h2>Education</h2>
+              <h3>Education</h3>
               {educationElements}
             </div>
 
             <div id="Skills" className="border-b-2 border-blue-200">
-              <h2>Skills</h2>
+              <h3>Skills</h3>
               {skillElements}
             </div>
 
             <div id="Experience" className="border-b-2 border-blue-200">
-              <h2>Experience</h2>
+              <h3>Experience</h3>
               {experienceElements}
             </div>
           </div>
