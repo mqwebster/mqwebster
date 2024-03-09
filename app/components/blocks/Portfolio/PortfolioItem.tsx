@@ -19,7 +19,7 @@ export default function PortfolioItem({
   type: string;
 }) {
   return (
-    <div key={`ProjectItem-${id}`}>
+    <div key={`ProjectItem-${id}`} className="w-full h-[26rem]">
       <PinContainer title={title} href={link}>
         <div className="flex flex-col p-4 tracking-tight text-slate-100/50">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100 dark:text-slate-900">
