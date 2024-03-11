@@ -47,7 +47,7 @@ export default function ResumeItem({
       <div className="flex flex-col gap-2 w-full">
         {date && <span className="text-xs">{date}</span>}
 
-        <h3>{title}</h3>
+        <h4>{title}</h4>
 
         {location && <span className="text-blue-base">{location}</span>}
 
