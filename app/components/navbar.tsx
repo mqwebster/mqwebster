@@ -40,10 +40,10 @@ export default function Navbar() {
 
         <div>
           <div
-            className="flex items-center h-[60px] cursor-pointer"
+            className="flex md:hidden items-center h-[60px] cursor-pointer"
             onClick={toggle}
           >
-            <div className="relative flex md:hidden flex-col justify-center items-end gap-2 w-[60px]">
+            <div className="relative flex flex-col justify-center items-end gap-2 w-[60px]">
               <div
                 className={`w-2/3 h-1 bg-white rounded-lg transition-all duration-500 ${
                   menu && "absolute -rotate-[405deg] origin-center top-0"
