@@ -2,7 +2,7 @@ import Timeline from "../blocks/Timeline/Timeline";
 
 export function About() {
   return (
-    <section id="#about" className="w-full max-w-screen-xl z-0 px-8 py-16">
+    <section id="#about" className="w-full md:max-w-screen-xl z-0 px-8 py-16">
       <div className="flex flex-col">
         <div className="about-content w-full dark:bg-black pb-32">
           <h2 className="w-max md:mx-auto">About Me...</h2>
