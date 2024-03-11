@@ -26,7 +26,7 @@ export function Resume() {
         <h2 className="w-max mx-auto">My Experience...</h2>
 
         <div className="flex flex-col md:flex-row gap-10 relative">
-          <nav className="flex items-center md:min-w-44 h-full sticky top-[120px] md:top-[20vh] bg-gray-200 text-black p-4 md:p-8 rounded-lg">
+          <nav className="z-50 flex items-center md:min-w-44 h-full sticky top-[120px] md:top-[20vh] bg-gray-200 text-black p-4 md:p-8 rounded-lg">
             <ul className="w-max mx-auto md:mx-0 flex flex-wrap md:flex-col items-center md:items-start justify-center gap-x-10 gap-4 md:gap-8">
               <li>
                 <a href="#Education">Education</a>
