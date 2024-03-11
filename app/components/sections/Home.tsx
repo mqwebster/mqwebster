@@ -29,7 +29,7 @@ export function Home() {
 }
 export const Header = () => {
   return (
-    <div className="max-w-screen-xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
+    <div className="md:max-w-screen-xl relative mx-auto pt-80 pb-40 px-8 w-full">
       <span>{`Hello, I'm...`}</span>
       <h1 className="text-7xl font-bold dark:text-white">Marques Webster</h1>
       <p className="max-w-2xl text-xl mt-8 dark:text-neutral-200">
