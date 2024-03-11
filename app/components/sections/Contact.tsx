@@ -23,7 +23,7 @@ export function Contact() {
   // }, []);
 
   return (
-    <section id="contact" className="w-full max-w-screen-xl z-0 py-16">
+    <section id="contact" className="w-full md:max-w-screen-xl z-0 px-8 py-16">
       <div className="flex flex-col gap-8 items-center py-20">
         <h2>Get In Contact...</h2>
         <h3 className="text-center">{`I'm currently open to work, and I'm always ready to learn!`}</h3>

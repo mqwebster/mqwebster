@@ -7,7 +7,10 @@ export function Portfolio() {
   // });
 
   return (
-    <section id="portfolio" className="w-full max-w-screen-xl z-0 py-16">
+    <section
+      id="portfolio"
+      className="w-full md:max-w-screen-xl z-0 px-8 py-16"
+    >
       <div className="">
         <h1 className="w-max mx-auto">Work Showcase...</h1>
 
@@ -34,7 +37,7 @@ export function Portfolio() {
                 return (
                   <div
                     key={`SiteItem-${item.id}`}
-                    className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-8 my-16"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-8 my-16"
                   >
                     <PortfolioItem key={`SiteItem-${item.id}`} {...item} />
                   </div>
@@ -44,7 +47,7 @@ export function Portfolio() {
 
           <div>
             <h3>Projects</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-8 my-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-8 my-16">
               {portfolioData
                 .filter((item) => item.type == "project")
                 .map((item, index) => {
