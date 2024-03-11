@@ -28,9 +28,9 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`max-h-[112px] w-full px-4 md:px-16 py-4 bg-blue-base sticky top-0 z-50`}
+      className={`max-h-[112px] w-full py-4 bg-blue-base sticky top-0 z-50`}
     >
-      <div className="mx-auto flex justify-between items-center md:max-w-screen-xl">
+      <div className="mx-auto flex justify-between items-center md:max-w-screen-xl px-8">
         <Image
           src="/MarquesWebster.png"
           alt="Marques Webster"
