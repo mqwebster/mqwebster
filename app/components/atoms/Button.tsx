@@ -21,12 +21,12 @@ export default function Button({ icon, link, text, type }) {
   function emailBtn() {
     function copyEmail() {
       setBtnText("Copied!");
-      var link = link.replace("mailto:", "");
-      navigator.clipboard.writeText(link);
+      const newLink = link.replace("mailto:", "");
+      navigator.clipboard.writeText(newLink);
 
       setTimeout(() => {
         setBtnText(text);
-      }, 2000);
+      }, 4000);
     }
 
     return (
