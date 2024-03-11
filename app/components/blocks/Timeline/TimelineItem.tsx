@@ -17,7 +17,7 @@ export default function TimelineItem({
   quoteAuthor: string;
 }) {
   return (
-    <div className="grid gap-4 md:gap-16 grid-cols-[16%,max-content,1fr] md:grid-cols-[1fr,max-content,1fr] mb-16">
+    <div className="grid gap-4 lg:gap-16 grid-cols-[16%,max-content,1fr] lg:grid-cols-[1fr,max-content,1fr] mb-16">
       <div className="md:ml-auto">{year}</div>
 
       <div className="flex justify-center">

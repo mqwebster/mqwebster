@@ -40,7 +40,7 @@ export default function Navbar() {
 
         <div>
           <div
-            className="flex md:hidden items-center h-[60px] cursor-pointer"
+            className="flex lg:hidden items-center h-[60px] cursor-pointer"
             onClick={toggle}
           >
             <div className="relative flex flex-col justify-center items-end gap-2 w-[60px]">
@@ -62,7 +62,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <ul className="hidden md:flex flex-row gap-4 text-white">
+          <ul className="hidden lg:flex flex-row gap-4 text-white">
             {navItems.map((item) => {
               return (
                 <li key={item.text}>
@@ -76,7 +76,7 @@ export default function Navbar() {
             <div
               className={`absolute top-[100%] left-0 w-full overflow-hidden`}
             >
-              <ul className="flex md:hidden flex-col gap-4 w-full h-[100vh] text-white bg-blue-base p-8">
+              <ul className="flex lg:hidden flex-col gap-4 w-full h-[100vh] text-white bg-blue-base p-8">
                 {navItems.map((item) => {
                   return (
                     <li key={item.text} onClick={toggle}>
