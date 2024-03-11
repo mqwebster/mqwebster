@@ -60,11 +60,14 @@ export default function ResumeItem({
         )}
 
         {skills && (
-          <ul className="ml-4 grid grid-cols-4 w-full gap-x-5 gap-y-10">
+          <ul className="-ml-8 md:ml-4 grid grid-cols-2 md:grid-cols-4 w-full gap-x-5 gap-y-10">
             {skills.map((skill, i) => {
               skill.url = skillsLogos[i].url;
               return (
-                <li key={skill.name} className="flex gap-4 items-center">
+                <li
+                  key={skill.name}
+                  className="flex flex-col md:flew-row gap-4 items-center"
+                >
                   <Image
                     src={skill.url}
                     alt={`${skill.name} Logo`}

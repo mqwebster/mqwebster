@@ -3,8 +3,8 @@ import { timelineData } from "./timelineData.js";
 
 export default function Timeline() {
   return (
-    <div className="relative flex flex-col items-center">
-      <div className="tl-progress-bar bg-gray-200 w-1 h-full absolute top-0 -z-10">
+    <div className="relative flex flex-col md:items-center">
+      <div className="tl-progress-bar bg-gray-200 w-1 h-full absolute top-0 left-[calc(16%+1rem+8px)] md:left-auto -z-10">
         <div className="bg-blue-base w-1 h-1/2 fixed top-0 rounded-b-lg"></div>
       </div>
 
