@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ResumeItem from "../blocks/Resume/ResumeItem";
 import { resumeData } from "../blocks/Resume/resumeData.js";
 
@@ -29,15 +30,15 @@ export function Resume() {
           <nav className="z-50 flex items-center md:min-w-44 h-full sticky top-[120px] md:top-[20vh] bg-gray-200 text-black p-4 md:p-8 rounded-lg">
             <ul className="w-max mx-auto md:mx-0 flex flex-wrap md:flex-col items-center md:items-start justify-center gap-x-10 gap-4 md:gap-8">
               <li className="group/resumeSection flex flex-col gap-1">
-                <a href="#Education">Education</a>
+                <Link href="/#Education">Education</Link>
                 <div className="h-[3px] w-0 rounded-lg group-hover/resumeSection:w-full bg-blue-base transition-[width] duration-500"></div>
               </li>
               <li className="group/resumeSection flex flex-col gap-1">
-                <a href="#Skills">Skills</a>
+                <Link href="/#Skills">Skills</Link>
                 <div className="h-[3px] w-0 rounded-lg group-hover/resumeSection:w-full bg-blue-base transition-[width] duration-500"></div>
               </li>
               <li className="group/resumeSection flex flex-col gap-1">
-                <a href="#Experience">Experience</a>
+                <Link href="/#Experience">Experience</Link>
                 <div className="h-[3px] w-0 rounded-lg group-hover/resumeSection:w-full bg-blue-base transition-[width] duration-500"></div>
               </li>
             </ul>
