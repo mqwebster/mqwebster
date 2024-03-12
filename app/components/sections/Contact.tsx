@@ -29,7 +29,7 @@ export function Contact() {
     >
       <div>
         <h2 className="font-title type-preset-2 mb-10">Get In Contact...</h2>
-        <p className="font-body type-preset-base">{`I'm currently open to work, and I'm always ready to learn!`}</p>
+        <p className="font-body type-preset-base max-w-2xl">{`I'm currently open to work, and I'm always ready to learn!`}</p>
 
         <div className="flex gap-4 mt-20">
           {/* <Button link={resume} text="Resume" icon={download} type="resume" /> */}

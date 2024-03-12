@@ -16,7 +16,9 @@ export const Header = () => {
     <div className="md:max-w-screen-xl relative mx-auto mt-[20vh] px-8 w-full">
       <span className="font-body type-preset-base">{`Hey, I'm...`}</span>
       <h1 className="font-title type-preset-1">Marques Webster</h1>
-      <p className="font-body type-preset-lg">And I love to build cool shit.</p>
+      <p className="font-body type-preset-lg max-w-2xl">
+        And I love to build cool shit.
+      </p>
     </div>
   );
 };
