@@ -65,8 +65,12 @@ export default function Navbar() {
           <ul className="hidden lg:flex flex-row gap-4 text-white">
             {navItems.map((item) => {
               return (
-                <li key={item.text}>
+                <li
+                  key={item.text}
+                  className="group/navItem flex flex-col gap-1"
+                >
                   <Link href={item.link}>{item.text}</Link>
+                  <div className="h-[3px] w-0 rounded-lg group-hover/navItem:w-full bg-white transition-[width] duration-500"></div>
                 </li>
               );
             })}

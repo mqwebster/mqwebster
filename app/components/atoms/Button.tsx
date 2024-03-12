@@ -6,9 +6,9 @@ export default function Button({ icon, link, text, type }) {
   const [btnText, setBtnText] = useState(text);
 
   const btnContent = (
-    <div className="group/button w-10 h-10 hover:w-40 overflow-clip flex items-center justify-between rounded-full border-0 hover:border-2 hover:border-r-0 border-blue-base">
-      <span className="hidden group-hover/button:block mx-auto">{btnText}</span>
-      <div className="max-w-10 max-h-10 p-2 rounded-full border-2 border-blue-base">
+    <div className="group relative w-12 h-12 hover:w-40 overflow-clip flex items-center justify-between rounded-full border-2 hover:border-r-0 border-blue-base transition-[width] duration-[800ms] pr-10">
+      <span className="hidden group-hover:block mx-auto">{btnText}</span>
+      <div className="buttonImage group-hover:rotate-[360deg] absolute right-0 transition-transform duration-[800ms] w-12 h-12 p-3 rounded-full border-0 group-hover:border-2 border-blue-base">
         <Image
           src={icon}
           alt="Button Icon"
@@ -21,12 +21,12 @@ export default function Button({ icon, link, text, type }) {
   function emailBtn() {
     function copyEmail() {
       setBtnText("Copied!");
-      var link = link.replace("mailto:", "");
-      navigator.clipboard.writeText(link);
+      const newLink = link.replace("mailto:", "");
+      navigator.clipboard.writeText(newLink);
 
       setTimeout(() => {
         setBtnText(text);
-      }, 2000);
+      }, 4000);
     }
 
     return (
