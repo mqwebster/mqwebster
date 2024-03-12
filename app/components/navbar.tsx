@@ -69,7 +69,7 @@ export default function Navbar() {
                   key={item.text}
                   className="group/navItem flex flex-col gap-1"
                 >
-                  <Link href={item.link}>{item.text}</Link>
+                  <Link href={`/${item.link}`}>{item.text}</Link>
                   <div className="h-[3px] w-0 rounded-lg group-hover/navItem:w-full bg-white transition-[width] duration-500"></div>
                 </li>
               );
