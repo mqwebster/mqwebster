@@ -1,19 +1,3 @@
-// export default function Home() {
-//   return (
-//     <section id="#home" className="w-full max-w-screen-xl z-10">
-//       <div className="min-h-[calc(100vh-112px)] flex flex-col justify-center items-center">
-//         <span className="">{`Hey, I'm...`}</span>
-//         <div className="">
-//           <ul className="">
-//             <li>Marques Q. Webster</li>
-//           </ul>
-//         </div>
-//         <h1>{`I'm a Frontend Software Developer!`}</h1>
-//       </div>
-//     </section>
-//   );
-// }
-
 "use client";
 import React from "react";
 import { HeroParallax } from "../ui/hero-parallax";
@@ -29,12 +13,10 @@ export function Home() {
 }
 export const Header = () => {
   return (
-    <div className="md:max-w-screen-xl relative mx-auto py-40 md:py-60 px-8 w-full">
-      <span>{`Hello, I'm...`}</span>
-      <h1 className="text-7xl font-bold dark:text-white">Marques Webster</h1>
-      <p className="max-w-2xl text-xl mt-8 dark:text-neutral-200">
-        And I love to build cool shit.
-      </p>
+    <div className="md:max-w-screen-xl relative mx-auto mt-[20vh] px-8 w-full">
+      <span className="font-body type-preset-base">{`Hey, I'm...`}</span>
+      <h1 className="font-title type-preset-1">Marques Webster</h1>
+      <p className="font-body type-preset-lg">And I love to build cool shit.</p>
     </div>
   );
 };
