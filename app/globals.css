@@ -20,6 +20,7 @@ html {
   font-size: 18px;
   font-family: "Montserrat";
   scroll-behavior: smooth;
+  --fontSize: 1rem;
 }
 
 body,
@@ -78,5 +79,40 @@ section,
   .type-preset-lg {
     font-size: calc(1rem * 1.5);
     line-height: calc(1rem * 2.5);
+  }
+
+  @media (max-width: 640px) {
+    .type-preset-1 {
+      font-size: 60px;
+      line-height: 75px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .type-preset-2 {
+      font-size: 48px;
+      line-height: 60px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .type-preset-3 {
+      font-size: 36px;
+      line-height: 45px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .type-preset-4 {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .type-preset-base {
+      font-size: 1rem;
+      line-height: calc(1rem * 1.5);
+    }
+    .type-preset-lg {
+      font-size: calc(1rem * 1.25);
+      line-height: calc(1rem * 1.75);
+    }
   }
 }
