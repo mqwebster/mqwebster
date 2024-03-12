@@ -6,7 +6,7 @@ export default function Button({ icon, link, text, type }) {
   const [btnText, setBtnText] = useState(text);
 
   const btnContent = (
-    <div className="group relative w-12 h-12 hover:w-40 overflow-clip flex items-center justify-between rounded-full border-2 hover:border-r-0 border-blue-base transition-[width] duration-[800ms] pr-10">
+    <div className="group relative w-12 h-12 hover:w-40 overflow-clip flex items-center justify-between rounded-full border-2 hover:border-r-0 border-blue-base transition-[width] duration-[800ms] pr-10 font-body type-preset-base">
       <span className="hidden group-hover:block mx-auto">{btnText}</span>
       <div className="buttonImage group-hover:rotate-[360deg] absolute right-0 transition-transform duration-[800ms] w-12 h-12 p-3 rounded-full border-0 group-hover:border-2 border-blue-base">
         <Image

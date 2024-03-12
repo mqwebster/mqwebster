@@ -62,7 +62,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <ul className="hidden lg:flex flex-row gap-4 text-white">
+          <ul className="hidden lg:flex flex-row gap-4 font-body type-preset-base text-white">
             {navItems.map((item) => {
               return (
                 <li

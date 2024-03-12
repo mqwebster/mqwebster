@@ -24,10 +24,10 @@ export function Resume() {
   return (
     <section id="#resume" className="w-full md:max-w-screen-xl z-0 px-8 py-16">
       <div className="">
-        <h2 className="w-max mx-auto">My Experience...</h2>
+        <h2 className="font-title type-preset-2 mb-10">The How...</h2>
 
         <div className="flex flex-col md:flex-row gap-10 relative">
-          <nav className="z-50 flex items-center md:min-w-44 h-full sticky top-[120px] md:top-[20vh] bg-gray-200 text-black p-4 md:p-8 rounded-lg">
+          <nav className="z-50 flex items-center md:min-w-44 h-full sticky top-[120px] md:top-[20vh] bg-gray-200 text-black p-4 md:p-8 rounded-lg font-body type-preset-base">
             <ul className="w-max mx-auto md:mx-0 flex flex-wrap md:flex-col items-center md:items-start justify-center gap-x-10 gap-4 md:gap-8">
               <li className="group/resumeSection flex flex-col gap-1">
                 <Link href="/#Education">Education</Link>
@@ -46,17 +46,17 @@ export function Resume() {
 
           <div className="flex flex-col gap-20">
             <div id="Education" className="border-b-2 border-blue-200">
-              <h3>Education</h3>
+              <h3 className="font-title type-preset-3">Education</h3>
               {educationElements}
             </div>
 
             <div id="Skills" className="border-b-2 border-blue-200">
-              <h3>Skills</h3>
+              <h3 className="font-title type-preset-3">Skills</h3>
               {skillElements}
             </div>
 
             <div id="Experience" className="border-b-2 border-blue-200">
-              <h3>Experience</h3>
+              <h3 className="font-title type-preset-3">Experience</h3>
               {experienceElements}
             </div>
           </div>

@@ -8,11 +8,11 @@ export function Portfolio() {
       className="w-full md:max-w-screen-xl z-0 px-8 py-16"
     >
       <div className="">
-        <h2 className="w-max mx-auto">Work Showcase...</h2>
+        <h2 className="font-title type-preset-2 mb-10">The What...</h2>
 
-        <div>
+        <div className="flex flex-col gap-10">
           <div>
-            <h3>Sites</h3>
+            <h3 className="font-title type-preset-3">Sites</h3>
             {portfolioData
               .filter((item) => item.type == "site")
               .map((item) => {
@@ -28,7 +28,7 @@ export function Portfolio() {
           </div>
 
           <div>
-            <h3>Projects</h3>
+            <h3 className="font-title type-preset-3">Projects</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-8 my-16">
               {portfolioData
                 .filter((item) => item.type == "project")

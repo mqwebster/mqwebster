@@ -23,12 +23,15 @@ export function Contact() {
   // }, []);
 
   return (
-    <section id="contact" className="w-full md:max-w-screen-xl z-0 px-8 py-16">
-      <div className="flex flex-col gap-8 items-center py-20">
-        <h2>Get In Contact...</h2>
-        <h3 className="text-center">{`I'm currently open to work, and I'm always ready to learn!`}</h3>
+    <section
+      id="contact"
+      className="w-full md:max-w-screen-xl z-0 px-8 pt-20 pb-40"
+    >
+      <div>
+        <h2 className="font-title type-preset-2 mb-10">Get In Contact...</h2>
+        <p className="font-body type-preset-base">{`I'm currently open to work, and I'm always ready to learn!`}</p>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 mt-20">
           {/* <Button link={resume} text="Resume" icon={download} type="resume" /> */}
           <Button
             link="mailto:marques.q.webster@gmail.com"

@@ -33,7 +33,7 @@ export default function ResumeItem({
   };
 
   return (
-    <div className="flex gap-5 mb-10">
+    <div className="flex gap-5 mb-10 font-body type-preset-base">
       <div className="">
         <Image
           width={40}
@@ -45,9 +45,9 @@ export default function ResumeItem({
       </div>
 
       <div className="flex flex-col gap-2 w-full">
-        {date && <span className="text-xs">{date}</span>}
+        {date && <span className="">{date}</span>}
 
-        <h4>{title}</h4>
+        <h4 className="font-title type-preset-4">{title}</h4>
 
         {location && <span className="text-blue-base">{location}</span>}
 

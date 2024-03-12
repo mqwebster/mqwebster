@@ -17,7 +17,7 @@ export default function TimelineItem({
   quoteAuthor: string;
 }) {
   return (
-    <div className="grid gap-4 lg:gap-16 grid-cols-[16%,max-content,1fr] lg:grid-cols-[1fr,max-content,1fr] mb-16 relative">
+    <div className="grid gap-4 lg:gap-16 grid-cols-[16%,max-content,1fr] lg:grid-cols-[1fr,max-content,1fr] mb-16 relative font-body type-preset-base">
       <div className="md:ml-auto h-full">
         <span className="sticky top-1/2">{year}</span>
       </div>
@@ -28,7 +28,7 @@ export default function TimelineItem({
 
       <div className="text-balance col-start-3 flex flex-col gap-8">
         <div>
-          <h3 className="mb-4">{title}</h3>
+          <h3 className="font-title type-preset-3 mb-5">{title}</h3>
           <p>{description}</p>
         </div>
 
