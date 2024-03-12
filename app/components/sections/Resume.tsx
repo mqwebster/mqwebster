@@ -46,17 +46,17 @@ export function Resume() {
 
           <div className="flex flex-col gap-20">
             <div id="Education" className="border-b-2 border-blue-200">
-              <h3 className="font-title type-preset-3">Education</h3>
+              <h3 className="font-title type-preset-3 mb-8">Education</h3>
               {educationElements}
             </div>
 
             <div id="Skills" className="border-b-2 border-blue-200">
-              <h3 className="font-title type-preset-3">Skills</h3>
+              <h3 className="font-title type-preset-3 mb-8">Skills</h3>
               {skillElements}
             </div>
 
             <div id="Experience" className="border-b-2 border-blue-200">
-              <h3 className="font-title type-preset-3">Experience</h3>
+              <h3 className="font-title type-preset-3 mb-8">Experience</h3>
               {experienceElements}
             </div>
           </div>

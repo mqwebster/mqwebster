@@ -34,13 +34,13 @@ export default function ResumeItem({
 
   return (
     <div className="flex gap-5 mb-10 font-body type-preset-base">
-      <div className="">
+      <div className="h-max rounded-full bg-blue-base p-3">
         <Image
           width={40}
           height={40}
           src={iconSelector[section]}
           alt="Resume Item Icon"
-          className="dark:invert"
+          className="invert"
         />
       </div>
 
