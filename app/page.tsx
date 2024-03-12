@@ -11,9 +11,9 @@ export default function Page() {
 
       <About />
 
-      <Resume />
-
       <Portfolio />
+
+      <Resume />
 
       <Contact />
     </main>

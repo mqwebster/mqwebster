@@ -21,8 +21,8 @@ export default function Navbar() {
   const navItems = [
     { link: "#home", text: "Home" },
     { link: "#about", text: "About" },
-    { link: "#resume", text: "Resume" },
     { link: "#portfolio", text: "Portfolio" },
+    { link: "#resume", text: "Resume" },
     { link: "#contact", text: "Contact" },
   ];
   return (
