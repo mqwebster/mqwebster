@@ -28,14 +28,17 @@ export function Resume() {
         <div className="flex flex-col md:flex-row gap-10 relative">
           <nav className="z-50 flex items-center md:min-w-44 h-full sticky top-[120px] md:top-[20vh] bg-gray-200 text-black p-4 md:p-8 rounded-lg">
             <ul className="w-max mx-auto md:mx-0 flex flex-wrap md:flex-col items-center md:items-start justify-center gap-x-10 gap-4 md:gap-8">
-              <li>
+              <li className="group/resumeSection flex flex-col gap-1">
                 <a href="#Education">Education</a>
+                <div className="h-[3px] w-0 rounded-lg group-hover/resumeSection:w-full bg-blue-base transition-[width] duration-500"></div>
               </li>
-              <li>
+              <li className="group/resumeSection flex flex-col gap-1">
                 <a href="#Skills">Skills</a>
+                <div className="h-[3px] w-0 rounded-lg group-hover/resumeSection:w-full bg-blue-base transition-[width] duration-500"></div>
               </li>
-              <li>
+              <li className="group/resumeSection flex flex-col gap-1">
                 <a href="#Experience">Experience</a>
+                <div className="h-[3px] w-0 rounded-lg group-hover/resumeSection:w-full bg-blue-base transition-[width] duration-500"></div>
               </li>
             </ul>
           </nav>
