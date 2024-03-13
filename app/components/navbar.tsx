@@ -80,7 +80,7 @@ export default function Navbar() {
             <div
               className={`absolute top-[100%] left-0 w-full overflow-hidden`}
             >
-              <ul className="flex lg:hidden flex-col gap-4 w-full h-[100vh] text-white bg-blue-base p-8">
+              <ul className="flex lg:hidden flex-col gap-8 w-full h-[100vh] font-title text-white type-preset-2 bg-blue-base p-8">
                 {navItems.map((item) => {
                   return (
                     <li key={item.text} onClick={toggle}>
