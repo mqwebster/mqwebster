@@ -19,7 +19,7 @@ export default function Navbar() {
   }, [menu]);
 
   const navItems = [
-    { link: "#home", text: "Home" },
+    { link: "", text: "Home" },
     { link: "#about", text: "About" },
     { link: "#portfolio", text: "Portfolio" },
     { link: "#resume", text: "Resume" },
