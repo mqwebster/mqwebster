@@ -22,7 +22,7 @@ export function Resume() {
   });
 
   return (
-    <section id="#resume" className="w-full md:max-w-screen-xl z-0 px-8 py-16">
+    <section id="resume" className="w-full md:max-w-screen-xl z-0 px-8 py-16">
       <div className="">
         <h2 className="font-title type-preset-2 mb-10">The How...</h2>
 

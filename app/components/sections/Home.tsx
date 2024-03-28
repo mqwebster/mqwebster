@@ -4,7 +4,7 @@ import { HeroParallax } from "../ui/hero-parallax";
 
 export function Home() {
   return (
-    <section className="overflow-clip w-full z-0 pb-40">
+    <section id="home" className="overflow-clip w-full z-0 pb-40">
       <HeroParallax products={products}>
         <Header />
       </HeroParallax>
