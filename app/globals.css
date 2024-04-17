@@ -38,7 +38,7 @@ section,
 }
 
 .tl-progress-bar {
-  clip-path: inset(0px 0px);
+  clip-path: inset(0px 0px round 0.5rem);
 }
 
 @layer utilities {
