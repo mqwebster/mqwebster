@@ -37,6 +37,10 @@ section,
     rgb(var(--background-start-rgb)); */
 }
 
+section {
+  scroll-margin-block-start: 10vh;
+}
+
 .tl-progress-bar {
   clip-path: inset(0px 0px round 0.5rem);
 }
