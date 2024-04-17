@@ -52,6 +52,10 @@ section {
 }
 
 @layer components {
+  .resumeScrollPosition {
+    scroll-margin-block-start: 20vh;
+  }
+
   .type-preset-1 {
     font-size: 112px;
     line-height: 140px;
@@ -86,6 +90,10 @@ section {
   }
 
   @media (max-width: 640px) {
+    .resumeScrollPosition {
+      scroll-margin-block-start: 28vh;
+    }
+
     .type-preset-1 {
       font-size: 60px;
       line-height: 75px;

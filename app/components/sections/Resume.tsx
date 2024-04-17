@@ -28,7 +28,7 @@ export function Resume() {
 
         <div className="flex flex-col md:flex-row gap-10 relative">
           <nav className="z-50 flex items-center md:min-w-44 h-full sticky top-[120px] md:top-[20vh] bg-gray-200 text-black p-4 md:p-8 rounded-lg font-body type-preset-base">
-            <ul className="w-max mx-auto md:mx-0 flex flex-wrap md:flex-col items-center md:items-start justify-center gap-x-10 gap-4 md:gap-8">
+            <ul className="w-max mx-auto md:mx-0 flex flex-wrap md:flex-col items-center md:items-start justify-center gap-8">
               <li className="group/resumeSection flex flex-col gap-1">
                 <Link href="/#Education">Education</Link>
                 <div className="h-[3px] w-0 rounded-lg group-hover/resumeSection:w-full bg-blue-base transition-[width] duration-500"></div>
@@ -45,17 +45,26 @@ export function Resume() {
           </nav>
 
           <div className="flex flex-col gap-20">
-            <div id="Education" className="border-b-2 border-blue-200">
+            <div
+              id="Education"
+              className="resumeScrollPosition border-b-2 border-blue-200"
+            >
               <h3 className="font-title type-preset-3 mb-8">Education</h3>
               {educationElements}
             </div>
 
-            <div id="Skills" className="border-b-2 border-blue-200">
+            <div
+              id="Skills"
+              className="resumeScrollPosition border-b-2 border-blue-200"
+            >
               <h3 className="font-title type-preset-3 mb-8">Skills</h3>
               {skillElements}
             </div>
 
-            <div id="Experience" className="border-b-2 border-blue-200">
+            <div
+              id="Experience"
+              className="resumeScrollPosition border-b-2 border-blue-200"
+            >
               <h3 className="font-title type-preset-3 mb-8">Experience</h3>
               {experienceElements}
             </div>
