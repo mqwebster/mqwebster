@@ -61,7 +61,7 @@ export default function ResumeItem({
               return (
                 <li
                   key={skill}
-                  className="flex flex-col md:flew-row gap-4 items-center grayscale hover:grayscale-0 hover:scale-110 transition-all duration-[200ms]"
+                  className="flex flex-col md:flew-row gap-4 items-center text-center grayscale hover:grayscale-0 hover:scale-110 transition-all duration-[200ms]"
                 >
                   <Image
                     src={url}
