@@ -4,11 +4,11 @@ export const resumeData = {
       id: 1,
       date: "Jan. 2022 - Dec. 2022",
       title: "Frontend Web Developer Fellow",
-      location: "Google | Tech Equity Program | Remote",
+      location: "Google | Tech Equity Collective | Remote",
       list: [
         "Collaborative project-based fellowship to increase proficiency in Java, JavaScript, additional frameworks and libraries, and how to use these languages to optimize scalability.",
         "Independent study of programming and web developer concepts such as Object-Oriented Programming, Responsive Web Design, and Progressive Web Apps.",
-        "Broadened understanding of Scrum Methodologies and tools such as Agile and Kanban.",
+        "Broadened understanding of Scrum Methodologies and tools such as Agile and Kanban in Github.",
       ],
     },
     {
@@ -22,18 +22,30 @@ export const resumeData = {
   Experience: [
     {
       id: 1,
+      date: "Mar. 2023 - Present",
+      title: "Frontend Developer / Designer",
+      location: "Nava PBC | Communications | Remote",
+      list: [
+        "Independently delivered high-quality work on medium/large engineering tasks with minimal guidance using frameworks and tools such as Next.js, Figma, Contentful, Google Analytics, and more.",
+        "Contributed significantly to the 2023 Public Benefit Report's design and development, achieving a #6 site ranking with about 2 minutes of average viewer engagement and nearly 7,000 page views.",
+        "Demonstrated strong project management skills, communicating timelines and status effectively using agile principles as the technical liaison between technical and non-technical stakeholders.",
+        "Led usability testing, design iterations, and quality assurance for multiple new reports and site features, resulting in successful deployments and enhanced website functionality.",
+      ],
+    },
+    {
+      id: 2,
       date: "Jun. 2020 - Present",
       title: "Lead Frontend Web Developer",
       location: "HI IQ Designs, LLC | Freelance | Remote",
       list: [
         "Mission-driven production of over a dozen WordPress, Webflow, and custom websites to stimulate advancement for small businesses and organizations.",
-        "Implement Waterfall methodology to ensure quality and timely turnover of each project phase and requirements.",
+        "Implement Waterfall methodology to ensure quality and timely turnover of project phase requirements for a reduction of 50% in project completion time.",
         "Provide consultation services to boost website engagement and overall site traffic through proper SEO practices application.",
-        "Generate custom graphic designs and improve the layout and accessibility of client sites while using planning, wireframing, and prototyping through Figma for project completion.",
+        "Generate custom graphic designs and improve the layout and accessibility of client sites while using planning, wireframing, and prototyping through Figma.",
       ],
     },
     {
-      id: 2,
+      id: 3,
       date: "Aug. 2021 - Apr. 2022",
       title: "TeamDynamix Service Administrator",
       location: "University of Illinois | Technology Services | Remote",
@@ -44,36 +56,14 @@ export const resumeData = {
       ],
     },
     {
-      id: 3,
-      date: "Nov. 2019 - Apr. 2022",
-      title: "Network Security Administrator",
-      location: "University of Illinois | Technology Services | Urbana, IL",
-      list: [
-        "Displayed executive stature to perform security scans for unauthorized networks and ensure the local network is uncompromising.",
-        "Acted as a technical liaison with various projects to provide hard technical direction on developing and deploying platforms and products.",
-        "Mounted strategies to observe systems performance, advise corrective actions for higher availability, and secure data integration.",
-      ],
-    },
-    {
       id: 4,
-      date: "Sep. 2019 - Apr. 2022",
+      date: "Mar. 2019 - Apr. 2022",
       title: "Web Development Administrator",
       location: "University of Illinois | Technology Services | Urbana, IL",
       list: [
-        "Spearheaded backend infrastructure management, including server patching and website domain setup and maintenance.",
-        "Facilitated using Amazon Web Services, CPanel, Drupal, and WordPress for future server and website hosting.",
-        "Collaborated in Group Policy Object restoration projects by way of Active Directory auditing and reorganizing.",
-      ],
-    },
-    {
-      id: 5,
-      date: "Mar. 2019 - Aug. 2021",
-      title: "User Services IT Consultant / Student Manager",
-      location: "University of Illinois | Technology Services | Urbana, IL",
-      list: [
-        "Aligned the organization for growth by providing exceptional staff and faculty computer support for roughly 800 domain computers and devices.",
-        "Analyzed system and business process requirements and designed test strategies, test plans, and test cases to ensure test coverage of mobile and web applications.",
-        "Delegated daily task work and facilitated IT mentoring for 8 student IT support team members.",
+        "Spearheaded backend infrastructure management, including server patching, WordPress and Drupal setup and maintenance of around 40 sites, and PHP file permission access management.",
+        "Operated MySQL database instances for querying and optimization in conjunction with Drupal sites.",
+        "Administered CPanel to manage server-side configurations and troubleshoot issues for well over 10,000 website content files.",
       ],
     },
   ],
