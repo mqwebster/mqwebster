@@ -1,13 +1,8 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { skillsLogos } from "./skillsLogos";
 import educationIcon from "/public/icons/education-icon.png";
 import experienceIcon from "/public/icons/experience-icon.png";
 import skillIcon from "/public/icons/skill-icon.png";
-
-interface skillsInterface {
-  name: string;
-  url;
-}
 
 export default function ResumeItem({
   id,
@@ -24,7 +19,7 @@ export default function ResumeItem({
   location?: string;
   list?: Array<string>;
   section: string;
-  skills?: Array<skillsInterface>;
+  skills?: Array<string>;
 }) {
   const iconSelector = {
     Education: educationIcon,
@@ -60,23 +55,23 @@ export default function ResumeItem({
         )}
 
         {skills && (
-          <ul className="-ml-8 grid grid-cols-2 md:grid-cols-4 w-full gap-x-5 gap-y-10">
+          <ul className="mt-6 -ml-8 grid grid-cols-2 md:grid-cols-4 w-full gap-x-5 gap-y-10">
             {skills.map((skill, i) => {
-              skill.url = skillsLogos[i].url;
+              const url = skillsLogos[skill]?.url;
               return (
                 <li
-                  key={skill.name}
-                  className="flex flex-col md:flew-row gap-4 items-center grayscale hover:grayscale-0 hover:scale-110 transition-all duration-[800ms]"
+                  key={skill}
+                  className="flex flex-col md:flew-row gap-4 items-center grayscale hover:grayscale-0 hover:scale-110 transition-all duration-[200ms]"
                 >
                   <Image
-                    src={skill.url}
-                    alt={`${skill.name} Logo`}
+                    src={url}
+                    alt={`${skill} Logo`}
                     width={48}
                     height={48}
-                    className="max-h-12 object-contain"
+                    className="h-12 object-contain"
                   />
 
-                  {skill.name}
+                  {skill}
                 </li>
               );
             })}
