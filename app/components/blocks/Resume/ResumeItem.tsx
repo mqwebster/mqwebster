@@ -31,8 +31,8 @@ export default function ResumeItem({
     <div className="flex gap-5 mb-10 font-body type-preset-base">
       <div className="h-max rounded-full bg-blue-base p-3">
         <Image
-          width={40}
-          height={40}
+          width={28}
+          height={28}
           src={iconSelector[section]}
           alt="Resume Item Icon"
           className="invert"
@@ -47,7 +47,7 @@ export default function ResumeItem({
         {location && <span className="text-blue-base">{location}</span>}
 
         {list && (
-          <ul className="list-[circle] flex flex-col gap-3 ml-8">
+          <ul className="list-[circle] flex flex-col gap-3 ml-0 md:ml-8">
             {list.map((item, index) => {
               return <li key={`${section}-${title}-${index}`}>{item}</li>;
             })}
@@ -68,7 +68,7 @@ export default function ResumeItem({
                     alt={`${skill} Logo`}
                     width={48}
                     height={48}
-                    className="h-12 object-contain"
+                    className="h-12 w-12 object-contain"
                   />
 
                   {skill}
