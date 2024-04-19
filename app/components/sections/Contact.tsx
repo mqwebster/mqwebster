@@ -6,7 +6,6 @@ import download from "/public/icons/download-icon.png";
 import email from "/public/icons/email-icon.png";
 import github from "/public/icons/github-icon.png";
 import linkedin from "/public/icons/linkedin-icon.png";
-// import resume from "/public/files/resume.pdf";
 
 export function Contact() {
   // const [visitors, setVisitors] = useState("");
@@ -32,7 +31,12 @@ export function Contact() {
         <p className="font-body type-preset-base max-w-2xl">{`I'm currently open to work, and I'm always ready to learn!`}</p>
 
         <div className="flex gap-4 mt-20">
-          {/* <Button link={resume} text="Resume" icon={download} type="resume" /> */}
+          <Button
+            link={"/files/resume.pdf"}
+            text="Resume"
+            icon={download}
+            type="resume"
+          />
           <Button
             link="mailto:marques.q.webster@gmail.com"
             text="Email"
