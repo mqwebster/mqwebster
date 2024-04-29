@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="mx-auto flex justify-between items-center md:max-w-screen-xl px-8">
         <Link href={`/`}>
           <Image
-            src="/MarquesWebster.png"
+            src="/images/MarquesWebster.png"
             alt="Marques Webster"
             width={72}
             height={72}
