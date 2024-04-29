@@ -2,19 +2,15 @@ import Image, { StaticImageData } from "next/image";
 import { PinContainer } from "../../ui/3d-pin";
 
 export default function PortfolioItem({
-  id,
   title,
   description,
   link,
   image,
-  type,
 }: {
-  id: number;
   title: string;
   description: string;
   link: string;
   image: StaticImageData;
-  type: string;
 }) {
   return (
     <div className="w-full h-[32rem] font-body type-preset-base">
