@@ -24,6 +24,25 @@ export function Portfolio() {
               })}
             </div>
           </div>
+
+          <div>
+            <h3 className="font-title type-preset-3 mb-5">Design Systems</h3>
+
+            <p>
+              Artifacts from recent projects I’ve worked on. Take a look at what
+              I’ve put together.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-8 my-16">
+              {portfolioData["design systems"].map((item, index) => {
+                return (
+                  <div key={`SiteItem-${index}_${item.title}`}>
+                    <PortfolioItem key={`SiteItem-${item.title}`} {...item} />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
