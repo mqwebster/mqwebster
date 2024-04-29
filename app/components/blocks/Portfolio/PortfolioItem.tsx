@@ -30,8 +30,14 @@ export default function PortfolioItem({
               </span>
             </div>
           </div>
-          <div className="relative flex rounded-lg mt-4 overflow-clip aspect-video">
-            <Image src={image} alt={`${title} screenshot`} fill />
+          <div className="w-full relative flex rounded-lg mt-4 overflow-clip aspect-video">
+            <Image
+              src={image}
+              alt={`${title} screenshot`}
+              width={1440}
+              height={1080}
+              className="object-cover object-top"
+            />
           </div>
         </div>
       </PinContainer>
