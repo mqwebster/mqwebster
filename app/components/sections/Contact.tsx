@@ -50,7 +50,7 @@ export function Contact() {
             type="social"
           />
           <Button
-            link="https://github.com/mqwebst2"
+            link="https://github.com/mqwebster"
             text="GitHub"
             icon={github}
             type="social"
