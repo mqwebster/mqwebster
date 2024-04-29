@@ -11,6 +11,7 @@ export function Home() {
     </section>
   );
 }
+
 export const Header = () => {
   return (
     <div className="md:max-w-screen-xl relative mx-auto mt-[20vh] px-8 w-full">
@@ -22,98 +23,101 @@ export const Header = () => {
     </div>
   );
 };
+
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    title: "Mozilla 2D Breakout Game",
+    link: "https://github.com/mqwebster/mozilla-breakout-game",
+    thumbnail: "/images/home-cta/2D Breakout Game.jpg",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "Nava PBC 2023 DEI Report",
+    link: "https://navapbc.com/dei",
+    thumbnail: "/images/home-cta/2023 DEI Report.jpg",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    title: "Nava PBC 2023 Public Benefit Report",
+    link: "https://navapbc.com/public-benefit-reports/2023",
+    thumbnail: "/images/home-cta/2023 PBR.jpg",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    title: "Airbnb Experiences Clone",
+    link: "https://github.com/mqwebster/airbnb-clone",
+    thumbnail: "/images/home-cta/Airbnb Experiences Clone.jpg",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
-
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    title: "Breath'g Vegan Design System",
+    link: "https://www.figma.com/file/GRf8PC942RFdQhgeDIyRPw/Breath'g-Vegan-Design-System?type=design&t=ejG9jcaijtIXE1xa-6",
+    thumbnail: "/images/home-cta/Breath'g Vegan Design System Cover.jpg",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+    title: "Breath'g Vegan",
+    link: "https://breathgvegan.com",
+    thumbnail: "/images/home-cta/Breath'g Vegan.jpg",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+    title: "Nava PBC Insights Filtering System",
+    link: "https://navapbc.com/insights",
+    thumbnail: "/images/home-cta/Insights Filtering System.jpg",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+    title: "Light-Dark Mode",
+    link: "https://github.com/mqwebster/light-dark-mode",
+    thumbnail: "/images/home-cta/Light-Dark Mode.jpg",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
-
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+    title: "Marques Q. Webster Portfolio",
+    link: "/",
+    thumbnail: "/images/home-cta/Marques Q Webster Portfolio.jpg",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    title: "Meme Generator",
+    link: "https://github.com/mqwebster/meme-generator",
+    thumbnail: "/images/home-cta/Meme Generator.jpg",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+    title: "Nava Labs",
+    link: "https://navapbc.com/nava-labs",
+    thumbnail: "/images/home-cta/Nava Labs.jpg",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    title: "Notes App",
+    link: "https://github.com/mqwebster/notes-app",
+    thumbnail: "/images/home-cta/Notes App.jpg",
+  },
+  {
+    title: "Partnership For Resilience Design System",
+    link: "https://www.figma.com/file/IiVKbpHuk7baoWxlboh5lF/P4R-Design-System?type=design&t=ejG9jcaijtIXE1xa-6",
+    thumbnail: "/images/home-cta/P4R Design System Cover.jpg",
+  },
+  {
+    title: "Paper Trails",
+    link: "https://paper-trails-dev.vercel.app",
+    thumbnail: "/images/home-cta/Paper Trails.jpg",
+  },
+  {
+    title: "React Router Tutorial",
+    link: "https://github.com/mqwebster/react-router-tutorial",
+    thumbnail: "/images/home-cta/React Router Tutorial.jpg",
+  },
+  {
+    title: "Tenzies Game",
+    link: "https://github.com/mqwebster/tenzies-dice-game",
+    thumbnail: "/images/home-cta/Tenzies Game.jpg",
+  },
+  {
+    title: "Travel Journal",
+    link: "https://github.com/mqwebster/travel-journal",
+    thumbnail: "/images/home-cta/Travel Journal.jpg",
+  },
+  {
+    title: "Your Career Tapestry Design System",
+    link: "https://www.figma.com/file/THMNO5iyDufQBgz68GJKMX/Your-Career-Tapestry-Design-System?type=design&t=ejG9jcaijtIXE1xa-6",
+    thumbnail: "/images/home-cta/YCT Design System Cover.jpg",
+  },
+  {
+    title: "Your Career Tapestry",
+    link: "https://yctapestry.com",
+    thumbnail: "/images/home-cta/Your Career Tapestry.jpg",
   },
 ];
