@@ -1,9 +1,9 @@
-import p4rImage from "/public/sites/p4r-port-item.png";
-import netflixImage from "/public/projects/netflix-port-item.png";
-import airbnbImage from "/public/projects/airbnb-port-item.png";
-import memeImage from "/public/projects/meme-port-item.png";
-import noteImage from "/public/projects/notes-port-item.png";
-import tenzieImage from "/public/projects/tenzie-port-item.png";
+import p4rImage from "/public/images/sites/p4r-port-item.png";
+import netflixImage from "/public/images/projects/netflix-port-item.png";
+import airbnbImage from "/public/images/projects/airbnb-port-item.png";
+import memeImage from "/public/images/projects/meme-port-item.png";
+import noteImage from "/public/images/projects/notes-port-item.png";
+import tenzieImage from "/public/images/projects/tenzie-port-item.png";
 
 export const portfolioData = [
   {
