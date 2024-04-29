@@ -2,9 +2,9 @@ export const timelineData = [
   {
     id: 1,
     year: "'96",
-    title: "Born and Raised",
+    title: "Childlike Creativity",
     description:
-      "Born in Atlanta, GA but raised in Matteson, IL, I've always shown an aptitude for art. Being an avid fan of Saturday morning cartoons and comic books, I learned to draw the day I could hold a pencil. While I would argue that child me was a much more talented artist than adult me, my love for art and design has never dimmed. Life has a funny way of looping back on itself and it's shown for me through my child-like creativity even though I now view the world through adult eyes.",
+      "From Atlanta to Matteson, my journey began with doodles and dreams. Raised on Saturday morning cartoons and comic books, I wielded a pencil before I could walk. Though my childhood sketches might outshine my adult attempts, my passion for art still shines bright. Life’s full circle is evident: I navigate adulthood with a childlike creativity, forever enchanted by the world of design.",
     quote: "Creativity is intelligence having fun.",
     quoteAuthor: "Albert Einstein",
   },
@@ -13,25 +13,25 @@ export const timelineData = [
     year: "'02",
     title: "Natural Born Leader",
     description:
-      "My parents have told me since a very young age that I am a leader. Don't get me wrong, my parents are biased, but they're not incorrect. Every great leader has learned from those they have followed and they are quick to give credit where it is due. In my 101 seasons on this blue ball, I've learned the skill of discernment to know who to learn from using the guidance of the soul my parents birthed me with. This time spent learning has made me a much stronger leader, and with that in mind, I want to continue learning from those around me to better lead those around me.",
+      "Since I was knee-high, my parents dubbed me a born leader. Sure, they're biased, but not entirely off base. Every standout leader owes a debt to their mentors and acknowledges it gladly. Through my 108 seasons on this spinning globe, I've honed my knack for picking out the right teachers, guided by the soul my parents instilled in me. Learning the ropes has only bolstered my leadership game, and I'm all in for soaking up more wisdom to guide those in my orbit.",
     quote: "Leadership and learning are indispensable to each other.",
     quoteAuthor: "John F. Kennedy",
   },
   {
     id: 3,
     year: "'10",
-    title: "Born To Communicate",
+    title: "Effective Communicator",
     description:
-      "Graduating as the Salutatorian of my middle school class afforded me the opportunity to practice my public speaking pretty early on in life and it’s only gotten better since. One thing that speaking in front of others has taught me is that the key to effective communication is finding common ground through listening to others. Knowing this has made it that much easier to be comfortable with speaking to people no matter the background they come from. One thing is true for all people, we all have our own lived experience. By learning to respect that, I’ve become much better at translating my own experience for others to understand as well as take the time to understand the mind of others.",
+      "Claiming the Salutatorian spot in middle school jumpstarted my journey in public speaking, and I've only improved with time. Speaking to diverse crowds taught me the golden rule of effective communication: listening first to find common ground. This insight eases any nerves, making it natural to connect with folks from all walks of life. Everyone has a unique story, a truth I've learned to honor, enhancing my ability to share my own experiences and empathize with others.",
     quote: "Each act of communication is a miracle of translation.",
     quoteAuthor: "Ken Liu",
   },
   {
     id: 4,
     year: "'20",
-    title: "Born-Again Developer",
+    title: "Power of Community",
     description:
-      "One of the biggest lessons I’ve learned in my journey to success is just how important community is in success. Having that stripped away by the COVID-19 pandemic really put the importance of it in perspective for me. While I’ve always been interested in tech, I never understood why it had so much mass appeal. What the pandemic showed me was when physicality is not possible, there are ways that community can still be accomplished: digitally. While being able to sit across from someone and have a conversation is ideal, I was enthralled to join more people like me that want to carve out digital spaces for people to build community around. And so I have as a Software Engineer!",
+      "My success journey taught me the power of community, a lesson underscored by the pandemic's isolating grip. Tech always intrigued me, but its universal allure eluded me until COVID-19 pushed us online. I discovered that even without physical proximity, digital spaces foster vibrant communities. As a Frontend Software Engineer, I'm thrilled to craft these virtual hubs, connecting like-minded souls in a shared digital embrace.",
     quote:
       "The strength of the team is each individual member. The strength of each member is the team.",
     quoteAuthor: "Phil Jackson",
