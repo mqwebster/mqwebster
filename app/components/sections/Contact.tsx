@@ -8,18 +8,18 @@ import github from "/public/icons/github-icon.png";
 import linkedin from "/public/icons/linkedin-icon.png";
 
 export function Contact() {
-  // const [visitors, setVisitors] = useState("");
+  const [visitors, setVisitors] = useState("");
 
-  // useEffect(() => {
-  //   const apiURL =
-  //     "https://rty7kmnenc.execute-api.us-east-2.amazonaws.com/api/siteViewCount";
+  useEffect(() => {
+    const apiURL =
+      "https://rty7kmnenc.execute-api.us-east-2.amazonaws.com/api/siteViewCount";
 
-  //   fetch(apiURL)
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setVisitors(data.body);
-  //     });
-  // }, []);
+    fetch(apiURL)
+      .then((res) => res.json())
+      .then((data) => {
+        setVisitors(data.body);
+      });
+  }, []);
 
   return (
     <section
@@ -57,12 +57,17 @@ export function Contact() {
           />
         </div>
 
-        {/* <div className="visitors">
+        <div className="visitors mt-16 flex flex-col gap-2">
           <p className="visitors-text">
             The number of visitors to this website is
           </p>
-          <span id="visitors-count">{visitors}</span>
-        </div> */}
+          <span
+            id="visitors-count"
+            className="font-title type-preset-3 text-blue-dark"
+          >
+            {visitors}
+          </span>
+        </div>
       </div>
     </section>
   );
