@@ -63,7 +63,7 @@ export function Contact() {
           </p>
           <span
             id="visitors-count"
-            className="font-title type-preset-3 text-blue-dark"
+            className="font-bold type-preset-4 text-blue-base"
           >
             {visitors}
           </span>
