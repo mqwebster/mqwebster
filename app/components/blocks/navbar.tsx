@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   function toggle() {
     setMenu(!menu);
@@ -17,6 +18,35 @@ export default function Navbar() {
       document.body.style.overflow = "unset";
     }
   }, [menu]);
+
+  function checkScroll(el, offset) {
+    const scrollTop = window.scrollY + offset;
+
+    const elTop = el.offsetTop;
+    const elBottom = el.offsetTop + el.offsetHeight;
+
+    if (elTop < scrollTop && scrollTop < elBottom) {
+      setActiveSection(el.id === "" ? el.id : `#${el.id}`);
+    }
+  }
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+      sections.forEach((section) => {
+        checkScroll(section, 400);
+      });
+    });
+
+    return () => {
+      window.removeEventListener("scroll", () => {
+        sections.forEach((section) => {
+          checkScroll(section, 400);
+        });
+      });
+    };
+  }, []);
 
   const navItems = [
     { link: "", text: "Home" },
@@ -72,7 +102,11 @@ export default function Navbar() {
                   className="group/navItem flex flex-col gap-1"
                 >
                   <Link href={`/${item.link}`}>{item.text}</Link>
-                  <div className="h-[3px] w-0 rounded-lg group-hover/navItem:w-full bg-white transition-[width] duration-500"></div>
+                  <div
+                    className={`h-[3px] w-0 rounded-lg group-hover/navItem:w-full bg-white transition-[width] duration-500 ${
+                      activeSection == item.link && "w-full"
+                    }`}
+                  ></div>
                 </li>
               );
             })}
