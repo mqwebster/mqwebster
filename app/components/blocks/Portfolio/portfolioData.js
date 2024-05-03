@@ -84,7 +84,7 @@ export const portfolioData = {
     {
       title: "2023 Public Benefit Report",
       description:
-        "Beyond profit margins lies a deeper narrative of social responsibility. I was instrumental in designing, prototyping, and developing the digital experience for the report, showcasing our commitment to making a positive impact.",
+        "I was instrumental in designing, prototyping, and developing the digital experience for the report, showcasing Nava's commitment to making a positive impact.",
       link: "https://navapbc.com/public-benefit-reports/2023",
       image: pbrImage,
     },
@@ -98,7 +98,7 @@ export const portfolioData = {
     {
       title: "Insights Filtering System",
       description:
-        "I deployed a dynamic filtering feature to accompany the catalog of insights Nava offers. I fine-tuned the user journey, ensuring seamless navigation and accessibility for all visitors, based on meticulous usability testing.",
+        "Based on meticulous usability testing, I fine-tuned the user journey and deployed a dynamic filtering feature to accompany the catalog of insights Nava offers.",
       link: "https://navapbc.com/insights",
       image: insightsImage,
     },
@@ -151,12 +151,12 @@ export const portfolioData = {
       link: "https://github.com/mqwebster/tenzies-dice-game",
       image: tenziesImage,
     },
-    {
-      title: "Travel Journal",
-      description:
-        "I’m blessed to have had the travel opportunities I’ve gotten so far in this life. I’m always happy to talk travel and learn about new locations to add to my wishlist.",
-      link: "https://github.com/mqwebster/travel-journal",
-      image: travelJournalImage,
-    },
+    // {
+    //   title: "Travel Journal",
+    //   description:
+    //     "I’m blessed to have had the travel opportunities I’ve gotten so far in this life. I’m always happy to talk travel and learn about new locations to add to my wishlist.",
+    //   link: "https://github.com/mqwebster/travel-journal",
+    //   image: travelJournalImage,
+    // },
   ],
 };
