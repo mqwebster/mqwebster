@@ -50,19 +50,19 @@ export const portfolioData = {
     {
       title: "Partnership For Resilience",
       description: "",
-      link: "https://www.figma.com/file/IiVKbpHuk7baoWxlboh5lF/P4R-Design-System?type=design&t=ejG9jcaijtIXE1xa-6",
+      link: "https://www.figma.com/file/IiVKbpHuk7baoWxlboh5lF/P4R-Design-System?type=design&node-id=33525%3A578&mode=design&t=ts3qQqMdbvomsDQ3-1",
       image: p4rDSImage,
     },
     {
       title: "Breath'g Vegan",
       description: "",
-      link: "https://www.figma.com/file/GRf8PC942RFdQhgeDIyRPw/Breath'g-Vegan-Design-System?type=design&t=ejG9jcaijtIXE1xa-6",
+      link: "https://www.figma.com/file/GRf8PC942RFdQhgeDIyRPw/Breath'g-Vegan-Design-System?type=design&node-id=5%3A6&mode=design&t=Fy0eGDNFWlvl3uQT-1",
       image: breathgveganDSImage,
     },
     {
       title: "Your Career Tapestry",
       description: "",
-      link: "https://www.figma.com/file/THMNO5iyDufQBgz68GJKMX/Your-Career-Tapestry-Design-System?type=design&t=ejG9jcaijtIXE1xa-6",
+      link: "https://www.figma.com/file/THMNO5iyDufQBgz68GJKMX/Your-Career-Tapestry-Design-System?type=design&node-id=256%3A2&mode=design&t=qhmLOo2ulQ9C7tIz-1",
       image: yctDSImage,
     },
   ],
