@@ -56,7 +56,7 @@ export const portfolioData = {
     {
       title: "Breath'g Vegan",
       description: "",
-      link: "https://www.figma.com/file/GRf8PC942RFdQhgeDIyRPw/Breath'g-Vegan-Design-System?type=design&node-id=5%3A6&mode=design&t=Fy0eGDNFWlvl3uQT-1",
+      link: "https://www.figma.com/file/GRf8PC942RFdQhgeDIyRPw/Breath'g-Vegan-Design-System?type=design&node-id=406%3A4&mode=design&t=SVSVrdUC444tMn6J-1",
       image: breathgveganDSImage,
     },
     {
