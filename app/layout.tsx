@@ -10,6 +10,7 @@ export const metadata = {
   title: "Marques Webster | Resume & Portfolio",
   description:
     "This portfolio is a gateway into the design and development abilities that drive my work.",
+  metadataBase: new URL("https://mqwebster.vercel.app"),
 };
 
 export default function RootLayout({ children }) {
