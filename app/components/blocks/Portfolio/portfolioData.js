@@ -42,7 +42,7 @@ export const portfolioData = {
     {
       title: "Marques Q. Webster Portfolio",
       description: "So…what do you think?",
-      link: "https://github.com/hiiqdesigns/mqwebster",
+      link: "https://github.com/mqwebster/mqwebster",
       image: portfolioImage,
     },
   ],
