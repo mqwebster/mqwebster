@@ -36,7 +36,9 @@ export const portfolioData = {
       title: "Your Career Tapestry",
       description:
         "Career coaching is important to most ages and all industries. This importance, plus the concept behind the Tapestry Program, guided the design of this website.",
-      link: "https://yctapestry.com",
+      // link: "https://yctapestry.com",
+      link: "https://hiiqdesigns.wixsite.com/yct-dev",
+      image: yctImage,
       image: yctImage,
     },
     {
