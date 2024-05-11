@@ -214,25 +214,25 @@ export default function Page() {
 
     let x = canvas.width / 2;
     let y = canvas.height - 30;
-    let dx = 2;
-    let dy = -2;
+    let dx = 4;
+    let dy = -3;
 
-    var ballRadius = 10;
+    var ballRadius = 12;
 
     var paddleHeight = 10;
-    var paddleWidth = 75;
+    var paddleWidth = 80;
     var paddleX = (canvas.width - paddleWidth) / 2;
     var rightPressed = false;
     var leftPressed = false;
 
-    var brickRowCount = 5;
-    var brickColumnCount = 3;
-    var brickWidth = 75;
+    var brickRowCount = 6;
+    var brickColumnCount = 6;
+    var brickWidth = 80;
     var brickHeight = 20;
     var brickPadding = 10;
     var brickOffsetTop = 40;
     let brickOffsetLeft =
-      canvas.offsetWidth / 2 -
+      canvas.width / 2 -
       (brickWidth * brickColumnCount + brickPadding * (brickColumnCount - 1)) /
         2;
 
@@ -300,15 +300,15 @@ export default function Page() {
     }
 
     function drawScore() {
-      ctx.font = "16px Arial";
+      ctx.font = "18px Montserrat";
       ctx.fillStyle = "#0095DD";
-      ctx.fillText("Score: " + score, 8, 20);
+      ctx.fillText("Score: " + score, 8, 40);
     }
 
     function drawLives() {
-      ctx.font = "16px Arial";
+      ctx.font = "18px Montserrat";
       ctx.fillStyle = "#0095DD";
-      ctx.fillText("Lives: " + lives, canvas.width - 65, 20);
+      ctx.fillText("Lives: " + lives, canvas.width - 72, 40);
     }
 
     function drawBricks() {
@@ -379,8 +379,8 @@ export default function Page() {
           } else {
             x = canvas.width / 2;
             y = canvas.height - 30;
-            dx = 2;
-            dy = -2;
+            dx = 4;
+            dy = -3;
             paddleX = (canvas.width - paddleWidth) / 2;
           }
         }
