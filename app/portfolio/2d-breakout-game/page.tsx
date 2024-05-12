@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import RestartIcon from "./RestartIcon";
 
 export default function Page() {
   const [paused, setPaused] = useState(true);
@@ -57,7 +58,7 @@ export default function Page() {
       if (
         relativeX > 0 - paddleWidth / 2 &&
         relativeX <
-          canvas.width - canvas.parentElement.offsetLeft + paddleWidth / 2
+          canvas.width - canvas.parentElement.offsetLeft + paddleWidth * 2
       ) {
         paddleX = relativeX + paddleWidth * 0.5;
       }
@@ -209,14 +210,20 @@ export default function Page() {
             </h2>
           </div>
 
-          <div onClick={() => setPaused(!paused)} className="w-full relative">
+          <div className="w-full relative">
             <div className="w-full flex justify-between font-title text-3xl">
               <span>Score: {score}</span>
-              <span>Lives: {lives}</span>
+              <div className="flex gap-2">
+                <button onClick={() => document.location.reload()}>
+                  <RestartIcon />
+                </button>
+                <span>Lives: {lives}</span>
+              </div>
             </div>
 
             <canvas
               ref={canvasRef}
+              onMouseEnter={() => setPaused(false)}
               id="myCanvas"
               width={1376}
               height={917.33}
