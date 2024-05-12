@@ -73,7 +73,7 @@ export const portfolioData = {
       title: "Mozilla 2D Breakout Game",
       description:
         "This classic game was just as fun to build as it is to play.",
-      link: "https://github.com/mqwebster/mozilla-breakout-game",
+      link: "/portfolio/2d-breakout-game",
       image: breakoutGameImage,
     },
     {
