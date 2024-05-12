@@ -8,7 +8,13 @@ export default function Navbar(props) {
   return (
     <nav className={`nav ${props.isDark ? "dark" : ""}`}>
       <div className="nav-logo">
-        <Image src={logo} alt="React Logo" className="nav-logo__img" />
+        <Image
+          src={logo}
+          width={32}
+          height={32}
+          alt="React Logo"
+          className="nav-logo__img"
+        />
         <span>ReactFacts</span>
       </div>
 
