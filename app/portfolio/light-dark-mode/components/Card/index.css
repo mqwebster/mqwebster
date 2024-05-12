@@ -1,0 +1,38 @@
+.main-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  position: relative;
+
+  height: 100%;
+
+  padding: 56px 28px;
+
+  background: no-repeat url("../../images/react-icon-light.png");
+  background-position: right 80%;
+  background-size: 28%;
+  color: #2b283a;
+}
+
+.main-card.dark {
+  background: no-repeat url("../../images/react-icon-dark.png");
+  background-position: right 80%;
+  background-size: 28%;
+  background-color: #282d35;
+  color: #ffffff;
+}
+
+.main-list {
+  max-width: 480px;
+}
+
+.main-list > li::marker {
+  color: #00d8ff;
+  font-size: 28px;
+}
+
+.main-list > li {
+  font-size: 20px;
+  padding-block: 8px;
+}
