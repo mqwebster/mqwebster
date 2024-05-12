@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
       <section
-        id="light-dark-mode"
+        id="airbnb-clone"
         className="w-full md:max-w-screen-xl z-0 px-8 py-16 mb-40"
       >
         <div className="flex flex-col">
