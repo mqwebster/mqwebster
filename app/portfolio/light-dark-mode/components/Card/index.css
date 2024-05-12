@@ -25,6 +25,8 @@
 
 .main-list {
   max-width: 480px;
+
+  list-style-type: disc;
 }
 
 .main-list > li::marker {
@@ -35,4 +37,5 @@
 .main-list > li {
   font-size: 20px;
   padding-block: 8px;
+  margin-left: 28px;
 }
