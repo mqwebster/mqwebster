@@ -214,7 +214,10 @@ export default function Page() {
             <div className="w-full flex justify-between font-title text-3xl">
               <span>Score: {score}</span>
               <div className="flex gap-2">
-                <button onClick={() => document.location.reload()}>
+                <button
+                  className={`dark:invert`}
+                  onClick={() => document.location.reload()}
+                >
                   <RestartIcon />
                 </button>
                 <span>Lives: {lives}</span>
