@@ -20,9 +20,7 @@ export default function Page() {
       >
         <div className="flex flex-col">
           <div className="w-full dark:bg-black pb-16">
-            <h2 className="font-title type-preset-2 mb-10">
-              Light - Dark Mode
-            </h2>
+            <h2 className="font-title type-preset-2 mb-10">Airbnb Clone</h2>
 
             <div className="w-max flex flex-col gap-2 font-title type-preset-4">
               <span>The Code...</span>

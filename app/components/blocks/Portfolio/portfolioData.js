@@ -156,8 +156,8 @@ export const portfolioData = {
       title: "Tenzies Dice Game",
       description:
         "Based on the Tenzi Dice Game, try out this online version until you win.",
-      link: "https://github.com/mqwebster/tenzies-dice-game",
-      // newWindow: false,
+      link: "/portfolio/tenzies-dice-game",
+      newWindow: false,
       image: tenziesImage,
     },
     // {

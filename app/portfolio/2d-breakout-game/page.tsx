@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Confetti from "react-confetti";
 import Button from "@/app/components/atoms/Button";
 import github from "/public/icons/github-icon.png";
 import RestartIcon from "./RestartIcon";
@@ -56,7 +57,7 @@ export default function Page() {
     document.addEventListener("mousemove", mouseMoveHandler, false);
 
     function mouseMoveHandler(e) {
-      var relativeX = e.clientX - canvas.parentElement.offsetLeft;
+      var relativeX = e.clientX - canvas.parentElement.parentElement.offsetLeft;
       if (
         relativeX > 0 - paddleWidth / 2 &&
         relativeX <
@@ -98,8 +99,8 @@ export default function Page() {
               scoreCount++;
               setScore(scoreCount);
               if (scoreCount == brickRowCount * brickColumnCount) {
-                alert("YOU WIN, CONGRATULATIONS!");
-                document.location.reload();
+                livesCount = 100;
+                setLives(livesCount);
               }
             }
           }
@@ -200,16 +201,18 @@ export default function Page() {
   }, [paused]);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      {score == 36 && <Confetti />}
+
       <section
         id="portfolio"
         className="w-full md:max-w-screen-xl z-0 px-8 py-16"
       >
         <div className="flex flex-col">
           <div className="w-full dark:bg-black pb-16">
-            <h2 className="font-title type-preset-2 mb-10">
+            <h1 className="font-title type-preset-2 mb-10">
               Mozilla 2D Breakout Game
-            </h2>
+            </h1>
 
             <div className="w-max flex flex-col gap-2 font-title type-preset-4">
               <span>The Code...</span>
@@ -236,14 +239,23 @@ export default function Page() {
               </div>
             </div>
 
-            <canvas
-              ref={canvasRef}
-              onMouseEnter={() => setPaused(false)}
-              id="myCanvas"
-              width={1376}
-              height={917.33}
-              className="bg-yellow-50 max-w-full w-full"
-            ></canvas>
+            <div className="relative">
+              <canvas
+                ref={canvasRef}
+                onMouseEnter={() => setPaused(false)}
+                id="myCanvas"
+                width={1376}
+                height={917.33}
+                className="bg-yellow-50 max-w-full w-full"
+              ></canvas>
+              {score == 36 && (
+                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                  <span className="text-black type-preset-3 font-title">
+                    Congratulations!! You won!!!
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </section>
