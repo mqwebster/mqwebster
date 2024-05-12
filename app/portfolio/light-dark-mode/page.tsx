@@ -16,7 +16,7 @@ export default function Page() {
     <main className="flex min-h-screen flex-col items-center justify-between ">
       <section
         id="light-dark-mode"
-        className="w-full md:max-w-screen-xl z-0 px-8 py-16"
+        className="w-full md:max-w-screen-xl z-0 px-8 py-16 mb-40"
       >
         <div className="flex flex-col">
           <div className="w-full dark:bg-black pb-16">
@@ -35,7 +35,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="flex flex-col w-full h-[600px] m-auto bg-white rounded-md overflow-hidden">
+          <div className="flex flex-col w-full m-auto bg-white rounded-md overflow-hidden">
             <Navbar isDark={darkMode} toggle={toggle} />
             <Card isDark={darkMode} />
           </div>
