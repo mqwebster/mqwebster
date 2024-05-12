@@ -54,7 +54,6 @@ export default function Page() {
 
     function mouseMoveHandler(e) {
       var relativeX = e.clientX - canvas.parentElement.offsetLeft;
-      console.log(relativeX, canvas.offsetWidth);
       if (
         relativeX > 0 - paddleWidth / 2 &&
         relativeX <
