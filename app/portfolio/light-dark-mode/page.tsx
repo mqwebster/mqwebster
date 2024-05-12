@@ -35,7 +35,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="flex flex-col w-[600px] h-[600px] bg-white rounded-md overflow-hidden">
+          <div className="flex flex-col w-full h-[600px] m-auto bg-white rounded-md overflow-hidden">
             <Navbar isDark={darkMode} toggle={toggle} />
             <Card isDark={darkMode} />
           </div>
