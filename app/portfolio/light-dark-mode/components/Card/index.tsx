@@ -3,7 +3,7 @@ import "./index.css";
 export default function Card(props) {
   return (
     <div className={`main-card ${props.isDark ? "dark" : ""}`}>
-      <h1>Fun facts about React</h1>
+      <h1 className="type-preset-lg font-bold">Fun facts about React</h1>
 
       <ul className="main-list">
         <li>Was first released in 2013</li>
