@@ -116,7 +116,7 @@ export default function Page() {
             bricks[c][r].y = brickY;
             ctx.beginPath();
             ctx.rect(brickX, brickY, brickWidth, brickHeight);
-            ctx.fillStyle = "#0095DD";
+            ctx.fillStyle = "#228EE8";
             ctx.fill();
             ctx.closePath();
           }
@@ -127,7 +127,7 @@ export default function Page() {
     function drawBall() {
       ctx.beginPath();
       ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-      ctx.fillStyle = "#0095DD";
+      ctx.fillStyle = "#228EE8";
       ctx.fill();
       ctx.closePath();
     }
@@ -140,7 +140,7 @@ export default function Page() {
         paddleWidth,
         paddleHeight
       );
-      ctx.fillStyle = "#0095DD";
+      ctx.fillStyle = "#228EE8";
       ctx.fill();
       ctx.closePath();
     }
@@ -227,7 +227,7 @@ export default function Page() {
               id="myCanvas"
               width={1376}
               height={917.33}
-              className="bg-green-200 max-w-full w-full"
+              className="bg-yellow-50 max-w-full w-full"
             ></canvas>
           </div>
         </div>
