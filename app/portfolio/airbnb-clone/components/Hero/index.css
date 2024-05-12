@@ -1,0 +1,27 @@
+.hero-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+  padding: 40px 80px;
+  width: 100%;
+}
+
+.hero-img {
+  display: flex;
+
+  min-width: 400px;
+  width: 100%;
+}
+
+.hero-img__grid {
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
