@@ -110,8 +110,8 @@ export const portfolioData = {
       title: "Light-Dark Mode",
       description:
         "A small UI card with light and dark mode functionality. Try it out and learn a little about the history of React while you’re at it.",
-      link: "https://github.com/mqwebster/light-dark-mode",
-      // newWindow: false,
+      link: "/portfolio/light-dark-mode",
+      newWindow: false,
       image: lightdarkImage,
     },
     {

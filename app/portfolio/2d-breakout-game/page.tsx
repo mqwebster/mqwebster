@@ -206,7 +206,7 @@ export default function Page() {
         className="w-full md:max-w-screen-xl z-0 px-8 py-16"
       >
         <div className="flex flex-col">
-          <div className="about-content w-full dark:bg-black pb-16">
+          <div className="w-full dark:bg-black pb-16">
             <h2 className="font-title type-preset-2 mb-10">
               Mozilla 2D Breakout Game
             </h2>
