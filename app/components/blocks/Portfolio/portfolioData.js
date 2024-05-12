@@ -111,7 +111,7 @@ export const portfolioData = {
       description:
         "A small UI card with light and dark mode functionality. Try it out and learn a little about the history of React while you’re at it.",
       link: "/portfolio/light-dark-mode",
-      // newWindow: false,
+      newWindow: false,
       image: lightdarkImage,
     },
     {
