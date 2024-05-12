@@ -11,14 +11,14 @@
 
   background: no-repeat url("../../images/react-icon-light.png");
   background-position: right 80%;
-  background-size: 28%;
+  background-size: 10rem;
   color: #2b283a;
 }
 
 .main-card.dark {
   background: no-repeat url("../../images/react-icon-dark.png");
   background-position: right 80%;
-  background-size: 28%;
+  background-size: 10rem;
   background-color: #282d35;
   color: #ffffff;
 }
