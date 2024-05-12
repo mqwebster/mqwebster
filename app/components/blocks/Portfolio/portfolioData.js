@@ -95,8 +95,8 @@ export const portfolioData = {
       title: "Airbnb Experiences Clone",
       description:
         "This is a static replica of an older Airbnb Experiences landing page.",
-      link: "https://github.com/mqwebster/airbnb-clone",
-      // newWindow: false,
+      link: "/portfolio/airbnb-clone",
+      newWindow: false,
       image: airbnbImage,
     },
     {
