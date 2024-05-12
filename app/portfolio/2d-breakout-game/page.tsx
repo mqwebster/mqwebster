@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Confetti from "react-confetti";
 import Button from "@/app/components/atoms/Button";
 import github from "/public/icons/github-icon.png";
 import RestartIcon from "./RestartIcon";
@@ -200,7 +201,9 @@ export default function Page() {
   }, [paused]);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      {score == 36 && <Confetti />}
+
       <section
         id="portfolio"
         className="w-full md:max-w-screen-xl z-0 px-8 py-16"
@@ -244,6 +247,14 @@ export default function Page() {
               height={917.33}
               className="bg-yellow-50 max-w-full w-full"
             ></canvas>
+              {score == 36 && (
+                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                  <span className="text-black type-preset-3 font-title">
+                    Congratulations!! You won!!!
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </section>
