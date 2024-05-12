@@ -7,12 +7,14 @@ export const PinContainer = ({
   children,
   title,
   href,
+  newWindow = true,
   className,
   containerClassName,
 }: {
   children: React.ReactNode;
   title?: string;
   href?: string;
+  newWindow?: boolean;
   className?: string;
   containerClassName?: string;
 }) => {
@@ -54,7 +56,7 @@ export const PinContainer = ({
           </div>
         </div>
       </div>
-      <PinPerspective title={title} href={href} />
+      <PinPerspective title={title} href={href} newWindow={newWindow} />
     </div>
   );
 };
@@ -62,9 +64,11 @@ export const PinContainer = ({
 export const PinPerspective = ({
   title,
   href,
+  newWindow,
 }: {
   title?: string;
   href?: string;
+  newWindow?: boolean;
 }) => {
   return (
     <motion.div className="w-full h-full flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
@@ -72,7 +76,7 @@ export const PinPerspective = ({
         <div className="absolute top-0 inset-x-0  flex justify-center">
           <a
             href={href}
-            target={"_blank"}
+            target={newWindow ? "_blank" : ""}
             className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 dark:bg-zinc-100 px-8 ring-1 ring-white/10"
           >
             <span className="relative z-20 text-white dark:text-black font-bold">

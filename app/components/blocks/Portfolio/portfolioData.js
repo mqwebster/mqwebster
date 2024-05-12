@@ -74,6 +74,7 @@ export const portfolioData = {
       description:
         "This classic game was just as fun to build as it is to play.",
       link: "/portfolio/2d-breakout-game",
+      newWindow: false,
       image: breakoutGameImage,
     },
     {
@@ -95,6 +96,7 @@ export const portfolioData = {
       description:
         "This is a static replica of an older Airbnb Experiences landing page.",
       link: "https://github.com/mqwebster/airbnb-clone",
+      // newWindow: false,
       image: airbnbImage,
     },
     {
@@ -109,6 +111,7 @@ export const portfolioData = {
       description:
         "A small UI card with light and dark mode functionality. Try it out and learn a little about the history of React while you’re at it.",
       link: "https://github.com/mqwebster/light-dark-mode",
+      // newWindow: false,
       image: lightdarkImage,
     },
     {
@@ -116,6 +119,7 @@ export const portfolioData = {
       description:
         "A little old-hat meme nostalgia is always a nice break from programming. Quick API calls for an even quicker laugh with this Meme Generator.",
       link: "https://github.com/mqwebster/meme-generator",
+      // newWindow: false,
       image: memeGeneratorImage,
     },
     {
@@ -130,6 +134,7 @@ export const portfolioData = {
       description:
         "A small note app that uses the power of local browser storage and React State and Effect hooks to make note-taking possible.",
       link: "https://github.com/mqwebster/notes-app",
+      // newWindow: false,
       image: notesAppImage,
     },
     {
@@ -144,6 +149,7 @@ export const portfolioData = {
       description:
         "React Router is a valuable tool for managing scalable, multi-page React apps. Given React Router's value, this was a great tutorial to explore what React Router can do.",
       link: "https://github.com/mqwebster/react-router-tutorial",
+      // newWindow: false,
       image: reactRouterImage,
     },
     {
@@ -151,6 +157,7 @@ export const portfolioData = {
       description:
         "Based on the Tenzi Dice Game, try out this online version until you win.",
       link: "https://github.com/mqwebster/tenzies-dice-game",
+      // newWindow: false,
       image: tenziesImage,
     },
     // {
@@ -158,6 +165,7 @@ export const portfolioData = {
     //   description:
     //     "I’m blessed to have had the travel opportunities I’ve gotten so far in this life. I’m always happy to talk travel and learn about new locations to add to my wishlist.",
     //   link: "https://github.com/mqwebster/travel-journal",
+    // newWindow: false,
     //   image: travelJournalImage,
     // },
   ],

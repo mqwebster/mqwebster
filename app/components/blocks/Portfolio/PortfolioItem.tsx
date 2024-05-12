@@ -5,16 +5,23 @@ export default function PortfolioItem({
   title,
   description,
   link,
+  newWindow,
   image,
 }: {
   title: string;
   description: string;
   link: string;
+  newWindow?: boolean;
   image: StaticImageData;
 }) {
   return (
     <div className="w-full h-[32rem] font-body type-preset-base">
-      <PinContainer title={title} href={link} className="h-full">
+      <PinContainer
+        title={title}
+        href={link}
+        newWindow={newWindow}
+        className="h-full"
+      >
         <div className="flex flex-col justify-between p-4 tracking-tight text-slate-100/50 h-full">
           <div>
             <h4 className="font-bold font-body type-preset-base text-slate-100 dark:text-slate-900 mb-2">
