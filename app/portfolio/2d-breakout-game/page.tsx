@@ -1,5 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Button from "@/app/components/atoms/Button";
+import github from "/public/icons/github-icon.png";
 import RestartIcon from "./RestartIcon";
 
 export default function Page() {
@@ -208,6 +210,16 @@ export default function Page() {
             <h2 className="font-title type-preset-2 mb-10">
               Mozilla 2D Breakout Game
             </h2>
+
+            <div className="w-max flex flex-col gap-2 font-title type-preset-4">
+              <span>The Code...</span>
+              <Button
+                link="https://github.com/mqwebster/mqwebster/tree/main/app/portfolio/2d-breakout-game"
+                text="GitHub"
+                icon={github}
+                type="social"
+              />
+            </div>
           </div>
 
           <div className="w-full relative">

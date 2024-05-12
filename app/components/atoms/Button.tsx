@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-export default function Button({ icon, link, text, type }) {
+export default function Button({ icon, link, newWindow = true, text, type }) {
   const [btnText, setBtnText] = useState(text);
 
   const btnContent = (
@@ -36,7 +36,11 @@ export default function Button({ icon, link, text, type }) {
           copyEmail();
         }}
       >
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a
+          href={link}
+          target={newWindow ? "_blank" : ""}
+          rel="noopener noreferrer"
+        >
           {btnContent}
         </a>
       </button>
@@ -54,7 +58,7 @@ export default function Button({ icon, link, text, type }) {
       <button onClick={download}>
         <a
           href={link}
-          target="_blank"
+          target={newWindow ? "_blank" : ""}
           rel="noopener noreferrer"
           download="Marques-Webster-Resume"
         >
@@ -71,7 +75,11 @@ export default function Button({ icon, link, text, type }) {
         resume: resumeBtn(),
       }[type] || (
         <button>
-          <a href={link} target="_blank" rel="noopener noreferrer">
+          <a
+            href={link}
+            target={newWindow ? "_blank" : ""}
+            rel="noopener noreferrer"
+          >
             {btnContent}
           </a>
         </button>
