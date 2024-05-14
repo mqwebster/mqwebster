@@ -278,15 +278,6 @@ i {
   text-decoration: underline;
 }
 
-#contact img {
-  width: 12rem;
-  height: 12rem;
-  background: #c8c8c8;
-  margin-right: 2rem;
-  border-radius: 1.5rem;
-  object-fit: cover;
-}
-
 #contact h1 ~ div {
   display: flex;
   gap: 0.5rem;

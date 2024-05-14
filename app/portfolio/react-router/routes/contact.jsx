@@ -23,7 +23,7 @@ export default function Contact() {
 
   return (
     <div id="contact">
-      <div>
+      <div className={`bg-blue-base rounded-md overflow-hidden mr-8`}>
         <Image
           key={contact.avatar}
           src={contact.avatar || userIcon}
