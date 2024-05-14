@@ -58,7 +58,12 @@ export default function Root() {
             <div className="sr-only" aria-live="polite"></div>
           </Form>
           <Form method="post">
-            <button type="submit">New</button>
+            <button
+              type="submit"
+              className="bg-white text-[#3992ff] rounded-lg px-3 py-2 hover:shadow-md"
+            >
+              New
+            </button>
           </Form>
         </div>
         <nav>
@@ -93,7 +98,7 @@ export default function Root() {
       </div>
       <div
         id="detail"
-        className={` bg-slate-100 ${
+        className={`bg-slate-100 ${
           navigation.state === "loading" ? "loading" : ""
         }`}
       >

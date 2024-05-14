@@ -27,7 +27,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full flex min-h-[60vh] rounded-lg overflow-hidden">
+          <div className="w-full flex min-h-[60vh] rounded-lg text-black overflow-hidden">
             <Main />
           </div>
         </div>

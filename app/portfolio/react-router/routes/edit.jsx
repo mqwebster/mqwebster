@@ -55,8 +55,17 @@ export default function EditContact() {
         <textarea name="notes" defaultValue={contact.notes} rows={6} />
       </label>
       <p>
-        <button type="submit">Save</button>
-        <button type="button" onClick={() => navigate(-1)}>
+        <button
+          type="submit"
+          className="bg-white text-[#3992ff] rounded-lg px-3 py-2 hover:shadow-md"
+        >
+          Save
+        </button>
+        <button
+          type="button"
+          className="bg-white text-red-400 rounded-lg px-3 py-2 hover:shadow-md"
+          onClick={() => navigate(-1)}
+        >
           Cancel
         </button>
       </p>
