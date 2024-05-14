@@ -8,6 +8,12 @@ module.exports = {
         // port: '',
         // pathname: '/account123/**',
       },
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+        // port: '',
+        // pathname: '/account123/**',
+      },
     ],
   },
 };
