@@ -148,8 +148,8 @@ export const portfolioData = {
       title: "React Router Tutorial",
       description:
         "React Router is a valuable tool for managing scalable, multi-page React apps. Given React Router's value, this was a great tutorial to explore what React Router can do.",
-      link: "https://github.com/mqwebster/react-router-tutorial",
-      // newWindow: false,
+      link: "/portfolio/react-router",
+      newWindow: false,
       image: reactRouterImage,
     },
     {
