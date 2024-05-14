@@ -1,7 +1,6 @@
-"use client";
 import github from "/public/icons/github-icon.png";
 import Button from "@/app/components/atoms/Button";
-import Main from "./Main.jsx";
+import "./Main.jsx";
 
 export default function Page() {
   return (
@@ -27,9 +26,10 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full flex min-h-[60vh] rounded-lg text-black overflow-hidden">
-            <Main />
-          </div>
+          <div
+            id="main"
+            className="w-full flex min-h-[60vh] rounded-lg text-black overflow-hidden"
+          ></div>
         </div>
       </section>
     </main>

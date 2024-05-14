@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page";
 import Root, {
@@ -50,8 +51,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-const Main = () => {
-  return <RouterProvider router={router} />;
-};
-
-export default Main;
+createRoot(document.getElementById("main")).render(
+  <RouterProvider router={router} />
+);
