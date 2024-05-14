@@ -1,6 +1,7 @@
 import Image from "next/image.js";
 import { Form, useFetcher, useLoaderData } from "react-router-dom";
 import { getContact, updateContact } from "../contacts.js";
+import * as userIcon from "../user.png";
 
 export async function action({ request, params }) {
   let formData = await request.formData();
@@ -25,7 +26,7 @@ export default function Contact() {
       <div>
         <Image
           key={contact.avatar}
-          src={contact.avatar || null}
+          src={contact.avatar || userIcon}
           width={216}
           height={216}
           alt={`${contact.first} ${contact.last}`}
