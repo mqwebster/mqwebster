@@ -1,8 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import PortfolioPageHeader from "@/app/components/blocks/Portfolio/PortfolioPageHeader";
 import Confetti from "react-confetti";
-import Button from "@/app/components/atoms/Button";
-import github from "/public/icons/github-icon.png";
 import RestartIcon from "./RestartIcon";
 
 export default function Page() {
@@ -205,25 +204,14 @@ export default function Page() {
       {score == 36 && <Confetti />}
 
       <section
-        id="portfolio"
+        id="2d-breakout-game"
         className="w-full md:max-w-screen-xl z-0 px-8 py-16"
       >
         <div className="flex flex-col">
-          <div className="w-full dark:bg-black pb-16">
-            <h1 className="font-title type-preset-2 mb-10">
-              Mozilla 2D Breakout Game
-            </h1>
-
-            <div className="w-max flex flex-col gap-2 font-title type-preset-4">
-              <span>The Code...</span>
-              <Button
-                link="https://github.com/mqwebster/mqwebster/tree/main/app/portfolio/2d-breakout-game"
-                text="GitHub"
-                icon={github}
-                type="social"
-              />
-            </div>
-          </div>
+          <PortfolioPageHeader
+            title="2D Breakout Game"
+            githubLink="https://github.com/mqwebster/mqwebster/tree/main/app/portfolio/2d-breakout-game"
+          />
 
           <div className="w-full relative">
             <div className="w-full flex justify-between font-title text-3xl">
