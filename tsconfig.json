@@ -28,7 +28,8 @@
     "**/*.tsx",
     "app/components/blocks/navbar.tsx",
     "app/components/blocks/**/*.js",
-    "app/portfolio/meme-generator/page.jsx"
+    "app/portfolio/meme-generator/page.jsx",
+    "app/portfolio/notes-app/page.jsx"
   ],
   "exclude": ["node_modules"]
 }
