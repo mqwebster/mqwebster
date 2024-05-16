@@ -118,8 +118,8 @@ export const portfolioData = {
       title: "Meme Generator",
       description:
         "A little old-hat meme nostalgia is always a nice break from programming. Quick API calls for an even quicker laugh with this Meme Generator.",
-      link: "https://github.com/mqwebster/meme-generator",
-      // newWindow: false,
+      link: "/portfolio/meme-generator",
+      newWindow: false,
       image: memeGeneratorImage,
     },
     {
