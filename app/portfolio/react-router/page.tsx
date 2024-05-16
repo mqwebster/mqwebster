@@ -1,5 +1,5 @@
-import github from "/public/icons/github-icon.png";
-import Button from "@/app/components/atoms/Button";
+// @ts-ignore
+import PortfolioPageHeader from "@/app/components/blocks/Portfolio/PortfolioPageHeader.tsx";
 import "./Main.jsx";
 
 export default function Page() {
@@ -10,21 +10,10 @@ export default function Page() {
         className="w-full md:max-w-screen-xl z-0 px-8 py-16"
       >
         <div className="flex flex-col">
-          <div className="about-content w-full dark:bg-black pb-32">
-            <h1 className="font-title type-preset-2 mb-10">
-              React Router Tutorial
-            </h1>
-
-            <div className="w-max flex flex-col gap-2 font-title type-preset-4">
-              <span>The Code...</span>
-              <Button
-                link="https://github.com/mqwebster/mqwebster/tree/main/app/portfolio/react-router"
-                text="GitHub"
-                icon={github}
-                type="social"
-              />
-            </div>
-          </div>
+          <PortfolioPageHeader
+            title="React Router"
+            githubLink="https://github.com/mqwebster/mqwebster/tree/main/app/portfolio/react-router"
+          />
 
           <div
             id="main"

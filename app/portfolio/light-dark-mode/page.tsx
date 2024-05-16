@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-import github from "/public/icons/github-icon.png";
-import Button from "@/app/components/atoms/Button";
+import PortfolioPageHeader from "@/app/components/blocks/Portfolio/PortfolioPageHeader";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 
@@ -19,21 +18,10 @@ export default function Page() {
         className="w-full md:max-w-screen-xl z-0 px-8 py-16 mb-40"
       >
         <div className="flex flex-col">
-          <div className="w-full dark:bg-black pb-16">
-            <h2 className="font-title type-preset-2 mb-10">
-              Light - Dark Mode
-            </h2>
-
-            <div className="w-max flex flex-col gap-2 font-title type-preset-4">
-              <span>The Code...</span>
-              <Button
-                link="https://github.com/mqwebster/mqwebster/tree/main/app/portfolio/light-dark-mode"
-                text="GitHub"
-                icon={github}
-                type="social"
-              />
-            </div>
-          </div>
+          <PortfolioPageHeader
+            title="Light - Dark Mode"
+            githubLink="https://github.com/mqwebster/mqwebster/tree/main/app/portfolio/light-dark-mode"
+          />
 
           <div className="flex flex-col w-full m-auto bg-white rounded-md overflow-hidden">
             <Navbar isDark={darkMode} toggle={toggle} />
