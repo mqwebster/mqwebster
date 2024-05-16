@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     "app/components/blocks/navbar.tsx",
-    "app/components/blocks/**/*.js"
+    "app/components/blocks/**/*.js",
+    "app/portfolio/meme-generator/page.jsx"
   ],
   "exclude": ["node_modules"]
 }
