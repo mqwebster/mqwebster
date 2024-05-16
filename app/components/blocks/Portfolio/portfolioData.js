@@ -133,8 +133,8 @@ export const portfolioData = {
       title: "Notes App",
       description:
         "A small note app that uses the power of local browser storage and React State and Effect hooks to make note-taking possible.",
-      link: "https://github.com/mqwebster/notes-app",
-      // newWindow: false,
+      link: "/portfolio/notes-app",
+      newWindow: false,
       image: notesAppImage,
     },
     {
