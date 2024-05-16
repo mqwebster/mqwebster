@@ -14,6 +14,12 @@ module.exports = {
         // port: '',
         // pathname: '/account123/**',
       },
+      {
+        protocol: "https",
+        hostname: "i.imgflip.com",
+        // port: '',
+        // pathname: '/account123/**',
+      },
     ],
   },
 };
