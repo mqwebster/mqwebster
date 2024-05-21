@@ -2,17 +2,6 @@ export const resumeData = {
   Education: [
     {
       id: 1,
-      date: "Jan. 2022 - Dec. 2022",
-      title: "Frontend Web Developer Fellow",
-      location: "Google | Tech Equity Collective | Remote",
-      list: [
-        "Collaborative project-based fellowship to increase proficiency in Java, JavaScript, additional frameworks and libraries, and how to use these languages to optimize scalability.",
-        "Independent study of programming and web developer concepts such as Object-Oriented Programming, Responsive Web Design, and Progressive Web Apps.",
-        "Broadened understanding of Scrum Methodologies and tools such as Agile and Kanban in Github.",
-      ],
-    },
-    {
-      id: 2,
       date: "Aug. 2014 - Dec. 2019",
       title: "Bachelor of Science in Technical Systems Management",
       location: "University of Illinois at Urbana-Champaign",
@@ -26,26 +15,37 @@ export const resumeData = {
       title: "Frontend Developer / Designer",
       location: "Nava PBC | Communications | Remote",
       list: [
+        "Contributed significantly to the 2023 Public Benefit Report's design and development, achieving a #6 site ranking with about 2 minutes of average viewer engagement and nearly 10,000 page views.",
+        "Led usability testing, design iterations, and quality assurance for the deployment of filtering functionality for all blog insights to promote accessibility best practices and easier site searchability.",
+        "Facilitated the upgrade of the internal design system used between design and development team integrating Figma, Storybook, and the Next.js codebase for increased site consistency and improved efficiency.",
         "Independently delivered high-quality work on medium/large engineering tasks with minimal guidance using frameworks and tools such as Next.js, Figma, Contentful, Google Analytics, and more.",
-        "Contributed significantly to the 2023 Public Benefit Report's design and development, achieving a #6 site ranking with about 2 minutes of average viewer engagement and nearly 7,000 page views.",
         "Demonstrated strong project management skills, communicating timelines and status effectively using agile principles as the technical liaison between technical and non-technical stakeholders.",
-        "Led usability testing, design iterations, and quality assurance for multiple new reports and site features, resulting in successful deployments and enhanced website functionality.",
       ],
     },
     {
       id: 2,
       date: "Jun. 2020 - Present",
-      title: "Lead Frontend Web Developer",
-      location: "HI IQ Designs, LLC | Freelance | Remote",
+      title: "Founder / Frontend Engineer and Designer",
+      location: "HI IQ Designs, LLC | Remote",
       list: [
-        "Mission-driven production of over a dozen WordPress, Webflow, and custom websites to stimulate advancement for small businesses and organizations.",
-        "Implement Waterfall methodology to ensure quality and timely turnover of project phase requirements for a reduction of 50% in project completion time.",
-        "Provide consultation services to boost website engagement and overall site traffic through proper SEO practices application.",
+        "Mission-driven production of custom designs and web apps using tools like Figma, WordPress, and React to stimulate the growth of small businesses while providing engaging user experiences.",
+        "Provide consultation services to boost website engagement and overall site traffic through proper SEO practices and application.",
         "Generate custom graphic designs and improve the layout and accessibility of client sites while using planning, wireframing, and prototyping through Figma.",
       ],
     },
     {
       id: 3,
+      date: "Jan. 2022 - Dec. 2022",
+      title: "Frontend Software Developer Fellow",
+      location: "Google Tech Equity Collective | Remote",
+      list: [
+        "Independent study of programming and software developer concepts such as Object-Oriented Programming, Responsive Web Design, and Progressive Web Apps.",
+        "Collaborative, project-based fellowship to build a small comprehensive capstone project showcasing the use of agile software development life cycle principles in Javascript and related frameworks like Typescript and React.",
+        "Exhibited strong time management ability to turnaround week-to-week individual projects to strengthen knowledge of interactive web app development using restful APIs, Java, Javascript, HTML, and CSS.",
+      ],
+    },
+    {
+      id: 4,
       date: "Aug. 2021 - Apr. 2022",
       title: "TeamDynamix Service Administrator",
       location: "University of Illinois | Technology Services | Remote",
@@ -56,7 +56,7 @@ export const resumeData = {
       ],
     },
     {
-      id: 4,
+      id: 5,
       date: "Mar. 2019 - Apr. 2022",
       title: "Web Development Administrator",
       location: "University of Illinois | Technology Services | Urbana, IL",
