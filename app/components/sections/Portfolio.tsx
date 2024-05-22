@@ -1,4 +1,4 @@
-import { portfolioData } from "../blocks/Portfolio/portfolioData";
+import { portfolioData } from "../../data/portfolioData";
 import PortfolioItem from "../blocks/Portfolio/PortfolioItem";
 
 export function Portfolio() {
