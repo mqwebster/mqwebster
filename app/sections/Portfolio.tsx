@@ -1,5 +1,5 @@
-import { portfolioData } from "../../data/portfolioData";
-import PortfolioItem from "../blocks/Portfolio/PortfolioItem";
+import { portfolioData } from "../data/portfolioData";
+import PortfolioItem from "../components/blocks/Portfolio/PortfolioItem";
 
 export function Portfolio() {
   return (

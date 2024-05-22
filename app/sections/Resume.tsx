@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ResumeItem from "../blocks/Resume/ResumeItem";
-import { resumeData } from "../../data/resumeData.js";
+import ResumeItem from "../components/blocks/Resume/ResumeItem";
+import { resumeData } from "../data/resumeData.js";
 
 export function Resume() {
   const educationElements = resumeData.Education.map((item) => {
