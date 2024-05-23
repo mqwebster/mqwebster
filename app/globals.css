@@ -41,6 +41,10 @@ section {
   scroll-margin-block-start: 10vh;
 }
 
+details summary::-webkit-details-marker {
+  display: none;
+}
+
 .tl-progress-bar {
   clip-path: inset(0px 0px round 0.5rem);
 }
