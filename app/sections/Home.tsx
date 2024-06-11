@@ -29,6 +29,7 @@ export const products = [
     title: "Mozilla 2D Breakout Game",
     link: "/portfolio/2d-breakout-game",
     thumbnail: "/images/home-cta/2D Breakout Game.jpg",
+    newWindow: false,
   },
   {
     title: "Nava PBC 2023 DEI Report",
@@ -44,6 +45,7 @@ export const products = [
     title: "Airbnb Experiences Clone",
     link: "/portfolio/airbnb-clone",
     thumbnail: "/images/home-cta/Airbnb Experiences Clone.jpg",
+    newWindow: false,
   },
   {
     title: "Breath'g Vegan Design System",
@@ -64,6 +66,7 @@ export const products = [
     title: "Light-Dark Mode",
     link: "/portfolio/light-dark-mode",
     thumbnail: "/images/home-cta/Light-Dark Mode.jpg",
+    newWindow: false,
   },
   {
     title: "Marques Q. Webster Portfolio",
@@ -74,6 +77,7 @@ export const products = [
     title: "Meme Generator",
     link: "/portfolio/meme-generator",
     thumbnail: "/images/home-cta/Meme Generator.jpg",
+    newWindow: false,
   },
   {
     title: "Nava Labs",
@@ -84,6 +88,7 @@ export const products = [
     title: "Notes App",
     link: "/portfolio/notes-app",
     thumbnail: "/images/home-cta/Notes App.jpg",
+    newWindow: false,
   },
   {
     title: "Partnership For Resilience Design System",
@@ -99,16 +104,19 @@ export const products = [
     title: "React Router Tutorial",
     link: "/portfolio/react-router",
     thumbnail: "/images/home-cta/React Router Tutorial.jpg",
+    newWindow: false,
   },
   {
     title: "Tenzies Game",
     link: "/portfolio/tenzies-dice-game",
     thumbnail: "/images/home-cta/Tenzies Game.jpg",
+    newWindow: false,
   },
   // {
   //   title: "Travel Journal",
   //   link: "/portfolio/travel-journal",
   //   thumbnail: "/images/home-cta/Travel Journal.jpg",
+  //   newWindow: false,
   // },
   {
     title: "Your Career Tapestry Design System",

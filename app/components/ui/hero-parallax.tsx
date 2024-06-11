@@ -19,6 +19,7 @@ export const HeroParallax = ({
     title: string;
     link: string;
     thumbnail: string;
+    newWindow?: boolean;
   }[];
 }) => {
   const firstRow = products.slice(0, 5);
@@ -111,9 +112,12 @@ export const ProductCard = ({
     title: string;
     link: string;
     thumbnail: string;
+    newWindow?: boolean;
   };
   translate: MotionValue<number>;
 }) => {
+  product.newWindow ?? true;
+
   return (
     <motion.div
       style={{
@@ -127,7 +131,7 @@ export const ProductCard = ({
     >
       <Link
         href={product.link}
-        target="_blank"
+        target={product.newWindow ? "_blank" : ""}
         className="block group-hover/product:shadow-2xl "
       >
         <Image
