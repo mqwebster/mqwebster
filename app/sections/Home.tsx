@@ -27,7 +27,7 @@ export const Header = () => {
 export const products = [
   {
     title: "Mozilla 2D Breakout Game",
-    link: "https://github.com/mqwebster/mozilla-breakout-game",
+    link: "/portfolio/2d-breakout-game",
     thumbnail: "/images/home-cta/2D Breakout Game.jpg",
   },
   {
@@ -42,7 +42,7 @@ export const products = [
   },
   {
     title: "Airbnb Experiences Clone",
-    link: "https://github.com/mqwebster/airbnb-clone",
+    link: "/portfolio/airbnb-clone",
     thumbnail: "/images/home-cta/Airbnb Experiences Clone.jpg",
   },
   {
@@ -62,17 +62,17 @@ export const products = [
   },
   {
     title: "Light-Dark Mode",
-    link: "https://github.com/mqwebster/light-dark-mode",
+    link: "/portfolio/light-dark-mode",
     thumbnail: "/images/home-cta/Light-Dark Mode.jpg",
   },
   {
     title: "Marques Q. Webster Portfolio",
-    link: "/",
+    link: "https://github.com/mqwebster/mqwebster",
     thumbnail: "/images/home-cta/Marques Q Webster Portfolio.jpg",
   },
   {
     title: "Meme Generator",
-    link: "https://github.com/mqwebster/meme-generator",
+    link: "/portfolio/meme-generator",
     thumbnail: "/images/home-cta/Meme Generator.jpg",
   },
   {
@@ -82,7 +82,7 @@ export const products = [
   },
   {
     title: "Notes App",
-    link: "https://github.com/mqwebster/notes-app",
+    link: "/portfolio/notes-app",
     thumbnail: "/images/home-cta/Notes App.jpg",
   },
   {
@@ -97,19 +97,19 @@ export const products = [
   },
   {
     title: "React Router Tutorial",
-    link: "https://github.com/mqwebster/react-router-tutorial",
+    link: "/portfolio/react-router",
     thumbnail: "/images/home-cta/React Router Tutorial.jpg",
   },
   {
     title: "Tenzies Game",
-    link: "https://github.com/mqwebster/tenzies-dice-game",
+    link: "/portfolio/tenzies-dice-game",
     thumbnail: "/images/home-cta/Tenzies Game.jpg",
   },
-  {
-    title: "Travel Journal",
-    link: "https://github.com/mqwebster/travel-journal",
-    thumbnail: "/images/home-cta/Travel Journal.jpg",
-  },
+  // {
+  //   title: "Travel Journal",
+  //   link: "/portfolio/travel-journal",
+  //   thumbnail: "/images/home-cta/Travel Journal.jpg",
+  // },
   {
     title: "Your Career Tapestry Design System",
     link: "https://www.figma.com/file/THMNO5iyDufQBgz68GJKMX/Your-Career-Tapestry-Design-System?type=design&t=ejG9jcaijtIXE1xa-6",
