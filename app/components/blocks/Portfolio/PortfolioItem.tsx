@@ -33,13 +33,13 @@ export default function PortfolioItem({
               </span>
             </div>
           </div>
-          <div className="w-full relative flex rounded-lg mt-4 overflow-clip aspect-video">
+          <div className="w-full relative flex rounded-lg mt-4 overflow-clip">
             <Image
               src={image}
               alt={`${title} screenshot`}
               width={1440}
               height={1080}
-              className="object-cover object-top"
+              className="object-cover object-top aspect-video"
             />
           </div>
         </div>
