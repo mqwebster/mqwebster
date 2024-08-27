@@ -12,14 +12,15 @@ export const resumeData = {
     {
       id: 1,
       date: "Mar. 2023 - Present",
-      title: "Frontend Developer / Designer",
+      title: "Frontend Engineer / Designer",
       location: "Nava PBC | Communications | Remote",
       list: [
-        "Contributed significantly to the 2023 Public Benefit Report's design and development, achieving a #6 site ranking with about 2 minutes of average viewer engagement and nearly 10,000 page views.",
-        "Led usability testing, design iterations, and quality assurance for the deployment of filtering functionality for all blog insights to promote accessibility best practices and easier site searchability.",
-        "Facilitated the upgrade of the internal design system used between design and development team integrating Figma, Storybook, and the Next.js codebase for increased site consistency and improved efficiency.",
-        "Independently delivered high-quality work on medium/large engineering tasks with minimal guidance using frameworks and tools such as Next.js, Figma, Contentful, Google Analytics, and more.",
-        "Demonstrated strong project management skills, communicating timelines and status effectively using agile principles as the technical liaison between technical and non-technical stakeholders.",
+        "Designed and developed the 2023 Public Benefit Report, resulting in a top #6 ranking in Google Analytics and boosting user engagement to an average of 2 minutes with nearly 10,000 page views.",
+        "Led usability testing and iterative design processes to implement advanced filtering functionality, ensuring WCAG-compliant accessibility and enhancing site searchability.",
+        "Streamlined the internal design system by integrating Figma, Storybook, and Next.js, improving Figma design library consistency and development efficiency.",
+        "Utilized Python scripting to process and prepare data for the 2023 DEI Report, enabling the creation of dynamic data visualizations that enhanced the presentation of diversity metrics on the DEI report page.",
+        "Deliver high-impact engineering solutions using Next.js, Figma, and Google Analytics, achieving project goals with minimal oversight and enhancing front-end performance.",
+        "Manage complex projects by applying Agile principles, effectively communicating timelines and progress between technical and non-technical stakeholders.",
       ],
     },
     {
@@ -36,12 +37,12 @@ export const resumeData = {
     {
       id: 3,
       date: "Jan. 2022 - Dec. 2022",
-      title: "Frontend Software Developer Fellow",
+      title: "Frontend Software Developer",
       location: "Google Tech Equity Collective | Remote",
       list: [
-        "Independent study of programming and software developer concepts such as Object-Oriented Programming, Responsive Web Design, and Progressive Web Apps.",
-        "Collaborative, project-based fellowship to build a small comprehensive capstone project showcasing the use of agile software development life cycle principles in Javascript and related frameworks like Typescript and React.",
-        "Exhibited strong time management ability to turnaround week-to-week individual projects to strengthen knowledge of interactive web app development using restful APIs, Java, Javascript, HTML, and CSS.",
+        "Mastered key frontend concepts including Object-Oriented Programming, Responsive Web Design, and Progressive Web Apps, strengthening foundational development skills.",
+        "Developed a comprehensive capstone project using JavaScript, Typescript, and React, demonstrating the full software development lifecycle in an Agile environment.",
+        "Delivered comprehensive projects with a focus on JavaScript, RESTful APIs, and React, enhancing interactive web development skills and ensuring timely completion in a fast-paced environment.",
       ],
     },
     {
