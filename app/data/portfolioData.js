@@ -9,6 +9,7 @@ import breathgveganDSImage from "/public/images/design-systems/Breath'g Vegan De
 import yctDSImage from "/public/images/design-systems/YCT Design System Cover.jpg";
 
 // Project Images
+import aiImageGeneratorImage from "/public/images/projects/AI-Image-Generator.jpg";
 import breakoutGameImage from "/public/images/projects/2D Breakout Game.jpg";
 import deiReportImage from "/public/images/projects/2023 DEI Report - Cropped.jpg";
 import pbrImage from "/public/images/projects/2023 PBR - Cropped.jpg";
@@ -70,6 +71,14 @@ export const portfolioData = {
   ],
   projects: [
     {
+      title: "AI Image Generator",
+      description:
+        "This project uses OpenAI and Dall-E 3.0 to create images from text. All you have to do is tell it to imagine your wildest dreams with you.",
+      link: "/portfolio/ai-image-generator",
+      newWindow: false,
+      image: aiImageGeneratorImage,
+    },
+    {
       title: "Mozilla 2D Breakout Game",
       description:
         "This classic game was just as fun to build as it is to play.",
@@ -91,14 +100,14 @@ export const portfolioData = {
       link: "https://navapbc.com/public-benefit-reports/2023",
       image: pbrImage,
     },
-    {
-      title: "Airbnb Experiences Clone",
-      description:
-        "This is a static replica of an older Airbnb Experiences landing page.",
-      link: "/portfolio/airbnb-clone",
-      newWindow: false,
-      image: airbnbImage,
-    },
+    // {
+    //   title: "Airbnb Experiences Clone",
+    //   description:
+    //     "This is a static replica of an older Airbnb Experiences landing page.",
+    //   link: "/portfolio/airbnb-clone",
+    //   newWindow: false,
+    //   image: airbnbImage,
+    // },
     {
       title: "Insights Filtering System",
       description:

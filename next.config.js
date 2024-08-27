@@ -20,6 +20,10 @@ module.exports = {
         // port: '',
         // pathname: '/account123/**',
       },
+      {
+        protocol: "https",
+        hostname: "oaidalleapiprodscus.blob.core.windows.net",
+      },
     ],
   },
 };
