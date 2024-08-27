@@ -100,14 +100,14 @@ export const portfolioData = {
       link: "https://navapbc.com/public-benefit-reports/2023",
       image: pbrImage,
     },
-    {
-      title: "Airbnb Experiences Clone",
-      description:
-        "This is a static replica of an older Airbnb Experiences landing page.",
-      link: "/portfolio/airbnb-clone",
-      newWindow: false,
-      image: airbnbImage,
-    },
+    // {
+    //   title: "Airbnb Experiences Clone",
+    //   description:
+    //     "This is a static replica of an older Airbnb Experiences landing page.",
+    //   link: "/portfolio/airbnb-clone",
+    //   newWindow: false,
+    //   image: airbnbImage,
+    // },
     {
       title: "Insights Filtering System",
       description:
