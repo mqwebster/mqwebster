@@ -38,13 +38,13 @@ export function Contact() {
             type="resume"
           />
           <Button
-            link="mailto:marques.q.webster@gmail.com"
+            link="mailto:contact@mqwebster.com"
             text="Email"
             icon={email}
             type="email"
           />
           <Button
-            link="https://www.linkedin.com/in/marques-webster/"
+            link="https://www.linkedin.com/in/mqwebster/"
             text="LinkedIn"
             icon={linkedin}
             type="social"
