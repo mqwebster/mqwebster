@@ -13,6 +13,7 @@ import aiImageGeneratorImage from "/public/images/projects/AI-Image-Generator.jp
 import breakoutGameImage from "/public/images/projects/2D Breakout Game.jpg";
 import deiReportImage from "/public/images/projects/2023 DEI Report - Cropped.jpg";
 import pbrImage from "/public/images/projects/2023 PBR - Cropped.jpg";
+import pbr2024Image from "/public/images/projects/2024 PBR - Cropped.jpg";
 import airbnbImage from "/public/images/projects/Airbnb Experiences Clone.jpg";
 import insightsImage from "/public/images/projects/Insights Filtering System - Cropped.jpg";
 import lightdarkImage from "/public/images/projects/Light-Dark Mode.jpg";
@@ -99,6 +100,13 @@ export const portfolioData = {
         "I was instrumental in designing, prototyping, and developing the digital experience for the report, showcasing Nava's commitment to making a positive impact.",
       link: "https://navapbc.com/public-benefit-reports/2023",
       image: pbrImage,
+    },
+    {
+      title: "2024 Public Benefit Report",
+      description:
+        "I led the development and implementation of the report including interactive animations using Framer Motion showcasing the multiple layers of service delivery.",
+      link: "https://navapbc.com/public-benefit-reports/2024",
+      image: pbr2024Image,
     },
     // {
     //   title: "Airbnb Experiences Clone",

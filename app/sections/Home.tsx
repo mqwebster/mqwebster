@@ -18,7 +18,7 @@ export const Header = () => {
       <span className="font-body type-preset-base">{`Hey, I'm...`}</span>
       <h1 className="font-title type-preset-1">Marques Webster</h1>
       <p className="font-body type-preset-lg max-w-2xl">
-        {`And I'm a Frontend Software Developer that loves to build cool experiences.`}
+        {`And I'm a Frontend Software Engineer and Desinger that loves to build cool experiences.`}
       </p>
     </div>
   );
@@ -40,6 +40,11 @@ export const products = [
     title: "Nava PBC 2023 Public Benefit Report",
     link: "https://navapbc.com/public-benefit-reports/2023",
     thumbnail: "/images/home-cta/2023 PBR.jpg",
+  },
+  {
+    title: "Nava PBC 2024 Public Benefit Report",
+    link: "https://navapbc.com/public-benefit-reports/2024",
+    thumbnail: "/images/home-cta/2024 PBR.jpg",
   },
   {
     title: "Airbnb Experiences Clone",
