@@ -1,7 +1,7 @@
 # Hi, I'm Marques Webster! 👋🏽
   **LinkedIn:** [/mqwebster](https://www.linkedin.com/in/mqwebster/)
   
-  **Email:** [marques.q.webster@gmail.com](mailto:marques.q.webster@gmail.com)
+  **Email:** [contact@mqwebster.com](mailto:contact@mqwebster.com)
 
 ---
 
