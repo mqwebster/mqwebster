@@ -18,7 +18,7 @@ export const Header = () => {
       <span className="font-body type-preset-base">{`Hey, I'm...`}</span>
       <h1 className="font-title type-preset-1">Marques Webster</h1>
       <p className="font-body type-preset-lg max-w-2xl">
-        {`And I'm a Frontend Software Engineer and Desinger that loves to build cool experiences.`}
+        {`And I'm a Frontend Software Engineer and Desinger that loves to build user-centered and dynamic experiences.`}
       </p>
     </div>
   );
