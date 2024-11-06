@@ -1,6 +1,6 @@
 "use client";
 // @ts-ignore
-import PortfolioPageHeader from "@/app/components/blocks/Portfolio/PortfolioPageHeader.tsx";
+import PortfolioPageHeader from "@/components/blocks/Portfolio/PortfolioPageHeader.tsx";
 import data from "./data.js";
 
 import Navbar from "./components/Navbar";

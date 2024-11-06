@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Button from "../components/atoms/Button";
+import Button from "@/components/atoms/Button";
 
 import download from "/public/icons/download-icon.png";
 import email from "/public/icons/email-icon.png";
@@ -10,16 +10,16 @@ import linkedin from "/public/icons/linkedin-icon.png";
 export function Contact() {
   const [visitors, setVisitors] = useState("");
 
-  useEffect(() => {
-    const apiURL =
-      "https://rty7kmnenc.execute-api.us-east-2.amazonaws.com/api/siteViewCount";
+  // useEffect(() => {
+  //   const apiURL =
+  //     "https://rty7kmnenc.execute-api.us-east-2.amazonaws.com/api/siteViewCount";
 
-    fetch(apiURL)
-      .then((res) => res.json())
-      .then((data) => {
-        setVisitors(data.body);
-      });
-  }, []);
+  //   fetch(apiURL)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setVisitors(data.body);
+  //     });
+  // }, []);
 
   return (
     <section

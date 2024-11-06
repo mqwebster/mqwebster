@@ -1,5 +1,5 @@
 "use client";
-import PortfolioPageHeader from "@/app/components/blocks/Portfolio/PortfolioPageHeader";
+import PortfolioPageHeader from "@/components/blocks/Portfolio/PortfolioPageHeader";
 import App from "./App";
 
 export default function Page() {

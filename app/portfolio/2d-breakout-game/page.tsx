@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import PortfolioPageHeader from "@/app/components/blocks/Portfolio/PortfolioPageHeader";
+import PortfolioPageHeader from "@/components/blocks/Portfolio/PortfolioPageHeader";
 import Confetti from "react-confetti";
 import RestartIcon from "./RestartIcon";
 

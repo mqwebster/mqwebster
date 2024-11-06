@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 
 import { useEffect, useState } from "react";
-import PortfolioPageHeader from "@/app/components/blocks/Portfolio/PortfolioPageHeader";
+import PortfolioPageHeader from "@/components/blocks/Portfolio/PortfolioPageHeader";
 import Confetti from "react-confetti";
 const Dice = dynamic(() => import("./Dice"), { ssr: false });
 

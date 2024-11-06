@@ -1,16 +1,16 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
-import Navbar from "./components/blocks/navbar";
+import Navbar from "@/components/blocks/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Marques Webster | Resume & Portfolio",
+  title: "Marques Webster | Frontend Software Engineer and Designer",
   description:
     "This portfolio is a gateway into the design and development abilities that drive my work.",
-  metadataBase: new URL("https://mqwebster.vercel.app"),
+  metadataBase: new URL("https://mqwebster.com"),
 };
 
 export default function RootLayout({ children }) {

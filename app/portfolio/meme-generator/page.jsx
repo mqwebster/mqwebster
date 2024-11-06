@@ -1,5 +1,5 @@
 "use client";
-import PortfolioPageHeader from "@/app/components/blocks/Portfolio/PortfolioPageHeader";
+import PortfolioPageHeader from "@/components/blocks/Portfolio/PortfolioPageHeader";
 import Header from "./components/Header";
 import Meme from "./components/Meme";
 
