@@ -1,0 +1,12 @@
+fragment ProjectImageFields on ProjectImage {
+  __typename
+  sys {
+    id
+  }
+  title
+  link
+  image {
+    ...ImageFields
+  }
+  newTab
+}

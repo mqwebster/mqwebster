@@ -1,0 +1,44 @@
+fragment PageFields on Page {
+  __typename
+  sys {
+    id
+  }
+  title
+  slug
+  description
+  image {
+    ...ImageFields
+  }
+  pageHero {
+    ...PageHeroFields
+  }
+  pageContentCollection {
+    items {
+      __typename
+      ... on ProjectGrid {
+        sys {
+          id
+        }
+        title
+        projectListCollection {
+          items {
+            ... on ProjectCard {
+              ...ProjectCardFields
+            }
+          }
+        }
+      }
+      ... on SectionHeader {
+        ...SectionHeaderFields
+      }
+    }
+  }
+}
+
+query Page($locale: String, $preview: Boolean) {
+  pageCollection(limit: 1, locale: $locale, preview: $preview) {
+    items {
+      ...PageFields
+    }
+  }
+}

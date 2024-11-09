@@ -1,0 +1,19 @@
+fragment PageHeroFields on PageHero {
+  __typename
+  sys {
+    id
+  }
+  type
+  beforeText
+  mainText
+  afterText
+  buttonText
+  buttonLink
+  secondaryButtonText
+  secondaryButtonLink
+  projectImageListCollection {
+    items {
+      ...ProjectImageFields
+    }
+  }
+}

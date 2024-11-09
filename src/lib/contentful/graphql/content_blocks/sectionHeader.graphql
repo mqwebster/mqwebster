@@ -1,0 +1,12 @@
+fragment SectionHeaderFields on SectionHeader {
+  sys {
+    id
+  }
+  title
+  body {
+    json
+  }
+  buttonText
+  buttonLink
+  color
+}

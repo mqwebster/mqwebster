@@ -1,0 +1,11 @@
+fragment ProjectCardFields on ProjectCard {
+  __typename
+  sys {
+    id
+  }
+  title
+  plainBody
+
+  buttonText
+  buttonLink
+}

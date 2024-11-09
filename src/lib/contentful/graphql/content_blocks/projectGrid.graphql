@@ -1,0 +1,13 @@
+fragment ProjectGridFields on ProjectGrid {
+  __typename
+  sys {
+    id
+  }
+  projectListCollection {
+    items {
+      ... on ProjectCard {
+        ...ProjectCardFields
+      }
+    }
+  }
+}
