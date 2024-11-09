@@ -1,11 +1,11 @@
 "use client";
 // @ts-ignore
-import PortfolioPageHeader from "@/components/blocks/Portfolio/PortfolioPageHeader.tsx";
+import PortfolioPageHeader from "@/src/components/blocks/Portfolio/PortfolioPageHeader.jsx";
 import data from "./data.js";
 
-import Navbar from "./components/Navbar";
-import Card from "./components/Card";
-import Hero from "./components/Hero";
+import Navbar from "./components/Navbar/index.jsx";
+import Card from "./components/Card/index.jsx";
+import Hero from "./components/Hero/index.jsx";
 
 export default function Page() {
   const dataElements = data.map((item) => {

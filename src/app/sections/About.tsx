@@ -1,4 +1,4 @@
-import Timeline from "@/components/blocks/Timeline/Timeline";
+import Timeline from "@/src/components/blocks/Timeline/Timeline";
 
 export function About() {
   return (

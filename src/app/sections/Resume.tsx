@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ResumeItem from "@/components/blocks/Resume/ResumeItem";
+import ResumeItem from "@/src/components/blocks/Resume/ResumeItem";
 import { resumeData } from "../data/resumeData.js";
 
 export function Resume() {

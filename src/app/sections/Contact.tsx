@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Button from "@/components/atoms/Button";
+import Button from "@/src/components/atoms/Button";
 
 import download from "/public/icons/download-icon.png";
 import email from "/public/icons/email-icon.png";

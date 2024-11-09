@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import PortfolioPageHeader from "@/components/blocks/Portfolio/PortfolioPageHeader";
+import PortfolioPageHeader from "@/src/components/blocks/Portfolio/PortfolioPageHeader";
 import Image from "next/image";
 
 export default function Page() {

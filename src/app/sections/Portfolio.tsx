@@ -1,4 +1,4 @@
-import { PortfolioDropdown } from "@/components/blocks/Portfolio/PortfolioDropdown";
+import { PortfolioDropdown } from "@/src/components/blocks/Portfolio/PortfolioDropdown";
 
 export function Portfolio() {
   return (

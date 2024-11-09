@@ -1,4 +1,4 @@
-import { portfolioData } from "@/app/data/portfolioData";
+import { portfolioData } from "@/src/app/data/portfolioData";
 import PortfolioItem from "./PortfolioItem";
 
 export const PortfolioDropdown = ({

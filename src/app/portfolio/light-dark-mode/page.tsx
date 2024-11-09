@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import PortfolioPageHeader from "@/components/blocks/Portfolio/PortfolioPageHeader";
+import PortfolioPageHeader from "@/src/components/blocks/Portfolio/PortfolioPageHeader";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 
