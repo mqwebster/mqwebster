@@ -1,11 +1,9 @@
-"use client";
-// @ts-ignore
-import PortfolioPageHeader from "@/src/components/blocks/Portfolio/PortfolioPageHeader.jsx";
+import PortfolioPageHeader from "@/src/components/blocks/Portfolio/PortfolioPageHeader";
 import data from "./data.js";
 
-import Navbar from "./components/Navbar/index.jsx";
-import Card from "./components/Card/index.jsx";
-import Hero from "./components/Hero/index.jsx";
+import Navbar from "@/src/app/portfolio/airbnb-clone/components/Navbar";
+import Card from "@/src/app/portfolio/airbnb-clone/components/Card";
+import Hero from "@/src/app/portfolio/airbnb-clone/components/Hero";
 
 export default function Page() {
   const dataElements = data.map((item) => {

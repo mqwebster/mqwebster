@@ -1,5 +1,4 @@
-// @ts-ignore
-import PortfolioPageHeader from "@/src/components/blocks/Portfolio/PortfolioPageHeader.jsx";
+import PortfolioPageHeader from "@/src/components/blocks/Portfolio/PortfolioPageHeader";
 import "./Main.jsx";
 
 export default function Page() {
