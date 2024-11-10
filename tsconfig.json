@@ -21,18 +21,6 @@
       }
     ]
   },
-  "include": [
-    "next-env.d.ts",
-    ".next/types/**/*.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "src/app/components/blocks/navbar.tsx",
-    "src/app/components/blocks/**/*.js",
-    "src/app/portfolio/meme-generator/page.jsx",
-    "src/app/portfolio/notes-app/page.jsx",
-    "src/app/data/portfolioData.js",
-    "src/app/data/resumeData.js",
-    "src/app/data/timelineData.js"
-  ],
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "src/**/*", "types/**/*"],
   "exclude": ["node_modules"]
 }
