@@ -9,22 +9,14 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { PageHeroInterface } from "@/types/blocks/PageHero/PageHeroInterface";
 
-export const HeroParallax = ({
-  children,
-  products,
-}: {
-  children: React.ReactNode;
-  products: {
-    title: string;
-    link: string;
-    thumbnail: string;
-    newWindow?: boolean;
-  }[];
-}) => {
-  const firstRow = products.slice(0, 5);
-  const secondRow = products.slice(5, 10);
-  const thirdRow = products.slice(10, 15);
+import { ProjectImage } from "../atoms/ProjectImage";
+
+export const HeroParallax = ({ ...props }: PageHeroInterface) => {
+  const firstRow = props.projectImageListCollection?.items.slice(0, 5);
+  const secondRow = props.projectImageListCollection?.items.slice(5, 10);
+  const thirdRow = props.projectImageListCollection?.items.slice(10, 15);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -60,9 +52,17 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="overflow-x-clip antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
-      {children}
+      <Header
+        beforeText={props.beforeText}
+        mainText={props.mainText}
+        afterText={props.afterText}
+        buttonText={props.buttonText}
+        buttonLink={props.buttonLink}
+        secondaryButtonText={props.secondaryButtonText}
+        secondaryButtonLink={props.secondaryButtonLink}
+      />
       <motion.div
         style={{
           rotateX,
@@ -73,29 +73,29 @@ export const HeroParallax = ({
         className=""
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-          {firstRow.map((product) => (
-            <ProductCard
-              product={product}
+          {firstRow?.map((project) => (
+            <ProjectImage
+              project={project}
               translate={translateX}
-              key={product.title}
+              key={project.title}
             />
           ))}
         </motion.div>
         <motion.div className="flex flex-row  mb-20 space-x-20 ">
-          {secondRow.map((product) => (
-            <ProductCard
-              product={product}
+          {secondRow?.map((project) => (
+            <ProjectImage
+              project={project}
               translate={translateXReverse}
-              key={product.title}
+              key={project.title}
             />
           ))}
         </motion.div>
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((product) => (
-            <ProductCard
-              product={product}
+          {thirdRow?.map((project) => (
+            <ProjectImage
+              project={project}
               translate={translateX}
-              key={product.title}
+              key={project.title}
             />
           ))}
         </motion.div>
@@ -104,48 +104,22 @@ export const HeroParallax = ({
   );
 };
 
-export const ProductCard = ({
-  product,
-  translate,
-}: {
-  product: {
-    title: string;
-    link: string;
-    thumbnail: string;
-    newWindow?: boolean;
-  };
-  translate: MotionValue<number>;
+export const Header = ({
+  beforeText = null,
+  mainText,
+  afterText,
+  buttonText,
+  buttonLink,
+  secondaryButtonText,
+  secondaryButtonLink,
 }) => {
-  product.newWindow ?? true;
-
   return (
-    <motion.div
-      style={{
-        x: translate,
-      }}
-      whileHover={{
-        y: -20,
-      }}
-      key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
-    >
-      <Link
-        href={product.link}
-        target={product.newWindow ? "_blank" : ""}
-        className="block group-hover/product:shadow-2xl "
-      >
-        <Image
-          src={product.thumbnail}
-          height={600}
-          width={600}
-          className="object-cover object-left-top absolute h-full w-full inset-0"
-          alt={product.title}
-        />
-      </Link>
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
-      </h2>
-    </motion.div>
+    <div className="md:max-w-screen-xl relative mx-auto mt-[20vh] px-8 w-full">
+      {beforeText && (
+        <span className="font-body type-preset-base">{beforeText}</span>
+      )}
+      <h1 className="font-title type-preset-1">{mainText}</h1>
+      <p className="font-body type-preset-lg max-w-2xl">{afterText}</p>
+    </div>
   );
 };
