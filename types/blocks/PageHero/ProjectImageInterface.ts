@@ -1,4 +1,4 @@
-import { ContentfulImageInterface } from "../ContentfulImageInterface";
+import { ContentfulImageInterface } from "@/types/ContentfulImageInterface";
 
 export interface ProjectImageInterface {
   id: string;

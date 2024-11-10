@@ -1,8 +1,8 @@
 import { ProjectImageInterface } from "./ProjectImageInterface";
 
 export interface PageHeroInterface {
-  id: string;
-  type: string;
+  sys: { id: string };
+  type: "Default" | "Macbook Scroll" | "Projects List";
   beforeText?: string;
   mainText: string;
   afterText?: string;
@@ -10,5 +10,5 @@ export interface PageHeroInterface {
   buttonLink?: string;
   secondaryButtonText?: string;
   secondaryButtonLink?: string;
-  projectImageList: Array<ProjectImageInterface>;
+  projectImageListCollection: Array<ProjectImageInterface>;
 }
