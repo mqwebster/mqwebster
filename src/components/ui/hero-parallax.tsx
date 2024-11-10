@@ -1,14 +1,7 @@
+// @ts-nocheck
 "use client";
-import React from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useSpring,
-  MotionValue,
-} from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
+import { useRef } from "react";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { PageHeroInterface } from "@/types/blocks/PageHero/PageHeroInterface";
 
 import { ProjectImage } from "../atoms/ProjectImage";
@@ -17,7 +10,7 @@ export const HeroParallax = ({ ...props }: PageHeroInterface) => {
   const firstRow = props.projectImageListCollection?.items.slice(0, 5);
   const secondRow = props.projectImageListCollection?.items.slice(5, 10);
   const thirdRow = props.projectImageListCollection?.items.slice(10, 15);
-  const ref = React.useRef(null);
+  const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],

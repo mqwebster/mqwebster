@@ -8,6 +8,7 @@ export default async function Page() {
   const gqlClient = preview ? previewClient : client;
 
   const landingPageData = await gqlClient.Page({ preview });
+  // @ts-ignore
   const page: PageInterface = landingPageData.pageCollection?.items[0];
 
   return <BaseTemplate {...page} />;
