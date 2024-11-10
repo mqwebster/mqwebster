@@ -2422,35 +2422,8 @@ export type PageQueryVariables = Exact<{
 }>;
 
 
-export type PageQuery = { __typename: 'Query', pageCollection?: { __typename: 'PageCollection', items: Array<{ __typename: 'Page', title?: string | null, slug?: string | null, description?: string | null, sys: { __typename: 'Sys', id: string }, image?: { __typename: 'Asset', title?: string | null, description?: string | null, width?: number | null, height?: number | null, url?: string | null, contentType?: string | null, sys: { __typename: 'Sys', id: string } } | null, pageHero?: { __typename: 'PageHero', type?: string | null, beforeText?: string | null, mainText?: string | null, afterText?: string | null, buttonText?: string | null, buttonLink?: string | null, secondaryButtonText?: string | null, secondaryButtonLink?: string | null, sys: { __typename: 'Sys', id: string }, projectImageListCollection?: { __typename: 'PageHeroProjectImageListCollection', items: Array<{ __typename: 'ProjectImage', title?: string | null, link?: string | null, newTab?: boolean | null, sys: { __typename: 'Sys', id: string }, image?: { __typename: 'Asset', title?: string | null, description?: string | null, width?: number | null, height?: number | null, url?: string | null, contentType?: string | null, sys: { __typename: 'Sys', id: string } } | null } | null> } | null } | null, pageContentCollection?: { __typename: 'PagePageContentCollection', items: Array<{ __typename: 'ProjectDropdown' } | { __typename: 'ProjectGrid', title?: string | null, sys: { __typename: 'Sys', id: string }, projectListCollection?: { __typename: 'ProjectGridProjectListCollection', items: Array<{ __typename: 'ProjectCard', title?: string | null, plainBody?: string | null, buttonText?: string | null, buttonLink?: string | null, sys: { __typename: 'Sys', id: string } } | null> } | null } | { __typename: 'SectionHeader', title?: string | null, buttonText?: string | null, buttonLink?: string | null, color?: string | null, sys: { __typename: 'Sys', id: string }, body?: { __typename: 'SectionHeaderBody', json: any } | null } | { __typename: 'Timeline' } | null> } | null } | null> } | null };
+export type PageQuery = { __typename: 'Query', pageCollection?: { __typename: 'PageCollection', items: Array<{ __typename: 'Page', title?: string | null, slug?: string | null, description?: string | null, sys: { __typename: 'Sys', id: string }, image?: { __typename: 'Asset', title?: string | null, description?: string | null, width?: number | null, height?: number | null, url?: string | null, contentType?: string | null, sys: { __typename: 'Sys', id: string } } | null, pageHero?: { __typename: 'PageHero', type?: string | null, beforeText?: string | null, mainText?: string | null, afterText?: string | null, buttonText?: string | null, buttonLink?: string | null, secondaryButtonText?: string | null, secondaryButtonLink?: string | null, sys: { __typename: 'Sys', id: string }, projectImageListCollection?: { __typename: 'PageHeroProjectImageListCollection', items: Array<{ __typename: 'ProjectImage', title?: string | null, link?: string | null, newTab?: boolean | null, sys: { __typename: 'Sys', id: string }, image?: { __typename: 'Asset', title?: string | null, description?: string | null, width?: number | null, height?: number | null, url?: string | null, contentType?: string | null, sys: { __typename: 'Sys', id: string } } | null } | null> } | null } | null, pageContentCollection?: { __typename: 'PagePageContentCollection', items: Array<{ __typename: 'ProjectDropdown' } | { __typename: 'ProjectGrid', sys: { __typename: 'Sys', id: string }, projectListCollection?: { __typename: 'ProjectGridProjectListCollection', items: Array<{ __typename: 'ProjectCard', title?: string | null, plainBody?: string | null, buttonText?: string | null, buttonLink?: string | null, sys: { __typename: 'Sys', id: string } } | null> } | null } | { __typename: 'SectionHeader', title?: string | null, buttonText?: string | null, buttonLink?: string | null, color?: string | null, sys: { __typename: 'Sys', id: string }, body?: { __typename: 'SectionHeaderBody', json: any } | null } | { __typename: 'Timeline' } | null> } | null } | null> } | null };
 
-export const ProjectCardFieldsFragmentDoc = gql`
-    fragment ProjectCardFields on ProjectCard {
-  __typename
-  sys {
-    id
-  }
-  title
-  plainBody
-  buttonText
-  buttonLink
-}
-    `;
-export const ProjectGridFieldsFragmentDoc = gql`
-    fragment ProjectGridFields on ProjectGrid {
-  __typename
-  sys {
-    id
-  }
-  projectListCollection {
-    items {
-      ... on ProjectCard {
-        ...ProjectCardFields
-      }
-    }
-  }
-}
-    `;
 export const ImageFieldsFragmentDoc = gql`
     fragment ImageFields on Asset {
   __typename
@@ -2495,7 +2468,36 @@ export const PageHeroFieldsFragmentDoc = gql`
   secondaryButtonLink
   projectImageListCollection {
     items {
-      ...ProjectImageFields
+      ... on ProjectImage {
+        ...ProjectImageFields
+      }
+    }
+  }
+}
+    `;
+export const ProjectCardFieldsFragmentDoc = gql`
+    fragment ProjectCardFields on ProjectCard {
+  __typename
+  sys {
+    id
+  }
+  title
+  plainBody
+  buttonText
+  buttonLink
+}
+    `;
+export const ProjectGridFieldsFragmentDoc = gql`
+    fragment ProjectGridFields on ProjectGrid {
+  __typename
+  sys {
+    id
+  }
+  projectListCollection {
+    items {
+      ... on ProjectCard {
+        ...ProjectCardFields
+      }
     }
   }
 }
@@ -2533,17 +2535,7 @@ export const PageFieldsFragmentDoc = gql`
     items {
       __typename
       ... on ProjectGrid {
-        sys {
-          id
-        }
-        title
-        projectListCollection {
-          items {
-            ... on ProjectCard {
-              ...ProjectCardFields
-            }
-          }
-        }
+        ...ProjectGridFields
       }
       ... on SectionHeader {
         ...SectionHeaderFields
@@ -2564,6 +2556,7 @@ export const PageDocument = gql`
 ${ImageFieldsFragmentDoc}
 ${PageHeroFieldsFragmentDoc}
 ${ProjectImageFieldsFragmentDoc}
+${ProjectGridFieldsFragmentDoc}
 ${ProjectCardFieldsFragmentDoc}
 ${SectionHeaderFieldsFragmentDoc}`;
 

@@ -13,7 +13,9 @@ fragment PageHeroFields on PageHero {
   secondaryButtonLink
   projectImageListCollection {
     items {
-      ...ProjectImageFields
+      ... on ProjectImage {
+        ...ProjectImageFields
+      }
     }
   }
 }

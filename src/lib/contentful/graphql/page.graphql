@@ -16,17 +16,7 @@ fragment PageFields on Page {
     items {
       __typename
       ... on ProjectGrid {
-        sys {
-          id
-        }
-        title
-        projectListCollection {
-          items {
-            ... on ProjectCard {
-              ...ProjectCardFields
-            }
-          }
-        }
+        ...ProjectGridFields
       }
       ... on SectionHeader {
         ...SectionHeaderFields
