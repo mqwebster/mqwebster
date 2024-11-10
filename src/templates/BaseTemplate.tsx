@@ -4,7 +4,6 @@ import { PageInterface } from "@/types/PageInterface";
 
 import PageHero from "../components/blocks/PageHero/PageHero";
 import Navbar from "../components/blocks/navbar";
-import { PageHeroInterface } from "@/types/blocks/PageHero/PageHeroInterface";
 const ProjectGrid = dynamic(
   () => import("@/src/components/blocks/ProjectGrid/ProjectGrid")
 );
@@ -12,15 +11,7 @@ const SectionHeader = dynamic(
   () => import("@/src/components/blocks/SectionHeader/SectionHeader")
 );
 
-function BaseTemplate({
-  id,
-  title,
-  slug,
-  description,
-  image,
-  pageHero,
-  pageContentCollection,
-}: PageInterface) {
+function BaseTemplate({ ...props }: PageInterface) {
   const getComponent = (entry: any, index) => {
     const typename = entry.__typename;
 
@@ -37,10 +28,10 @@ function BaseTemplate({
       <Navbar />
 
       <main>
-        <PageHero {...pageHero} />
+        <PageHero {...props.pageHero} />
 
         <div className="flex flex-col items-center justify-between">
-          {pageContentCollection.items.map((block, i) =>
+          {props.pageContentCollection.items.map((block, i) =>
             getComponent(block, i)
           )}
         </div>
