@@ -4,6 +4,12 @@ module.exports = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "images.ctfassets.net",
+        // port: '',
+        // pathname: '/account123/**',
+      },
+      {
+        protocol: "https",
         hostname: "aceternity.com",
         // port: '',
         // pathname: '/account123/**',
