@@ -9,7 +9,7 @@ export function formatPage(page) {
     description: page.description,
     image: formatImage(page.socialImage),
     pageHero: page.pageHero,
-    pageContent: page.contentCollection.items,
+    pageContentCollection: page.contentCollection.items,
   };
 
   return formattedPage;
