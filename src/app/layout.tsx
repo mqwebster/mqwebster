@@ -2,8 +2,6 @@ import { Inter } from "next/font/google";
 import "/src/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
-import Navbar from "@/src/components/blocks/navbar";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -29,8 +27,8 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
+
       <body className={`relative ${inter.className}`}>
-        <Navbar />
         {children}
         <Analytics />
       </body>

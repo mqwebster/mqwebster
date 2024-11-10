@@ -1,5 +1,5 @@
 import { ContentfulImageInterface } from "./ContentfulImageInterface";
-import { PageHeroInterface } from "./PageHero/PageHeroInterface";
+import { PageHeroInterface } from "./blocks/PageHero/PageHeroInterface";
 
 export interface PageInterface {
   id: string;
@@ -8,5 +8,5 @@ export interface PageInterface {
   description: string;
   image: ContentfulImageInterface;
   pageHero: PageHeroInterface;
-  pageContent: any;
+  pageContentCollection: any;
 }
