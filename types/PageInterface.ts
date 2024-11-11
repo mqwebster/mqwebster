@@ -8,5 +8,5 @@ export interface PageInterface {
   description: string;
   image: ContentfulImageInterface;
   pageHero: PageHeroInterface;
-  pageContentCollection: any;
+  pageContentCollection?: any;
 }

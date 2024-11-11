@@ -10,5 +10,5 @@ export interface PageHeroInterface {
   buttonLink?: string;
   secondaryButtonText?: string;
   secondaryButtonLink?: string;
-  projectImageListCollection: Array<ProjectImageInterface>;
+  projectImageListCollection?: Array<ProjectImageInterface>;
 }
