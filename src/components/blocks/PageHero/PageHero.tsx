@@ -20,7 +20,7 @@ function PageHero(props: PageHeroInterface) {
 
   if (props.type === "Projects List") {
     return (
-      <section className="overflow-clip w-full z-0 pb-40">
+      <section className="w-full z-0 pb-40">
         <HeroParallax {...props}></HeroParallax>
       </section>
     );
