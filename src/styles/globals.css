@@ -60,6 +60,10 @@ details summary::-webkit-details-marker {
     scroll-margin-block-start: 20vh;
   }
 
+  .blueScrollbar {
+    scrollbar-color: #ffffff #228ee8;
+  }
+
   .type-preset-1 {
     font-size: 112px;
     line-height: 140px;

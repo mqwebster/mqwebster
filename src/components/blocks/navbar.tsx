@@ -1,11 +1,19 @@
 "use client";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+const navItems = [
+  { link: "/", text: "Home" },
+  { link: "/#about", text: "About" },
+  { link: "/#portfolio", text: "Portfolio" },
+  { link: "/#resume", text: "Resume" },
+  { link: "/#contact", text: "Contact" },
+];
+
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
-  // const [activeSection, setActiveSection] = useState("");
 
   function toggle() {
     setMenu(!menu);
@@ -19,115 +27,92 @@ export default function Navbar() {
     }
   }, [menu]);
 
-  // function checkScroll(el, offset) {
-  //   const scrollTop = window.scrollY + offset;
+  const { scrollYProgress } = useScroll();
+  const bgColor = useTransform(
+    scrollYProgress,
+    [0, 0.18, 0.2],
+    ["#228ee800", "#228ee800", "#228ee8ff"]
+  );
+  const fgColor = useTransform(
+    scrollYProgress,
+    [0, 0.18, 0.2],
+    ["#000000", "#000000", "#ffffff"]
+  );
 
-  //   const elTop = el.offsetTop;
-  //   const elBottom = el.offsetTop + el.offsetHeight;
-
-  //   if (elTop < scrollTop && scrollTop < elBottom) {
-  //     setActiveSection(el.id === "" ? el.id : `#${el.id}`);
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   const sections = document.querySelectorAll("section");
-
-  //   window.addEventListener("scroll", () => {
-  //     sections.forEach((section) => {
-  //       checkScroll(section, 400);
-  //     });
-  //   });
-
-  //   return () => {
-  //     window.removeEventListener("scroll", () => {
-  //       sections.forEach((section) => {
-  //         checkScroll(section, 400);
-  //       });
-  //     });
-  //   };
-  // }, []);
-
-  const navItems = [
-    { link: "/", text: "Home" },
-    { link: "/#about", text: "About" },
-    { link: "/#portfolio", text: "Portfolio" },
-    { link: "/#resume", text: "Resume" },
-    { link: "/#contact", text: "Contact" },
-  ];
   return (
-    <nav
+    <motion.nav
       id="navbar"
-      className={`max-h-[112px] w-full py-4 bg-blue-base sticky top-0 z-50`}
+      style={{ backgroundColor: bgColor }}
+      className={`w-full py-4 sticky top-0 z-50 ${
+        menu ? "pr-4 !bg-blue-base" : "pr-0"
+      }`}
     >
-      <div className="mx-auto flex justify-between items-center md:max-w-screen-xl px-8">
+      <div className="flex justify-between items-center md:max-w-screen-xl px-8 mx-auto">
         <Link href={`/`}>
           <Image
             src="/images/MarquesWebster.png"
             alt="Marques Webster"
-            width={72}
-            height={72}
+            width={60}
+            height={60}
           />
         </Link>
 
         <div>
           <div
-            className="flex lg:hidden items-center h-[60px] cursor-pointer"
+            className="flex items-center h-[48px] cursor-pointer"
             onClick={toggle}
           >
-            <div className="relative flex flex-col justify-center items-end gap-2 w-[60px]">
-              <div
-                className={`w-2/3 h-1 bg-white rounded-lg transition-all duration-500 ${
-                  menu && "absolute -rotate-[405deg] origin-center top-0"
+            <div className="relative flex flex-col justify-center items-end gap-2 w-[48px]">
+              <motion.div
+                style={{ backgroundColor: fgColor }}
+                className={`w-2/3 h-1 dark:!bg-white rounded-lg transition-transform duration-500 ${
+                  menu &&
+                  "absolute -rotate-[405deg] origin-center top-0 !bg-white"
                 }`}
-              ></div>
-              <div
-                className={`w-full h-1 bg-white rounded-lg transition-all duration-500 ${
-                  menu && " scale-0 bg-transparent"
+              ></motion.div>
+              <motion.div
+                style={{ backgroundColor: fgColor }}
+                className={`w-full h-1 dark:!bg-white rounded-lg transition-transform duration-500 ${
+                  menu && " scale-0 bg-transparent !bg-white"
                 }`}
-              ></div>
-              <div
-                className={`w-2/3 h-1 bg-white rounded-lg transition-all duration-500 ${
-                  menu && "absolute rotate-[405deg] origin-center bottom-0"
+              ></motion.div>
+              <motion.div
+                style={{ backgroundColor: fgColor }}
+                className={`w-2/3 h-1 dark:!bg-white rounded-lg transition-transform duration-500 ${
+                  menu &&
+                  "absolute rotate-[405deg] origin-center bottom-0 !bg-white"
                 }`}
-              ></div>
+              ></motion.div>
             </div>
           </div>
 
-          <ul className="hidden lg:flex flex-row gap-4 font-body type-preset-base text-white">
-            {navItems.map((item) => {
-              return (
-                <li
-                  key={item.text}
-                  className="group/navItem flex flex-col gap-1"
-                >
-                  <Link href={`${item.link}`}>{item.text}</Link>
-                  <div
-                    className={`h-[3px] w-0 rounded-lg group-hover/navItem:w-full bg-white transition-[width] duration-500`}
-                    // ${activeSection == item.link && "w-full"}
-                  ></div>
-                </li>
-              );
-            })}
-          </ul>
-
           {menu && (
             <div
-              className={`absolute top-[100%] left-0 w-full overflow-hidden`}
+              className={`absolute top-full left-0 w-full h-screen pb-16 overflow-scroll bg-blue-base blueScrollbar`}
             >
-              <ul className="flex lg:hidden flex-col gap-8 w-full h-[100vh] font-title text-white type-preset-2 bg-blue-base p-8">
-                {navItems.map((item) => {
-                  return (
-                    <li key={item.text} onClick={toggle}>
-                      <Link href={item.link}>{item.text}</Link>
-                    </li>
-                  );
-                })}
-              </ul>
+              <div className="flex justify-between items-center md:max-w-screen-xl px-8 mx-auto">
+                <ul className="flex flex-col gap-2 type-preset-2 font-title text-white py-8">
+                  {navItems.map((item) => {
+                    return (
+                      <li
+                        key={item.text}
+                        className="group/navItem flex flex-col w-fit"
+                      >
+                        <Link href={`${item.link}`} onClick={toggle}>
+                          {item.text}
+                        </Link>
+                        <div
+                          className={`h-3 w-0 rounded-lg group-hover/navItem:w-full bg-white transition-[width] duration-500`}
+                        ></div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </div>
           )}
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
