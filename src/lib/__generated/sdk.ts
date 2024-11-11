@@ -2468,9 +2468,7 @@ export const PageHeroFieldsFragmentDoc = gql`
   secondaryButtonLink
   projectImageListCollection {
     items {
-      ... on ProjectImage {
-        ...ProjectImageFields
-      }
+      ...ProjectImageFields
     }
   }
 }
@@ -2495,9 +2493,7 @@ export const ProjectGridFieldsFragmentDoc = gql`
   }
   projectListCollection {
     items {
-      ... on ProjectCard {
-        ...ProjectCardFields
-      }
+      ...ProjectCardFields
     }
   }
 }
