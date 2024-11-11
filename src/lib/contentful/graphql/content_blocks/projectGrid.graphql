@@ -5,9 +5,7 @@ fragment ProjectGridFields on ProjectGrid {
   }
   projectListCollection {
     items {
-      ... on ProjectCard {
-        ...ProjectCardFields
-      }
+      ...ProjectCardFields
     }
   }
 }
