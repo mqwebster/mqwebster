@@ -10,7 +10,6 @@ export const ProjectImage = ({
   project: ProjectImageInterface;
   translate: MotionValue<number>;
 }) => {
-  console.log(project);
   return (
     <motion.div
       style={{
