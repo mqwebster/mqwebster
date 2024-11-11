@@ -4,6 +4,7 @@ import { PageInterface } from "@/types/PageInterface";
 
 import PageHero from "../components/blocks/PageHero/PageHero";
 import Navbar from "../components/blocks/navbar";
+import Footer from "../components/blocks/footer";
 const ProjectGrid = dynamic(
   () => import("@/src/components/blocks/ProjectGrid/ProjectGrid")
 );
@@ -36,6 +37,8 @@ function BaseTemplate({ ...props }: PageInterface) {
           )}
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
