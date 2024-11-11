@@ -9,7 +9,7 @@ function ProjectGrid({ id, projectListCollection }: ProjectGridInterface) {
         {projectListCollection?.items.map((project) => {
           return (
             <div key={project.title}>
-              <ProjectCard {...project} />
+              <ProjectCard id={project.sys.id} {...project} />
             </div>
           );
         })}
