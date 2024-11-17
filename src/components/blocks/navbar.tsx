@@ -43,9 +43,7 @@ export default function Navbar() {
     <motion.nav
       id="navbar"
       style={{ backgroundColor: bgColor }}
-      className={`w-full py-4 sticky top-0 z-50 ${
-        menu ? "pr-4 !bg-blue-base" : "pr-0"
-      }`}
+      className={`w-full py-4 sticky top-0 z-50 ${menu && "!bg-blue-base"}`}
     >
       <div className="flex justify-between items-center md:max-w-screen-xl px-8 mx-auto">
         <Link href={`/`}>
