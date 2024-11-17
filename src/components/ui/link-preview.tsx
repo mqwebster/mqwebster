@@ -20,6 +20,7 @@ type LinkPreviewProps = {
   height?: number;
   quality?: number;
   layout?: string;
+  newTab: boolean;
 } & (
   | { isStatic: true; imageSrc: string }
   | { isStatic?: false; imageSrc?: never }
@@ -35,6 +36,7 @@ export const LinkPreview = ({
   layout = "fixed",
   isStatic = false,
   imageSrc = "",
+  newTab = true,
 }: LinkPreviewProps) => {
   let src;
   if (!isStatic) {
@@ -43,11 +45,11 @@ export const LinkPreview = ({
       screenshot: true,
       meta: false,
       embed: "screenshot.url",
-      colorScheme: "dark",
+      colorScheme: "light",
       "viewport.isMobile": true,
       "viewport.deviceScaleFactor": 1,
-      "viewport.width": width * 3,
-      "viewport.height": height * 3,
+      "viewport.width": width * 6,
+      "viewport.height": height * 6,
     });
     src = `https://api.microlink.io/?${params}`;
   } else {
@@ -101,6 +103,7 @@ export const LinkPreview = ({
           onMouseMove={handleMouseMove}
           className={cn("text-black dark:text-white", className)}
           href={url}
+          target={newTab ? "_blank" : ""}
         >
           {children}
         </HoverCardPrimitive.Trigger>
@@ -133,6 +136,7 @@ export const LinkPreview = ({
               >
                 <Link
                   href={url}
+                  target={newTab ? "_blank" : ""}
                   className="block p-1 bg-white border-2 border-transparent shadow rounded-md hover:border-neutral-200 dark:hover:border-neutral-800"
                   style={{ fontSize: 0 }}
                 >

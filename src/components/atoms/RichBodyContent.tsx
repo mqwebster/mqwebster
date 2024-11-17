@@ -19,15 +19,27 @@ function RichBodyContent({ body }) {
         children !== "" && (
           <p className="type-preset-lg font-body py-4">{children}</p>
         ),
-      [INLINES.HYPERLINK]: (node, children) => (
-        <LinkPreview
-          url={node.data.uri}
-          quality={70}
-          className="font-bold underline decoration-2 underline-offset-4"
-        >
-          {children}
-        </LinkPreview>
-      ),
+      [INLINES.HYPERLINK]: (node, children) => {
+        var newTab: boolean = true;
+
+        if (
+          node.data.uri.includes("mqwebster.com") ||
+          node.data.uri.startsWith("/")
+        ) {
+          newTab = false;
+        }
+
+        return (
+          <LinkPreview
+            url={node.data.uri}
+            quality={70}
+            className="font-bold underline decoration-2 underline-offset-4"
+            newTab={newTab}
+          >
+            {children}
+          </LinkPreview>
+        );
+      },
     },
   };
 
