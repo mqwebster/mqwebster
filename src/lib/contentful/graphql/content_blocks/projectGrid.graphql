@@ -3,6 +3,7 @@ fragment ProjectGridFields on ProjectGrid {
   sys {
     id
   }
+  type
   projectListCollection {
     items {
       ...ProjectCardFields

@@ -678,6 +678,8 @@ enum ProjectCardLinkingCollectionsProjectGridCollectionOrder {
   sys_publishedVersion_DESC
   title_ASC
   title_DESC
+  type_ASC
+  type_DESC
 }
 
 enum ProjectCardOrder {
@@ -829,6 +831,7 @@ type ProjectGrid implements Entry & _Node {
   projectListCollection(limit: Int = 100, locale: String, order: [ProjectGridProjectListCollectionOrder], preview: Boolean, skip: Int = 0, where: ProjectCardFilter): ProjectGridProjectListCollection
   sys: Sys!
   title(locale: String): String
+  type(locale: String): String
 }
 
 type ProjectGridCollection {
@@ -852,6 +855,13 @@ input ProjectGridFilter {
   title_not: String
   title_not_contains: String
   title_not_in: [String]
+  type: String
+  type_contains: String
+  type_exists: Boolean
+  type_in: [String]
+  type_not: String
+  type_not_contains: String
+  type_not_in: [String]
 }
 
 type ProjectGridLinkingCollections {
@@ -887,6 +897,8 @@ enum ProjectGridOrder {
   sys_publishedVersion_DESC
   title_ASC
   title_DESC
+  type_ASC
+  type_DESC
 }
 
 type ProjectGridProjectListCollection {
