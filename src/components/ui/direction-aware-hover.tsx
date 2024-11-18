@@ -150,19 +150,19 @@ const textVariants = {
     opacity: 0,
   },
   top: {
-    y: -20,
+    y: -4,
     opacity: 1,
   },
   bottom: {
-    y: 2,
+    y: 4,
     opacity: 1,
   },
   left: {
-    x: -2,
+    x: -4,
     opacity: 1,
   },
   right: {
-    x: 20,
+    x: 4,
     opacity: 1,
   },
 };
