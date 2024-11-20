@@ -32,30 +32,13 @@ export default function Footer() {
         <p className="font-body type-preset-base max-w-2xl">{`I'm currently open to work, and I'm always ready to learn!`}</p>
 
         <div className="flex gap-4 mt-20">
+          <Button href={"/files/resume.pdf"} text="Resume" />
+          <Button href="mailto:contact@mqwebster.com" text="Email" />
           <Button
-            link={"/files/resume.pdf"}
-            text="Resume"
-            icon={download}
-            type="resume"
-          />
-          <Button
-            link="mailto:contact@mqwebster.com"
-            text="Email"
-            icon={email}
-            type="email"
-          />
-          <Button
-            link="https://www.linkedin.com/in/mqwebster/"
+            href="https://www.linkedin.com/in/mqwebster/"
             text="LinkedIn"
-            icon={linkedin}
-            type="social"
           />
-          <Button
-            link="https://github.com/mqwebster"
-            text="GitHub"
-            icon={github}
-            type="social"
-          />
+          <Button href="https://github.com/mqwebster" text="GitHub" />
         </div>
 
         <div className="mt-16 flex flex-col gap-2">
