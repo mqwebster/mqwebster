@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { PageHeroInterface } from "@/types/blocks/PageHero/PageHeroInterface";
 
 import { ProjectImage } from "../atoms/ProjectImage";
+import Button from "../atoms/Button";
 
 export const HeroParallax = ({ ...props }: PageHeroInterface) => {
   const firstRow = props.projectImageListCollection?.items.slice(0, 5);
@@ -113,6 +114,12 @@ export const Header = ({
       )}
       <h1 className="font-title type-preset-1">{mainText}</h1>
       <p className="font-body type-preset-lg max-w-2xl">{afterText}</p>
+
+      <div className="relative z-10 flex gap-4 mt-8 w-fit">
+        {buttonText && buttonLink && (
+          <Button text={buttonText} href={buttonLink} />
+        )}
+      </div>
     </div>
   );
 };
