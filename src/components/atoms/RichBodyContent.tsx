@@ -33,7 +33,7 @@ function RichBodyContent({ body }) {
           <LinkPreview
             url={node.data.uri}
             quality={70}
-            className="font-bold underline decoration-2 underline-offset-4"
+            className="font-medium text-blue-base dark:text-blue-400 underline decoration-1 decoration-black dark:decoration-white underline-offset-4"
             newTab={newTab}
           >
             {children}
