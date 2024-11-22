@@ -1,4 +1,4 @@
-import { ProjectImageInterface } from "./ProjectImageInterface";
+import { ProjectImageInterface } from "../atoms/ProjectImageInterface";
 
 export interface PageHeroInterface {
   sys: { id: string };
