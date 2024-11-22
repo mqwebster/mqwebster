@@ -1,4 +1,4 @@
-import { PageHeroInterface } from "@/types/blocks/PageHero/PageHeroInterface";
+import { PageHeroInterface } from "@/types/blocks/PageHeroInterface";
 import { HeroParallax } from "../../ui/hero-parallax";
 
 function PageHero(props: PageHeroInterface) {

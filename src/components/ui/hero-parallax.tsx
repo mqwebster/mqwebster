@@ -2,7 +2,7 @@
 "use client";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { PageHeroInterface } from "@/types/blocks/PageHero/PageHeroInterface";
+import { PageHeroInterface } from "@/types/blocks/PageHeroInterface";
 
 import { ProjectImage } from "../atoms/ProjectImage";
 import Button from "../atoms/Button";

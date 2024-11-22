@@ -1,7 +1,7 @@
 import { motion, MotionValue } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ProjectImageInterface } from "@/types/blocks/PageHero/ProjectImageInterface";
+import { ProjectImageInterface } from "@/types/atoms/ProjectImageInterface";
 
 export const ProjectImage = ({
   project,
