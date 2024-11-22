@@ -617,6 +617,7 @@ type ProjectCard implements Entry & _Node {
   plainBody(locale: String): String
   sys: Sys!
   title(locale: String): String
+  type(locale: String): String
 }
 
 type ProjectCardCollection {
@@ -660,6 +661,13 @@ input ProjectCardFilter {
   title_not: String
   title_not_contains: String
   title_not_in: [String]
+  type: String
+  type_contains: String
+  type_exists: Boolean
+  type_in: [String]
+  type_not: String
+  type_not_contains: String
+  type_not_in: [String]
 }
 
 type ProjectCardLinkingCollections {
@@ -699,6 +707,8 @@ enum ProjectCardOrder {
   sys_publishedVersion_DESC
   title_ASC
   title_DESC
+  type_ASC
+  type_DESC
 }
 
 """
@@ -925,6 +935,8 @@ enum ProjectGridProjectListCollectionOrder {
   sys_publishedVersion_DESC
   title_ASC
   title_DESC
+  type_ASC
+  type_DESC
 }
 
 """
@@ -1594,6 +1606,13 @@ input cfProjectCardNestedFilter {
   title_not: String
   title_not_contains: String
   title_not_in: [String]
+  type: String
+  type_contains: String
+  type_exists: Boolean
+  type_in: [String]
+  type_not: String
+  type_not_contains: String
+  type_not_in: [String]
 }
 
 input cfProjectImageNestedFilter {

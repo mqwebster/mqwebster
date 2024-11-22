@@ -6,9 +6,10 @@ import { DirectionAwareHover } from "../ui/direction-aware-hover";
 
 export default async function ProjectCard({
   id,
-  type,
+  gridType,
   title,
   plainbody,
+  type,
   buttonText,
   buttonLink,
 }: ProjectCardInterface) {
@@ -66,9 +67,9 @@ export default async function ProjectCard({
     );
   };
 
-  if (type === "3D Card") return <ThreeDCard />;
+  if (gridType === "3D Card") return <ThreeDCard />;
 
-  if (type === "Featured Projects")
+  if (gridType === "Featured Projects")
     return (
       <DirectionAwareHover imageUrl={`https:${cardImageUrl}`}>
         <p className={`type-preset-lg font-body font-bold`}>{title}</p>

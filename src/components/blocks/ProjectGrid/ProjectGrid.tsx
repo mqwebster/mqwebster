@@ -13,7 +13,7 @@ function ProjectGrid({
         {projectListCollection?.items.map((project) => {
           return (
             <div key={project.title}>
-              <ProjectCard id={project.sys.id} type={type} {...project} />
+                <ProjectCard id={project.sys.id} gridType={type} {...project} />
             </div>
           );
         })}

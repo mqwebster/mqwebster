@@ -5,6 +5,7 @@ fragment ProjectCardFields on ProjectCard {
   }
   title
   plainBody
+  type
   buttonText
   buttonLink
 }
