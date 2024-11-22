@@ -19,7 +19,7 @@ export const ProjectImage = ({
         y: -20,
       }}
       key={project.title}
-      className="group/project h-96 w-[30rem] relative flex-shrink-0"
+      className="group/project h-96 w-[30rem] relative flex-shrink-0 hover:shadow-xl"
     >
       <Link
         href={project.link}
