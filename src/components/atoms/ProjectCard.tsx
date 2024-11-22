@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { DirectionAwareHover } from "../ui/direction-aware-hover";
+import getImage from "@/src/lib/contentful/getImage";
 
-export default async function ProjectCard({
+async function ProjectCard({
   id,
   gridType,
   title,
@@ -13,17 +14,7 @@ export default async function ProjectCard({
   buttonText,
   buttonLink,
 }: ProjectCardInterface) {
-  // Have to run a separate API on Project Cards
-  // Issue where site crashes when `image` field is added to `src/lib/graphql/cards/projectCard.graphql` fragment
-  const contentful = require("contentful");
-  const client = contentful.createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    environment: "master", // defaults to 'master' if not set
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  });
-  const cardImageUrl = await client.getEntry(id).then((entry) => {
-    return entry.fields.image.fields.file.url;
-  });
+  const imageUrl = await getImage(id);
 
   const ThreeDCard = () => {
     return (
@@ -37,7 +28,7 @@ export default async function ProjectCard({
           </CardItem>
           <CardItem translateZ="100" className="w-full mt-4">
             <Image
-              src={`https:${cardImageUrl}`}
+              src={`https:${imageUrl}`}
               height="1000"
               width="1000"
               className="w-full aspect-video object-cover rounded-xl group-hover/card:shadow-xl"
@@ -71,8 +62,10 @@ export default async function ProjectCard({
 
   if (gridType === "Featured Projects")
     return (
-      <DirectionAwareHover imageUrl={`https:${cardImageUrl}`}>
+      <DirectionAwareHover imageUrl={`https:${imageUrl}`}>
         <p className={`type-preset-lg font-body font-bold`}>{title}</p>
       </DirectionAwareHover>
     );
 }
+
+export default ProjectCard;
