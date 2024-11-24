@@ -1,8 +1,6 @@
 import { cn } from "@/utils/cn";
 import Image from "next/image";
-
-import { ContentfulImageInterface } from "@/types/ContentfulImageInterface";
-import getImage from "@/src/lib/contentful/getImage";
+import { IconApps, IconAppWindow, IconBrandFigma } from "@tabler/icons-react";
 
 export const BentoGrid = ({
   className,
@@ -28,15 +26,22 @@ export async function BentoGridItem({
   id,
   title,
   description,
-  icon,
+  imageUrl,
+  type,
 }: {
   className?: string;
-  id?: ContentfulImageInterface;
+  id: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-  icon?: React.ReactNode;
+  imageUrl?: string;
+  type?: "Design System" | "Project" | "Site";
 }) {
-  const imageUrl = await getImage(id);
+  const icon = {
+    "Design System": <IconBrandFigma className="h-4 w-4 text-neutral-500" />,
+    Project: <IconApps className="h-4 w-4 text-neutral-500" />,
+    Site: <IconAppWindow className="h-4 w-4 text-neutral-500" />,
+  };
+
   return (
     <div
       className={cn(
@@ -48,7 +53,7 @@ export async function BentoGridItem({
         <div className="flex w-full h-[360px] mb-4 rounded-md overflow-clip">
           {imageUrl ? (
             <Image
-              src={`https:${imageUrl}`}
+              src={imageUrl}
               alt=""
               quality={60}
               width={1920}
@@ -60,7 +65,7 @@ export async function BentoGridItem({
           )}
         </div>
         <div className="group-hover/bento:translate-x-2 transition duration-200">
-          {icon}
+          {icon[type]}
           <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
             {title}
           </div>
