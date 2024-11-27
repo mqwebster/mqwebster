@@ -13,4 +13,4 @@ My portfolio is a [Next.js](https://nextjs.org/) project bootstrapped with [`cre
 
 The app is deployed via [Vercel](https://vercel.com/) and can be found at the link below:
 
-**[Marques Webster Portfolio](https://mqwebster.vercel.app/)**
+**[Marques Webster Portfolio](https://mqwebster.com/)**
