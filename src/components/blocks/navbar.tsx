@@ -38,20 +38,27 @@ export default function Navbar() {
     [0, 0.18, 0.2],
     ["#000000", "#000000", "#ffffff"]
   );
+  const bgBlur = useTransform(
+    scrollYProgress,
+    [0, 0.18, 0.2],
+    ["blur(0)", "blur(0)", "blur(12px)"]
+  );
 
   return (
     <nav
       id="navbar"
-      className={`w-full py-4 sticky top-0 z-50 ${
-        menu
-          ? ""
-          : "bg-gradient-to-b from-[#f0f0f0] dark:from-black to-transparent"
+      className={`w-full pt-4 sticky top-0 z-50 ${
+        menu ? "" : "bg-gradient-to-b from-[#f0f0f0] dark:from-black from-10%"
       }`}
     >
       <motion.div
-        style={{ backgroundColor: menu ? "transparent" : bgColor }}
+        style={{
+          backgroundColor: menu ? "transparent" : bgColor,
+          backdropFilter: bgBlur,
+          WebkitBackdropFilter: bgBlur,
+        }}
         className={`nav-container relative z-10 flex justify-between items-center md:max-w-screen-xl px-8 py-2 mx-1 lg:mx-auto rounded-lg ${
-          menu ? "backdrop-blur-none" : "backdrop-blur-md"
+          menu && "!backdrop-blur-none"
         }`}
       >
         <Link href={`/`}>
