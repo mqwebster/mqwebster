@@ -25,7 +25,9 @@ async function ProjectCard({ ...props }: ProjectCardInterface) {
         description={props.plainbody}
         type={props.type}
         imageUrl={`https:${imageUrl}`}
-        className={props.index % 3 === 0 ? "md:col-span-2" : ""}
+        className={
+          props.index >= 3 && props.index % 3 === 0 ? "md:col-span-2" : ""
+        }
       />
     );
 
