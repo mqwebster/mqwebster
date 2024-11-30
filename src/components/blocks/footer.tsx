@@ -28,8 +28,8 @@ export default function Footer() {
       className="w-full md:max-w-screen-xl z-0 px-8 pt-20 pb-40 mx-auto"
     >
       <div>
-        <h2 className="font-title type-preset-2 mb-10">Get In Contact...</h2>
-        <p className="font-body type-preset-base max-w-2xl">{`I'm currently open to work, and I'm always ready to learn!`}</p>
+        <h2 className="font-title heading-2">Get In Contact...</h2>
+        <p className="body-lg font-body py-4 max-w-2xl">{`I'm currently open to work, and I'm always ready to learn!`}</p>
 
         <div className="flex flex-col md:flex-row gap-4 mt-20">
           <Button href={"/files/resume.pdf"} text="Resume" />

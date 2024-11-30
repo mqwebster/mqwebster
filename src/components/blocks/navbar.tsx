@@ -98,7 +98,7 @@ export default function Navbar() {
           className={`absolute top-0 left-0 z-0 w-full h-screen pt-[96px] pb-16 overflow-scroll bg-blue-base bg-opacity-[0.77] backdrop-blur-lg blueScrollbar`}
         >
           <div className="flex justify-between items-center md:max-w-screen-xl px-8 mx-auto">
-            <ul className="flex flex-col gap-2 type-preset-2 font-title text-white py-8">
+            <ul className="flex flex-col gap-2 heading-2 font-title text-white py-8">
               {navItems.map((item) => {
                 return (
                   <li

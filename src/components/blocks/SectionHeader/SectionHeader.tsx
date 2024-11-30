@@ -12,7 +12,7 @@ function SectionHeader({
   return (
     <section id="" className="w-full md:max-w-screen-xl z-0 px-8 pb-8 pt-16">
       <div className="flex flex-col">
-        <h2 className="font-title type-preset-2">{title}</h2>
+        <h2 className="font-title heading-2">{title}</h2>
         <div className="max-w-4xl">
           {body && <RichBodyContent body={body} />}
         </div>

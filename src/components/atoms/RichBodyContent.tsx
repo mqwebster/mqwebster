@@ -16,9 +16,7 @@ function RichBodyContent({ body }) {
     },
     renderNode: {
       [BLOCKS.PARAGRAPH]: (node, children) =>
-        children !== "" && (
-          <p className="type-preset-lg font-body py-4">{children}</p>
-        ),
+        children !== "" && <p className="body-lg font-body py-4">{children}</p>,
       [INLINES.HYPERLINK]: (node, children) => {
         var newTab: boolean = true;
 
@@ -33,7 +31,7 @@ function RichBodyContent({ body }) {
           <LinkPreview
             url={node.data.uri}
             quality={70}
-            className="font-medium text-blue-base dark:text-blue-400 underline decoration-1 decoration-black dark:decoration-white underline-offset-4"
+            className="text-blue-base dark:text-blue-400 underline decoration-1 decoration-black dark:decoration-white underline-offset-4"
             newTab={newTab}
           >
             {children}
