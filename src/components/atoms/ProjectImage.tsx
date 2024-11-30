@@ -35,9 +35,9 @@ export const ProjectImage = ({
         />
       </Link>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/project:opacity-80 bg-black pointer-events-none rounded-md"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/project:opacity-100 text-white">
+      <p className="absolute bottom-4 left-4 opacity-0 group-hover/project:opacity-100 body-lg font-bold text-white">
         {project.title}
-      </h2>
+      </p>
     </motion.div>
   );
 };

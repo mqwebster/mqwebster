@@ -108,12 +108,10 @@ export const Header = ({
   secondaryButtonLink,
 }) => {
   return (
-    <div className="md:max-w-screen-xl relative mx-auto mt-[20vh] px-8 w-full">
-      {beforeText && (
-        <span className="font-body type-preset-base">{beforeText}</span>
-      )}
-      <h1 className="font-title type-preset-1">{mainText}</h1>
-      <p className="font-body type-preset-lg max-w-2xl">{afterText}</p>
+    <div className="md:max-w-screen-xl relative mx-auto mt-[16vh] md:mt-[20vh] px-8 w-full">
+      {beforeText && <span className="font-body body-base">{beforeText}</span>}
+      <h1 className="font-title heading-1">{mainText}</h1>
+      <p className="font-body body-lg max-w-2xl">{afterText}</p>
 
       <div className="relative z-10 flex gap-4 mt-8 w-fit">
         {buttonText && buttonLink && (
