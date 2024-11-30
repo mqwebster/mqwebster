@@ -17,10 +17,13 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Montserrat";
   scroll-behavior: smooth;
+  --typescale: 1.333;
   --fontSize: 1rem;
+  --headingLineHeight: 1.333;
+  --bodyLineHeight: 1.5;
 }
 
 body,
@@ -29,12 +32,6 @@ section,
 .buttonImage {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
 }
 
 section {
@@ -64,75 +61,99 @@ details summary::-webkit-details-marker {
     scrollbar-color: #ffffff #228ee8;
   }
 
-  .type-preset-1 {
-    font-size: 112px;
-    line-height: 140px;
+  .heading-1 {
+    font-size: calc(var(--fontSize) * pow(var(--typescale), 7));
+    line-height: var(--headingLineHeight);
     font-weight: 500;
     text-transform: uppercase;
   }
-  .type-preset-2 {
-    font-size: 88px;
-    line-height: 110px;
+  .heading-2 {
+    font-size: calc(var(--fontSize) * pow(var(--typescale), 6));
+    line-height: var(--headingLineHeight);
     font-weight: 500;
     text-transform: uppercase;
   }
-  .type-preset-3 {
-    font-size: 64px;
-    line-height: 80px;
+  .heading-3 {
+    font-size: calc(var(--fontSize) * pow(var(--typescale), 5));
+    line-height: var(--headingLineHeight);
     font-weight: 500;
     text-transform: uppercase;
   }
-  .type-preset-4 {
-    font-size: 40px;
-    line-height: 50px;
+  .heading-4 {
+    font-size: calc(var(--fontSize) * pow(var(--typescale), 4));
+    line-height: var(--headingLineHeight);
     font-weight: 500;
     text-transform: uppercase;
   }
-  .type-preset-base {
-    font-size: 1rem;
-    line-height: calc(1rem * 2);
+  .heading-5 {
+    font-size: calc(var(--fontSize) * pow(var(--typescale), 3));
+    line-height: var(--headingLineHeight);
+    font-weight: 500;
+    text-transform: uppercase;
   }
-  .type-preset-lg {
-    font-size: calc(1rem * 1.5);
-    line-height: calc(1rem * 2.5);
+  .heading-6 {
+    font-size: calc(var(--fontSize) * pow(var(--typescale), 2));
+    line-height: var(--headingLineHeight);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .body-lg {
+    font-size: calc(var(--fontSize) * var(--typescale));
+    line-height: var(--bodyLineHeight);
+  }
+  .body-base {
+    font-size: var(--fontSize);
+    line-height: var(--bodyLineHeight);
+  }
+  .body-sm {
+    font-size: calc(var(--fontSize) / var(--typescale));
+    line-height: var(--bodyLineHeight);
+  }
+  .body-xs {
+    font-size: calc(var(--fontSize) / pow(var(--typescale), 2));
+    line-height: var(--bodyLineHeight);
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     .resumeScrollPosition {
       scroll-margin-block-start: 28vh;
     }
 
-    .type-preset-1 {
-      font-size: 60px;
-      line-height: 75px;
+    .heading-1 {
+      font-size: calc(var(--fontSize) * pow(var(--typescale), 4));
+      line-height: var(--headingLineHeight);
       font-weight: 500;
       text-transform: uppercase;
     }
-    .type-preset-2 {
-      font-size: 48px;
-      line-height: 60px;
+    .heading-2 {
+      font-size: calc(var(--fontSize) * pow(var(--typescale), 3));
+      line-height: var(--headingLineHeight);
       font-weight: 500;
       text-transform: uppercase;
     }
-    .type-preset-3 {
-      font-size: 36px;
-      line-height: 45px;
+    .heading-3 {
+      font-size: calc(var(--fontSize) * pow(var(--typescale), 2));
+      line-height: var(--headingLineHeight);
       font-weight: 500;
       text-transform: uppercase;
     }
-    .type-preset-4 {
-      font-size: 24px;
-      line-height: 30px;
+    .heading-4 {
+      font-size: calc(var(--fontSize) * var(--typescale));
+      line-height: var(--headingLineHeight);
       font-weight: 500;
       text-transform: uppercase;
     }
-    .type-preset-base {
-      font-size: 1rem;
-      line-height: calc(1rem * 1.5);
+    .heading-5 {
+      font-size: var(--fontSize);
+      line-height: var(--headingLineHeight);
+      font-weight: 500;
+      text-transform: uppercase;
     }
-    .type-preset-lg {
-      font-size: calc(1rem * 1.25);
-      line-height: calc(1rem * 1.75);
+    .heading-6 {
+      font-size: calc(var(--fontSize) / var(--typescale));
+      line-height: var(--headingLineHeight);
+      font-weight: 500;
+      text-transform: uppercase;
     }
   }
 }
