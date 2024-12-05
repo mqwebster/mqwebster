@@ -8,6 +8,9 @@ export default function Button({
   newTab = true,
   icon,
 }: ButtonInterface) {
+  newTab =
+    href.startsWith("/") || href.includes("mqwebster.com/") ? false : true;
+
   return (
     <button className="rounded-lg px-10 py-3 border border-black bg-transparent text-white dark:border-white relative group transition duration-200">
       <Link
