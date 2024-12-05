@@ -36,7 +36,10 @@ async function ProjectCard({ ...props }: ProjectCardInterface) {
 
   if (props.gridType === "Featured Projects")
     return (
-      <DirectionAwareHover imageUrl={`https:${imageUrl}`}>
+      <DirectionAwareHover
+        link={props.buttonLink}
+        imageUrl={`https:${imageUrl}`}
+      >
         <p className={`body-lg font-body font-bold`}>{props.title}</p>
       </DirectionAwareHover>
     );

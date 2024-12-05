@@ -71,7 +71,17 @@ export async function BentoGridItem({
         className
       )}
     >
-      <Link href={link}>
+      <Link
+        href={link ?? ""}
+        className={
+          !link || link === "" ? "pointer-events-none" : "pointer-events-auto"
+        }
+        aria-disabled={!link || link === ""}
+        tabIndex={!link || link === "" ? -1 : 0}
+        target={
+          link.startsWith("/") || link.includes("mqwebster.com") ? "" : "_blank"
+        }
+      >
         <div className="p-4 pb-8">
           <div className="flex w-full aspect-square md:aspect-auto sm:h-[160px] md:h-[200px] lg:h-[360px] mb-4 rounded-md overflow-clip">
             {imageUrl ? (

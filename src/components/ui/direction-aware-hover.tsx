@@ -4,14 +4,17 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/utils/cn";
+import Link from "next/link";
 
 export const DirectionAwareHover = ({
+  link,
   imageUrl,
   children,
   childrenClassName,
   imageClassName,
   className,
 }: {
+  link?: string;
   imageUrl: string;
   children: React.ReactNode | string;
   childrenClassName?: string;
@@ -69,48 +72,60 @@ export const DirectionAwareHover = ({
         className
       )}
     >
-      <AnimatePresence mode="wait">
-        <motion.div
-          className="relative h-full w-full"
-          initial="initial"
-          whileHover={direction}
-          exit="exit"
-        >
-          <motion.div className="group-hover/card:block hidden absolute inset-0 w-full h-full bg-black/40 z-10 transition duration-500" />
+      <Link
+        href={link ?? ""}
+        className={
+          !link || link === "" ? "pointer-events-none" : "pointer-events-auto"
+        }
+        aria-disabled={!link || link === ""}
+        tabIndex={!link || link === "" ? -1 : 0}
+        target={
+          link.startsWith("/") || link.includes("mqwebster.com") ? "" : "_blank"
+        }
+      >
+        <AnimatePresence mode="wait">
           <motion.div
-            variants={variants}
-            className="h-full w-full relative bg-gray-50 dark:bg-black"
-            transition={{
-              duration: 0.2,
-              ease: "easeOut",
-            }}
+            className="relative h-full w-full"
+            initial="initial"
+            whileHover={direction}
+            exit="exit"
           >
-            <Image
-              alt="image"
+            <motion.div className="group-hover/card:block hidden absolute inset-0 w-full h-full bg-black/40 z-10 transition duration-500" />
+            <motion.div
+              variants={variants}
+              className="h-full w-full relative bg-gray-50 dark:bg-black"
+              transition={{
+                duration: 0.2,
+                ease: "easeOut",
+              }}
+            >
+              <Image
+                alt="image"
+                className={cn(
+                  "h-full w-full object-cover object-left-top scale-[1.08]",
+                  imageClassName
+                )}
+                width="1000"
+                height="1000"
+                src={imageUrl}
+              />
+            </motion.div>
+            <motion.div
+              variants={textVariants}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+              }}
               className={cn(
-                "h-full w-full object-cover object-left-top scale-[1.08]",
-                imageClassName
+                "text-white absolute bottom-4 left-4 z-40",
+                childrenClassName
               )}
-              width="1000"
-              height="1000"
-              src={imageUrl}
-            />
+            >
+              {children}
+            </motion.div>
           </motion.div>
-          <motion.div
-            variants={textVariants}
-            transition={{
-              duration: 0.5,
-              ease: "easeOut",
-            }}
-            className={cn(
-              "text-white absolute bottom-4 left-4 z-40",
-              childrenClassName
-            )}
-          >
-            {children}
-          </motion.div>
-        </motion.div>
-      </AnimatePresence>
+        </AnimatePresence>
+      </Link>
     </motion.div>
   );
 };
