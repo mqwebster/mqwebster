@@ -21,7 +21,7 @@ export default function PortfolioPageHeader({
       {githubLink && (
         <div className="w-max flex flex-col gap-2 font-title type-preset-4">
           <span>The Code...</span>
-          <Button link={githubLink} text="GitHub" icon={github} type="social" />
+          {/* <Button link={githubLink} text="GitHub" icon={github} type="social" /> */}
         </div>
       )}
     </div>
