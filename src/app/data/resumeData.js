@@ -59,17 +59,6 @@ export const resumeData = {
   Skills: [
     {
       id: 1,
-      title: "Interpersonal Skills",
-      list: [
-        "Detail-oriented work ethic",
-        "Employee resource management",
-        "Enthusiastic synergy-focused approach to collaboration",
-        "Project management",
-        "Solution based communication skills",
-      ],
-    },
-    {
-      id: 2,
       title: "Technical Competencies",
       skills: [
         "Airtable",
@@ -96,6 +85,17 @@ export const resumeData = {
         "WordPress",
         "YAML",
         "Yarn",
+      ],
+    },
+    {
+      id: 2,
+      title: "Interpersonal Skills",
+      list: [
+        "Detail-oriented work ethic",
+        "Employee resource management",
+        "Enthusiastic synergy-focused approach to collaboration",
+        "Project management",
+        "Solution based communication skills",
       ],
     },
   ],

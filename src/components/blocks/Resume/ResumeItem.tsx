@@ -42,7 +42,7 @@ export default function ResumeItem({
       <div className="flex flex-col gap-2 w-full">
         {date && <span className="">{date}</span>}
 
-        <h4 className="font-title type-preset-4">{title}</h4>
+        <h4 className="font-title heading-5">{title}</h4>
 
         {location && <span className="text-blue-base">{location}</span>}
 
