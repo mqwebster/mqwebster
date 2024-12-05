@@ -32,7 +32,12 @@ export default function Footer() {
         <p className="body-lg font-body py-4 max-w-2xl">{`I'm currently open to work, and I'm always ready to learn!`}</p>
 
         <div className="flex flex-col md:flex-row gap-4 mt-20">
-          <Button href={"/files/resume.pdf"} text="Resume" />
+          <Button
+            href={
+              "https://assets.ctfassets.net/vvji94wwc94s/2i1QoCtd7LEfP7nYNNbFCU/f661156c42d65d0abde1f106d196d06e/MQWebsterResume.pdf"
+            }
+            text="Resume"
+          />
           <Button href="mailto:contact@mqwebster.com" text="Email" />
           <Button
             href="https://www.linkedin.com/in/mqwebster/"
