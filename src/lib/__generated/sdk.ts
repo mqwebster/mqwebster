@@ -2460,6 +2460,7 @@ export type CfpageContentMultiTypeNestedFilter = {
 };
 
 export type PageQueryVariables = Exact<{
+  slug: Scalars['String']['input'];
   locale?: InputMaybe<Scalars['String']['input']>;
   preview?: InputMaybe<Scalars['Boolean']['input']>;
 }>;
@@ -2586,8 +2587,13 @@ export const PageFieldsFragmentDoc = gql`
 }
     `;
 export const PageDocument = gql`
-    query Page($locale: String, $preview: Boolean) {
-  pageCollection(limit: 1, locale: $locale, preview: $preview) {
+    query Page($slug: String!, $locale: String, $preview: Boolean) {
+  pageCollection(
+    limit: 1
+    where: {slug: $slug}
+    locale: $locale
+    preview: $preview
+  ) {
     items {
       ...PageFields
     }
@@ -2608,7 +2614,7 @@ const defaultWrapper: SdkFunctionWrapper = (action, _operationName, _operationTy
 
 export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
   return {
-    Page(variables?: PageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<PageQuery> {
+    Page(variables: PageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<PageQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<PageQuery>(PageDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'Page', 'query', variables);
     }
   };

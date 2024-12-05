@@ -25,8 +25,13 @@ fragment PageFields on Page {
   }
 }
 
-query Page($locale: String, $preview: Boolean) {
-  pageCollection(limit: 1, locale: $locale, preview: $preview) {
+query Page($slug: String!, $locale: String, $preview: Boolean) {
+  pageCollection(
+    limit: 1
+    where: { slug: $slug }
+    locale: $locale
+    preview: $preview
+  ) {
     items {
       ...PageFields
     }
