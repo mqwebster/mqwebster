@@ -50,7 +50,7 @@ export async function BentoGridItem({
       )}
     >
       <div className="h-full">
-        <div className="flex w-full h-[360px] mb-4 rounded-md overflow-clip">
+        <div className="flex w-full aspect-square md:aspect-auto md:h-[360px] mb-4 rounded-md overflow-clip">
           {imageUrl ? (
             <Image
               src={imageUrl}
