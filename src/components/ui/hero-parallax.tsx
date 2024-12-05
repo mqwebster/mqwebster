@@ -108,7 +108,7 @@ export const Header = ({
   secondaryButtonLink,
 }) => {
   return (
-    <div className="md:max-w-screen-xl relative mx-auto mt-[16vh] md:mt-[20vh] px-8 w-full">
+    <div className="md:max-w-screen-xl relative mx-auto mt-[12vh] md:mt-[20vh] px-8 w-full">
       {beforeText && <span className="font-body body-base">{beforeText}</span>}
       <h1 className="font-title heading-1">{mainText}</h1>
       <p className="font-body body-lg max-w-2xl">{afterText}</p>
