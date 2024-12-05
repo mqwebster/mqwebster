@@ -29,7 +29,7 @@ function ProjectGrid({
 
   return (
     <section className="w-full md:max-w-screen-xl z-0 px-8 py-8">
-      <div className="w-full grid grid-cols-2 gap-8">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* @ts-ignore */}
         {projectListCollection?.items.map((project, i) => {
           return (
