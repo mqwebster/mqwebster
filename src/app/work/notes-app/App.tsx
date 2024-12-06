@@ -17,7 +17,10 @@ export default function App() {
   }, []);
 
   const [notes, setNotes] = useState(
-    () => JSON.parse(localStorage.getItem("notes")) || []
+    () =>
+      (typeof window !== "undefined" &&
+        JSON.parse(localStorage.getItem("notes"))) ||
+      []
   );
   // const [notes, setNotes] = useState([]);
   const [currentNoteId, setCurrentNoteId] = useState(
@@ -25,7 +28,7 @@ export default function App() {
   );
 
   useEffect(() => {
-    window.localStorage.setItem("notes", JSON.stringify(notes));
+    window && window.localStorage.setItem("notes", JSON.stringify(notes));
   }, [notes]);
 
   function createNewNote() {
