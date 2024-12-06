@@ -9,4 +9,5 @@ export interface PageInterface {
   image: ContentfulImageInterface;
   pageHero: PageHeroInterface;
   pageContentCollection?: any;
+  children?: React.ReactNode;
 }

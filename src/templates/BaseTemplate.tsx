@@ -12,7 +12,7 @@ const SectionHeader = dynamic(
   () => import("@/src/components/blocks/SectionHeader/SectionHeader")
 );
 
-function BaseTemplate({ ...props }: PageInterface) {
+function BaseTemplate({ children, ...props }: PageInterface) {
   const getComponent = (entry: any, index) => {
     const typename = entry.__typename;
 
@@ -31,10 +31,12 @@ function BaseTemplate({ ...props }: PageInterface) {
       <main>
         <PageHero {...props.pageHero} />
 
-        <div className="flex flex-col items-center justify-between">
+        <div className="relative flex flex-col items-center justify-between">
           {props.pageContentCollection.items.map((block, i) =>
             getComponent(block, i)
           )}
+
+          {children}
         </div>
       </main>
 
