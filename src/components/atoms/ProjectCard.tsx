@@ -40,7 +40,9 @@ async function ProjectCard({ ...props }: ProjectCardInterface) {
         link={props.buttonLink}
         imageUrl={`https:${imageUrl}`}
       >
-        <p className={`body-lg font-body font-bold`}>{props.title}</p>
+        <p className={`body-lg font-body font-semibold w-full`}>
+          {props.title}
+        </p>
       </DirectionAwareHover>
     );
 }
