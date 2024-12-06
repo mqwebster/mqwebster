@@ -1,4 +1,3 @@
-import PortfolioPageHeader from "@/src/components/blocks/Portfolio/PortfolioPageHeader";
 import data from "./data.js";
 
 import Navbar from "@/src/app/portfolio/airbnb-clone/components/Navbar";
@@ -17,11 +16,6 @@ export default function Page() {
         className="w-full md:max-w-screen-xl z-0 px-8 py-16 mb-40"
       >
         <div className="flex flex-col">
-          <PortfolioPageHeader
-            title="Airbnb Clone"
-            githubLink="https://github.com/mqwebster/mqwebster/tree/main/app/portfolio/airbnb-clone"
-          />
-
           <div className="flex flex-col w-full m-auto bg-white rounded-md overflow-hidden">
             <Navbar />
 

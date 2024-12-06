@@ -1,4 +1,3 @@
-import PortfolioPageHeader from "@/src/components/blocks/Portfolio/PortfolioPageHeader";
 import "./Main.jsx";
 
 export default function Page() {
@@ -9,11 +8,6 @@ export default function Page() {
         className="w-full md:max-w-screen-xl z-0 px-8 py-16"
       >
         <div className="flex flex-col">
-          <PortfolioPageHeader
-            title="React Router"
-            githubLink="https://github.com/mqwebster/mqwebster/tree/main/app/portfolio/react-router"
-          />
-
           <div
             id="main"
             className="w-full flex min-h-[60vh] rounded-lg text-black overflow-hidden"
