@@ -1,10 +1,9 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import PortfolioPageHeader from "@/src/components/blocks/Portfolio/PortfolioPageHeader";
 import Confetti from "react-confetti";
 import RestartIcon from "./RestartIcon";
 
-export default function Page() {
+export default function Canvas() {
   const [paused, setPaused] = useState(true);
   const [lives, setLives] = useState<number>(null);
   const [score, setScore] = useState<number>(null);
@@ -200,21 +199,14 @@ export default function Page() {
   }, [paused]);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      {score == 36 && <Confetti />}
-
+    <>
       <section
         id="2d-breakout-game"
-        className="w-full md:max-w-screen-xl z-0 px-8 py-16"
+        className="relative w-full md:max-w-screen-xl z-0 px-8 py-16"
       >
         <div className="flex flex-col">
-          <PortfolioPageHeader
-            title="2D Breakout Game"
-            githubLink="https://github.com/mqwebster/mqwebster/tree/main/app/portfolio/2d-breakout-game"
-          />
-
           <div className="w-full relative">
-            <div className="w-full flex justify-between font-title text-3xl">
+            <div className="w-full flex justify-between font-title heading-6">
               <span>Score: {score}</span>
               <div className="flex gap-2">
                 <button
@@ -227,18 +219,19 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative overflow-hidden">
+              {score === 36 && <Confetti />}
               <canvas
                 ref={canvasRef}
                 onMouseEnter={() => setPaused(false)}
                 id="myCanvas"
                 width={1376}
                 height={917.33}
-                className="bg-yellow-50 max-w-full w-full"
+                className="bg-yellow-50 max-w-full w-full rounded-lg"
               ></canvas>
               {score == 36 && (
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                  <span className="text-black type-preset-3 font-title">
+                  <span className="text-black heading-5 font-title">
                     Congratulations!! You won!!!
                   </span>
                 </div>
@@ -247,6 +240,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
