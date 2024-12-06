@@ -15,7 +15,7 @@ export default function Button({
   return (
     <button
       className={cn(
-        "rounded-lg border border-black bg-transparent text-white dark:border-white relative group transition duration-200",
+        "my-2 rounded-lg border border-black bg-transparent text-white dark:border-white relative group transition duration-200",
         className
       )}
     >
