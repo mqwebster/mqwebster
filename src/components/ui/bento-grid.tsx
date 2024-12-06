@@ -91,7 +91,7 @@ export async function BentoGridItem({
                 quality={60}
                 width={1920}
                 height={1080}
-                className="object-cover object-left-top"
+                className="object-cover object-left-top max-w-none md:w-full"
               />
             ) : (
               <div className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.5] bg-dot-black/[0.5] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border-2 border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
@@ -99,7 +99,7 @@ export async function BentoGridItem({
           </div>
           <div className="group-hover/bento:translate-x-2 transition duration-200">
             {icon[type]}
-            <div className="body-base font-body font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+            <div className="body-lg font-body font-semibold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
               {title}
             </div>
             <div className="body-sm font-body text-neutral-600 dark:text-neutral-300">
