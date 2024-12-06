@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 const navItems = [
   { link: "/", text: "Home" },
   { link: "/resume", text: "Resume" },
+  { link: "/#work", text: "Work" },
 ];
 
 export default function Navbar() {
