@@ -91,7 +91,7 @@ export async function BentoGridItem({
                 quality={60}
                 width={1920}
                 height={1080}
-                className="object-cover object-left-top"
+                className="object-cover object-left-top min-h-full"
               />
             ) : (
               <div className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.5] bg-dot-black/[0.5] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border-2 border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
