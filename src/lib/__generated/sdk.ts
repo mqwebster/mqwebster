@@ -1677,6 +1677,7 @@ export type ResourceSys = {
 export type SectionHeader = Entry & _Node & {
   __typename: 'SectionHeader';
   _id: Scalars['ID']['output'];
+  anchor?: Maybe<Scalars['String']['output']>;
   body?: Maybe<SectionHeaderBody>;
   buttonLink?: Maybe<Scalars['String']['output']>;
   buttonText?: Maybe<Scalars['String']['output']>;
@@ -1685,6 +1686,12 @@ export type SectionHeader = Entry & _Node & {
   linkedFrom?: Maybe<SectionHeaderLinkingCollections>;
   sys: Sys;
   title?: Maybe<Scalars['String']['output']>;
+};
+
+
+/** [See type definition](https://app.contentful.com/spaces/vvji94wwc94s/content_types/sectionHeader) */
+export type SectionHeaderAnchorArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
 };
 
 
@@ -1782,6 +1789,13 @@ export type SectionHeaderCollection = {
 export type SectionHeaderFilter = {
   AND?: InputMaybe<Array<InputMaybe<SectionHeaderFilter>>>;
   OR?: InputMaybe<Array<InputMaybe<SectionHeaderFilter>>>;
+  anchor?: InputMaybe<Scalars['String']['input']>;
+  anchor_contains?: InputMaybe<Scalars['String']['input']>;
+  anchor_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  anchor_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  anchor_not?: InputMaybe<Scalars['String']['input']>;
+  anchor_not_contains?: InputMaybe<Scalars['String']['input']>;
+  anchor_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   body_contains?: InputMaybe<Scalars['String']['input']>;
   body_exists?: InputMaybe<Scalars['Boolean']['input']>;
   body_not_contains?: InputMaybe<Scalars['String']['input']>;
@@ -1858,6 +1872,8 @@ export enum SectionHeaderLinkingCollectionsPageCollectionOrder {
 }
 
 export enum SectionHeaderOrder {
+  AnchorAsc = 'anchor_ASC',
+  AnchorDesc = 'anchor_DESC',
   ButtonLinkAsc = 'buttonLink_ASC',
   ButtonLinkDesc = 'buttonLink_DESC',
   ButtonTextAsc = 'buttonText_ASC',
@@ -2466,7 +2482,7 @@ export type PageQueryVariables = Exact<{
 }>;
 
 
-export type PageQuery = { __typename: 'Query', pageCollection?: { __typename: 'PageCollection', items: Array<{ __typename: 'Page', title?: string | null, slug?: string | null, description?: string | null, sys: { __typename: 'Sys', id: string }, image?: { __typename: 'Asset', title?: string | null, description?: string | null, width?: number | null, height?: number | null, url?: string | null, contentType?: string | null, sys: { __typename: 'Sys', id: string } } | null, pageHero?: { __typename: 'PageHero', type?: string | null, beforeText?: string | null, mainText?: string | null, afterText?: string | null, buttonText?: string | null, buttonLink?: string | null, secondaryButtonText?: string | null, secondaryButtonLink?: string | null, sys: { __typename: 'Sys', id: string }, projectImageListCollection?: { __typename: 'PageHeroProjectImageListCollection', items: Array<{ __typename: 'ProjectImage', title?: string | null, link?: string | null, newTab?: boolean | null, sys: { __typename: 'Sys', id: string }, image?: { __typename: 'Asset', title?: string | null, description?: string | null, width?: number | null, height?: number | null, url?: string | null, contentType?: string | null, sys: { __typename: 'Sys', id: string } } | null } | null> } | null } | null, pageContentCollection?: { __typename: 'PagePageContentCollection', items: Array<{ __typename: 'ProjectDropdown' } | { __typename: 'ProjectGrid', type?: string | null, sys: { __typename: 'Sys', id: string }, projectListCollection?: { __typename: 'ProjectGridProjectListCollection', items: Array<{ __typename: 'ProjectCard', title?: string | null, plainBody?: string | null, type?: string | null, buttonText?: string | null, buttonLink?: string | null, sys: { __typename: 'Sys', id: string } } | null> } | null } | { __typename: 'SectionHeader', title?: string | null, buttonText?: string | null, buttonLink?: string | null, color?: string | null, sys: { __typename: 'Sys', id: string }, body?: { __typename: 'SectionHeaderBody', json: any } | null } | { __typename: 'Timeline' } | null> } | null } | null> } | null };
+export type PageQuery = { __typename: 'Query', pageCollection?: { __typename: 'PageCollection', items: Array<{ __typename: 'Page', title?: string | null, slug?: string | null, description?: string | null, sys: { __typename: 'Sys', id: string }, image?: { __typename: 'Asset', title?: string | null, description?: string | null, width?: number | null, height?: number | null, url?: string | null, contentType?: string | null, sys: { __typename: 'Sys', id: string } } | null, pageHero?: { __typename: 'PageHero', type?: string | null, beforeText?: string | null, mainText?: string | null, afterText?: string | null, buttonText?: string | null, buttonLink?: string | null, secondaryButtonText?: string | null, secondaryButtonLink?: string | null, sys: { __typename: 'Sys', id: string }, projectImageListCollection?: { __typename: 'PageHeroProjectImageListCollection', items: Array<{ __typename: 'ProjectImage', title?: string | null, link?: string | null, newTab?: boolean | null, sys: { __typename: 'Sys', id: string }, image?: { __typename: 'Asset', title?: string | null, description?: string | null, width?: number | null, height?: number | null, url?: string | null, contentType?: string | null, sys: { __typename: 'Sys', id: string } } | null } | null> } | null } | null, pageContentCollection?: { __typename: 'PagePageContentCollection', items: Array<{ __typename: 'ProjectDropdown' } | { __typename: 'ProjectGrid', type?: string | null, sys: { __typename: 'Sys', id: string }, projectListCollection?: { __typename: 'ProjectGridProjectListCollection', items: Array<{ __typename: 'ProjectCard', title?: string | null, plainBody?: string | null, type?: string | null, buttonText?: string | null, buttonLink?: string | null, sys: { __typename: 'Sys', id: string } } | null> } | null } | { __typename: 'SectionHeader', title?: string | null, anchor?: string | null, buttonText?: string | null, buttonLink?: string | null, color?: string | null, sys: { __typename: 'Sys', id: string }, body?: { __typename: 'SectionHeaderBody', json: any } | null } | { __typename: 'Timeline' } | null> } | null } | null> } | null };
 
 export const ImageFieldsFragmentDoc = gql`
     fragment ImageFields on Asset {
@@ -2550,6 +2566,7 @@ export const SectionHeaderFieldsFragmentDoc = gql`
     id
   }
   title
+  anchor
   body {
     json
   }

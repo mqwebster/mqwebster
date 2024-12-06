@@ -1078,6 +1078,7 @@ type ResourceSys {
 """
 type SectionHeader implements Entry & _Node {
   _id: ID!
+  anchor(locale: String): String
   body(locale: String): SectionHeaderBody
   buttonLink(locale: String): String
   buttonText(locale: String): String
@@ -1138,6 +1139,13 @@ type SectionHeaderCollection {
 input SectionHeaderFilter {
   AND: [SectionHeaderFilter]
   OR: [SectionHeaderFilter]
+  anchor: String
+  anchor_contains: String
+  anchor_exists: Boolean
+  anchor_in: [String]
+  anchor_not: String
+  anchor_not_contains: String
+  anchor_not_in: [String]
   body_contains: String
   body_exists: Boolean
   body_not_contains: String
@@ -1196,6 +1204,8 @@ enum SectionHeaderLinkingCollectionsPageCollectionOrder {
 }
 
 enum SectionHeaderOrder {
+  anchor_ASC
+  anchor_DESC
   buttonLink_ASC
   buttonLink_DESC
   buttonText_ASC

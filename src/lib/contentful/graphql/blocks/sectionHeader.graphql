@@ -3,6 +3,7 @@ fragment SectionHeaderFields on SectionHeader {
     id
   }
   title
+  anchor
   body {
     json
   }
