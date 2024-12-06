@@ -3,7 +3,7 @@ import ReactMde from "react-mde";
 import Showdown from "showdown";
 
 export default function Editor({ currentNote, updateNote }) {
-  const [selectedTab, setSelectedTab] = useState("write");
+  const [selectedTab, setSelectedTab] = useState<"write" | "preview">("write");
 
   const converter = new Showdown.Converter({
     tables: true,
@@ -13,7 +13,7 @@ export default function Editor({ currentNote, updateNote }) {
   });
 
   return (
-    <div className="w-[80%] h-[60vh] px-4 py-2 overflow-y-auto">
+    <div className="w-full md:w-[80%] h-[72vh] px-4 py-2 overflow-y-auto">
       <ReactMde
         value={currentNote.body}
         onChange={updateNote}
@@ -22,7 +22,7 @@ export default function Editor({ currentNote, updateNote }) {
         generateMarkdownPreview={(markdown) =>
           Promise.resolve(converter.makeHtml(markdown))
         }
-        minEditorHeight={20}
+        minEditorHeight={40}
         heightUnits="vh"
       />
     </div>

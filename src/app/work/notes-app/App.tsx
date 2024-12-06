@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import Sidebar from "./components/Sidebar";
 import Editor from "./components/Editor";
@@ -7,17 +8,25 @@ import { nanoid } from "nanoid";
 import "./App.css";
 
 export default function App() {
-  // const [notes, setNotes] = useState(
-  //   () => JSON.parse(localStorage.getItem("notes")) || []
-  // );
-  const [notes, setNotes] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window && window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+  }, []);
+
+  const [notes, setNotes] = useState(
+    () => JSON.parse(localStorage.getItem("notes")) || []
+  );
+  // const [notes, setNotes] = useState([]);
   const [currentNoteId, setCurrentNoteId] = useState(
     (notes[0] && notes[0].id) || ""
   );
 
-  // useEffect(() => {
-  //   window.localStorage.setItem("notes", JSON.stringify(notes));
-  // }, [notes]);
+  useEffect(() => {
+    window.localStorage.setItem("notes", JSON.stringify(notes));
+  }, [notes]);
 
   function createNewNote() {
     const newNote = {
@@ -63,7 +72,7 @@ export default function App() {
   return (
     <div>
       {notes.length > 0 ? (
-        <Split sizes={[30, 70]} direction="horizontal" className="split">
+        <Split sizes={[30, 70]} direction={"horizontal"} className="split">
           <Sidebar
             notes={notes}
             currentNote={findCurrentNote()}
@@ -76,13 +85,21 @@ export default function App() {
           )}
         </Split>
       ) : (
-        <div className="w-full h-[60vh] flex flex-col justify-center items-center gap-4">
-          <h2 className="type-preset-lg font-bold">You have no notes</h2>
+        <div className="relative z-0 w-full h-[72vh] flex flex-col justify-center items-center gap-4">
+          <h2 className="heading-5 md:heading-6 font-title">
+            You have no notes
+          </h2>
+
           <button
-            className="bg-blue-base text-white p-4 rounded-lg"
+            className={
+              "rounded-lg border border-black bg-transparent text-white dark:border-white relative group transition duration-200"
+            }
             onClick={createNewNote}
           >
-            Create one now
+            <div className="px-10 py-3">
+              <div className="rounded-lg absolute -bottom-2 right-2 bg-blue-base group-hover:bg-blue-dark h-full w-full -z-10 group-hover:bottom-0 group-hover:right-0 transition-all duration-200" />
+              <span className="relative">Create a new note</span>
+            </div>
           </button>
         </div>
       )}

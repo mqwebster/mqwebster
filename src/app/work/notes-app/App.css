@@ -3,12 +3,14 @@
 .react-mde {
   border-radius: 0.25rem;
   overflow: hidden;
+  font-size: 16px;
+  font-family: "Montserrat";
 }
 
 .mde-tabs > button {
   border-radius: 0.25rem;
   color: #228ee8;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 2rem;
 }
 .mde-tabs > button.selected {
   border-radius: 0.25rem;

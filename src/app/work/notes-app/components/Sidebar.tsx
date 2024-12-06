@@ -11,9 +11,9 @@ export default function Sidebar(props) {
         }`}
         onClick={() => props.setCurrentNoteId(note.id)}
       >
-        <h4 className="font-bold whitespace-nowrap text-ellipsis overflow-hidden">
+        <h3 className="font-body whitespace-nowrap text-ellipsis overflow-hidden">
           {note.body.split("\n")[0]}
-        </h4>
+        </h3>
         <button
           className="hidden border-none bg-transparent group-hover:block hover:text-red-400"
           onClick={(event) => props.delete(event, note.id)}
@@ -25,9 +25,9 @@ export default function Sidebar(props) {
   ));
 
   return (
-    <div className="w-[20%] h-[60vh] overflow-y-auto">
+    <div className="w-full md:w-[20%] md:h-[60vh] overflow-y-auto">
       <div className="flex justify-between items-center px-4 py-2">
-        <h3 className="type-preset-lg font-bold">Notes</h3>
+        <h2 className="heading-5 md:heading-6 font-title">Notes</h2>
 
         <button
           className="bg-blue-base text-white w-7 h-7 rounded-md"
