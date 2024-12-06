@@ -194,58 +194,58 @@ export const Keypad = () => {
       <Row>
         <KBtn
           className="w-10 items-end justify-start pl-[4px] pb-[2px]"
-          childrenClassName="items-start"
+          childrenClassName="items-start !text-[5px]"
         >
           esc
         </KBtn>
         <KBtn>
           <IconBrightnessDown className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F1</span>
+          <span className="inline-block mt-1 !text-[5px]">F1</span>
         </KBtn>
 
         <KBtn>
           <IconBrightnessUp className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F2</span>
+          <span className="inline-block mt-1 !text-[5px]">F2</span>
         </KBtn>
         <KBtn>
           <IconTable className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F3</span>
+          <span className="inline-block mt-1 !text-[5px]">F3</span>
         </KBtn>
         <KBtn>
           <IconSearch className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F4</span>
+          <span className="inline-block mt-1 !text-[5px]">F4</span>
         </KBtn>
         <KBtn>
           <IconMicrophone className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F5</span>
+          <span className="inline-block mt-1 !text-[5px]">F5</span>
         </KBtn>
         <KBtn>
           <IconMoon className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F6</span>
+          <span className="inline-block mt-1 !text-[5px]">F6</span>
         </KBtn>
         <KBtn>
           <IconPlayerTrackPrev className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F7</span>
+          <span className="inline-block mt-1 !text-[5px]">F7</span>
         </KBtn>
         <KBtn>
           <IconPlayerSkipForward className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F8</span>
+          <span className="inline-block mt-1 !text-[5px]">F8</span>
         </KBtn>
         <KBtn>
           <IconPlayerTrackNext className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F8</span>
+          <span className="inline-block mt-1 !text-[5px]">F8</span>
         </KBtn>
         <KBtn>
           <IconVolume3 className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F10</span>
+          <span className="inline-block mt-1 !text-[5px]">F10</span>
         </KBtn>
         <KBtn>
           <IconVolume2 className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F11</span>
+          <span className="inline-block mt-1 !text-[5px]">F11</span>
         </KBtn>
         <KBtn>
           <IconVolume className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F12</span>
+          <span className="inline-block mt-1 !text-[5px]">F12</span>
         </KBtn>
         <KBtn>
           <div className="h-4 w-4 rounded-full  bg-gradient-to-b from-20% from-neutral-900 via-black via-50% to-neutral-900 to-95% p-px">
@@ -311,7 +311,7 @@ export const Keypad = () => {
         </KBtn>
         <KBtn
           className="w-10 items-end justify-end pr-[4px] pb-[2px]"
-          childrenClassName="items-end"
+          childrenClassName="items-end !text-[5px]"
         >
           delete
         </KBtn>
@@ -321,7 +321,7 @@ export const Keypad = () => {
       <Row>
         <KBtn
           className="w-10 items-end justify-start pl-[4px] pb-[2px]"
-          childrenClassName="items-start"
+          childrenClassName="items-start !text-[5px]"
         >
           tab
         </KBtn>
@@ -374,7 +374,7 @@ export const Keypad = () => {
       <Row>
         <KBtn
           className="w-[2.8rem] items-end justify-start pl-[4px] pb-[2px]"
-          childrenClassName="items-start"
+          childrenClassName="items-start !text-[5px]"
         >
           caps lock
         </KBtn>
@@ -416,7 +416,7 @@ export const Keypad = () => {
         </KBtn>
         <KBtn
           className="w-[2.85rem] items-end justify-end pr-[4px] pb-[2px]"
-          childrenClassName="items-end"
+          childrenClassName="items-end !text-[5px]"
         >
           return
         </KBtn>
@@ -426,7 +426,7 @@ export const Keypad = () => {
       <Row>
         <KBtn
           className="w-[3.65rem] items-end justify-start pl-[4px] pb-[2px]"
-          childrenClassName="items-start"
+          childrenClassName="items-start !text-[5px]"
         >
           shift
         </KBtn>
@@ -465,7 +465,7 @@ export const Keypad = () => {
         </KBtn>
         <KBtn
           className="w-[3.65rem] items-end justify-end pr-[4px] pb-[2px]"
-          childrenClassName="items-end"
+          childrenClassName="items-end !text-[5px]"
         >
           shift
         </KBtn>
@@ -475,7 +475,7 @@ export const Keypad = () => {
       <Row>
         <KBtn className="" childrenClassName="h-full justify-between py-[4px]">
           <div className="flex justify-end w-full pr-1">
-            <span className="block">fn</span>
+            <span className="block !text-[5px]">fn</span>
           </div>
           <div className="flex justify-start w-full pl-1">
             <IconWorld className="h-[6px] w-[6px]" />
@@ -486,7 +486,7 @@ export const Keypad = () => {
             <IconChevronUp className="h-[6px] w-[6px]" />
           </div>
           <div className="flex justify-start w-full pl-1">
-            <span className="block">control</span>
+            <span className="block !text-[5px]">control</span>
           </div>
         </KBtn>
         <KBtn className="" childrenClassName="h-full justify-between py-[4px]">
@@ -494,7 +494,7 @@ export const Keypad = () => {
             <OptionKey className="h-[6px] w-[6px]" />
           </div>
           <div className="flex justify-start w-full pl-1">
-            <span className="block">option</span>
+            <span className="block !text-[5px]">option</span>
           </div>
         </KBtn>
         <KBtn
@@ -505,7 +505,7 @@ export const Keypad = () => {
             <IconCommand className="h-[6px] w-[6px]" />
           </div>
           <div className="flex justify-start w-full pl-1">
-            <span className="block">command</span>
+            <span className="block !text-[5px]">command</span>
           </div>
         </KBtn>
         <KBtn className="w-[8.2rem]"></KBtn>
@@ -517,7 +517,7 @@ export const Keypad = () => {
             <IconCommand className="h-[6px] w-[6px]" />
           </div>
           <div className="flex justify-start w-full pl-1">
-            <span className="block">command</span>
+            <span className="block !text-[5px]">command</span>
           </div>
         </KBtn>
         <KBtn className="" childrenClassName="h-full justify-between py-[4px]">
@@ -525,7 +525,7 @@ export const Keypad = () => {
             <OptionKey className="h-[6px] w-[6px]" />
           </div>
           <div className="flex justify-start w-full pl-1">
-            <span className="block">option</span>
+            <span className="block !text-[5px]">option</span>
           </div>
         </KBtn>
         <div className="w-[4.9rem] mt-[2px] h-6 p-[0.5px] rounded-[4px] flex flex-col justify-end items-center">
@@ -578,7 +578,7 @@ export const KBtn = ({
       >
         <div
           className={cn(
-            "text-neutral-200 text-[5px] w-full flex justify-center items-center flex-col",
+            "text-neutral-200 !text-[6.5px] w-full flex justify-center items-center flex-col",
             childrenClassName,
             backlit && "text-white"
           )}
