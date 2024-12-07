@@ -1,25 +1,24 @@
-import Footer from "@/src/components/blocks/footer";
-import Navbar from "@/src/components/blocks/navbar";
-import PageHero from "@/src/components/blocks/PageHero/PageHero";
+import { draftMode } from "next/headers";
+import { client, previewClient } from "@/src/lib/client";
+import { PageInterface } from "@/types/PageInterface";
+import BaseTemplate from "@/src/templates/BaseTemplate";
 import Resume from "@/src/components/blocks/Resume/Resume";
-import SectionHeader from "@/src/components/blocks/SectionHeader/SectionHeader";
 
-export default function Page() {
+export default async function Page() {
+  const { isEnabled: preview } = draftMode();
+  const gqlClient = preview ? previewClient : client;
+
+  const landingPageData = await gqlClient.Page({
+    slug: "/resume",
+    preview,
+    locale: "en-US",
+  });
+  // @ts-ignore
+  const page: PageInterface = landingPageData.pageCollection?.items[0];
+
   return (
-    <>
-      <Navbar />
-
-      <main>
-        {/* <PageHero /> */}
-
-        <div className="flex flex-col items-center justify-between">
-          <SectionHeader id="resume" title="My Resume..." color="Default" />
-
-          <Resume />
-        </div>
-      </main>
-
-      <Footer />
-    </>
+    <BaseTemplate {...page}>
+      <Resume />
+    </BaseTemplate>
   );
 }
