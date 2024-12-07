@@ -45,25 +45,25 @@ export default function Resume() {
           <div className="flex flex-col gap-20">
             <div
               id="Skills"
-              className="resumeScrollPosition border-b-2 border-blue-200"
+              className="resumeScrollPosition border-b border-blue-200"
             >
-              <h3 className="font-title heading-3 mb-8">Skills</h3>
+              <h2 className="font-title heading-3 mb-8">Skills</h2>
               {skillElements}
             </div>
 
             <div
               id="Experience"
-              className="resumeScrollPosition border-b-2 border-blue-200"
+              className="resumeScrollPosition border-b border-blue-200"
             >
-              <h3 className="font-title heading-3 mb-8">Experience</h3>
+              <h2 className="font-title heading-3 mb-8">Experience</h2>
               {experienceElements}
             </div>
 
             <div
               id="Education"
-              className="resumeScrollPosition border-b-2 border-blue-200"
+              className="resumeScrollPosition border-b border-blue-200"
             >
-              <h3 className="font-title heading-3 mb-8">Education</h3>
+              <h2 className="font-title heading-3 mb-8">Education</h2>
               {educationElements}
             </div>
           </div>
