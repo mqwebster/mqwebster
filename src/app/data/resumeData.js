@@ -1,0 +1,106 @@
+export const resumeData = {
+  Education: [
+    {
+      id: 1,
+      date: "Aug. 2014 - Dec. 2019",
+      title: "Bachelor of Science in Technical Systems Management",
+      location: "University of Illinois at Urbana-Champaign",
+    },
+  ],
+
+  Experience: [
+    {
+      id: 1,
+      date: "Mar. 2023 - Present",
+      title: "Frontend Software Engineer / Designer",
+      location: "Nava PBC | Communications | Remote",
+      list: [
+        "Led the design and frontend development of high-trafc applications, including the 2023 and 2024 Public Benet Report, implementing accessible, user-centered design principles to achieve a 40% increase in engagement and top #6 Google Analytics ranking for visibility.",
+        "Developed advanced, WCAG-compliant ltering functionality to enhance user accessibility, optimizing public sector access to relevant data, thereby increasing site searchability by 30%.",
+        "Implemented automated CI/CD pipeline integrating Storybook and Next.js, improving development velocity by 60% while maintaining code quality standards.",
+        "Utilized secure coding practices and Python scripting to automate data processing for DEI reports, achieving dynamic, visually engaging data visualizations that highlighted diversity metrics, raising awareness and engagement on DEI initiatives.",
+        "Led Agile Scrum ceremonies for the Communications team of 12 as the sole engineer, coordinating sprint planning, weekly stand-ups, and retrospectives to drive cross-functional alignment across multiple disciplines, ensuring on-time, high-quality deliverables.",
+      ],
+    },
+    {
+      id: 2,
+      date: "Jun. 2020 - Aug. 2024",
+      title: "Founder / UX Developer",
+      location: "HI IQ Designs, LLC | Remote",
+      list: [
+        " Propelled small business and public sector growth through custom web applications with scalable, user-centered designs, leveraging tools such as WordPress, React, and AWS cloud services to drive customer engagement and retention, resulting in a 35% increase in client conversion rates.",
+        "Enhanced client site performance and engagement through SEO, automated deployment, and robust CI/CD strategies, signicantly improving load times and boosting long-term client retention by 50%.",
+        "Provided mentorship and consultation on UX, accessibility compliance, and frontend optimization, enabling clients to integrate best practices that improved user satisfaction and site usability scores.",
+        "Led technical and branding discovery sessions with stakeholders to gather requirements and translate business needs into technical specications.",
+      ],
+    },
+    {
+      id: 3,
+      date: "Jan. 2022 - Dec. 2022",
+      title: "Frontend Software Developer",
+      location: "Google Tech Equity Collective | Remote",
+      list: [
+        "Contributed to progressive web app development using React and TypeScript, optimizing response times and ensuring compatibility across devices, which enhanced accessibility and user engagement by 20%.",
+        "Worked closely with cross-functional teams, providing technical expertise and supporting agile workows to deliver secure, high-quality web solutions on time and in line with user-centered design principles.",
+        "Collaborated with UX researchers to implement user feedback, resulting in a 25% increase in feature adoption rates.",
+      ],
+    },
+    {
+      id: 4,
+      date: "Mar. 2019 - Apr. 2022",
+      title: "Lead System Administrator / Web Developer",
+      location: "University of Illinois | Technology Services | Urbana, IL",
+      list: [
+        "Led infrastructure management for 40+ WordPress and Drupal sites, integrating CI/CD to maintain 99.9% uptime and high-performance standards, which minimized disruptions to academic services.",
+        "Supported a network of 800+ devices, administering secure server congurations and MySQL optimization to deliver seamless functionality, safeguarding sensitive academic data, and optimizing response times by 30%.",
+        "Implemented security protocols and SSL certications to maintain a secure digital environment, reducing vulnerabilities and supporting compliance with institutional policies.",
+      ],
+    },
+  ],
+
+  Skills: [
+    {
+      id: 1,
+      title: "Technical Competencies",
+      skills: [
+        "Airtable",
+        "AWS",
+        "Contentful",
+        "Figma",
+        "GitHub",
+        "Google Analytics 4",
+        "GraphQL",
+        "Jira",
+        "JSON",
+        "Next.js",
+        "Notion",
+        "NPM",
+        "Prettier",
+        "Python",
+        "React",
+        "Storybook",
+        "TypeScript",
+        "Vercel",
+        "Vite",
+        "Webflow",
+        "Wix",
+        "WordPress",
+        "YAML",
+        "Yarn",
+      ],
+    },
+    {
+      id: 2,
+      title: "Interpersonal Skills",
+      list: [
+        "Cross-functional collaboration",
+        "Detail-oriented work ethic",
+        "Employee resource management",
+        "Enthusiastic synergy-focused approach to collaboration",
+        "Project management",
+        "Solution based communication skills",
+        "User-centered design and development",
+      ],
+    },
+  ],
+};

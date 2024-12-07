@@ -21,18 +21,6 @@
       }
     ]
   },
-  "include": [
-    "next-env.d.ts",
-    ".next/types/**/*.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "app/components/blocks/navbar.tsx",
-    "app/components/blocks/**/*.js",
-    "app/portfolio/meme-generator/page.jsx",
-    "app/portfolio/notes-app/page.jsx",
-    "app/data/portfolioData.js",
-    "app/data/resumeData.js",
-    "app/data/timelineData.js"
-  ],
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "src/**/*", "types/**/*"],
   "exclude": ["node_modules"]
 }
