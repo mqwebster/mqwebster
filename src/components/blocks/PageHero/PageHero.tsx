@@ -9,7 +9,7 @@ function PageHero(props: PageHeroInterface) {
       <section className="overflow-clip w-full z-0 pb-40">
         <BackgroundBeamsWithCollision>
           <div className="md:max-w-screen-xl relative mx-auto mt-[12vh] md:mt-[20vh] px-8 w-full">
-            <h1 className="font-title heading-1 mt-[19.38px]">
+            <h1 className="font-title heading-1 pt-[19.38px]">
               {props.mainText}
             </h1>
             <p className="font-body body-lg max-w-2xl mt-4">
