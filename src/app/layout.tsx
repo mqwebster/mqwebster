@@ -5,9 +5,6 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Marques Webster | Frontend Software Engineer and Designer",
-  description:
-    "This portfolio is a gateway into the design and development abilities that drive my work.",
   metadataBase: new URL("https://mqwebster.com"),
 };
 
