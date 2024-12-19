@@ -68,7 +68,7 @@ export default function SearchForm() {
           <textarea
             name="prompt"
             maxLength={160}
-            className="w-full h-[100px] my-[10px] text-black rounded-md"
+            className="w-full h-[100px] my-[10px] p-2 text-black rounded-md"
           ></textarea>
 
           <div className="w-full mt-4">
