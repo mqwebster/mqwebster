@@ -97,7 +97,7 @@ export const BackgroundBeamsWithCollision = ({
             mass: 80,
           },
         }}
-        className="w-fit absolute bottom-4"
+        className="w-fit absolute bottom-20 lg:bottom-10"
       >
         <ChevronDownDots />
       </motion.div>
