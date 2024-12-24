@@ -26,7 +26,9 @@ export default function Button({
       >
         <div className="px-10 py-3">
           <div className="rounded-lg absolute -bottom-2 right-2 bg-blue-base group-hover:bg-blue-dark h-full w-full -z-10 group-hover:bottom-0 group-hover:right-0 transition-all duration-200" />
-          <span className="relative">{text}</span>
+          <span className="relative font-body body-base font-light">
+            {text}
+          </span>
         </div>
       </Link>
     </button>
