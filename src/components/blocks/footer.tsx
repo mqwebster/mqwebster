@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row gap-4 mt-10 md:mt-20">
           <Button
             href={
-              "https://assets.ctfassets.net/vvji94wwc94s/2i1QoCtd7LEfP7nYNNbFCU/f661156c42d65d0abde1f106d196d06e/MQWebsterResume.pdf"
+              "https://assets.ctfassets.net/vvji94wwc94s/2i1QoCtd7LEfP7nYNNbFCU/ab99910a302b1f048a35e8d6c6553d53/MarquesQWebsterResume.pdf"
             }
             text="Resume"
           />
